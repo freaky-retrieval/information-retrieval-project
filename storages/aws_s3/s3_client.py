@@ -7,6 +7,7 @@ from PIL import Image
 import tenacity
 import logging
 
+from base import BasePipelineModule
 from storages.aws_s3.config import S3StorageConfig
 
 
@@ -38,7 +39,7 @@ def _download_object(s3_client, bucket_name, object_key) -> Optional[Image.Image
         return None
 
 
-class S3StorageClient:
+class S3StorageClient(BasePipelineModule):
     def __init__(self, config: S3StorageConfig):
         self.config = config
 
@@ -52,6 +53,10 @@ class S3StorageClient:
         )
 
         logging.info(f"S3 client initialized with the following config: {config}")
+
+    @classmethod
+    def from_env(cls):
+        return cls(S3StorageConfig.from_env())
 
     def upload_file_obj(self, file_obj: Image.Image, key: str):
         ext = file_obj.format
