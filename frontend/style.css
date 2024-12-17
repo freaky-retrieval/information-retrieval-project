@@ -1,0 +1,85 @@
+.product-card {
+    border: 2px solid #ddd;        /* Light grey border */
+    padding: 16px;                  /* Add padding inside the block */
+    margin-bottom: 8px;                    /* Space between products */
+    text-align: center;             /* Center the text */
+    border-radius: 8px;             /* Rounded corners */
+    background-color: #fff;         /* White background for the product */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for the block */
+    height: 350px;                  /* Set height for uniform blocks */
+    display: flex;                  /* Use flexbox to align items */
+    flex-direction: column;         /* Stack items vertically */
+    justify-content: space-between; /* Space between elements */
+    overflow: hidden;               /* Prevent overflow */
+}
+
+.product-card-detail {
+    text-align: center;             /* Center the text */
+    background-color: #fff;         /* White background for the product */
+    height: 350px;                  /* Set height for uniform blocks */
+    display: flex;                  /* Use flexbox to align items */
+    flex-direction: column;         /* Stack items vertically */
+    justify-content: space-between; /* Space between elements */
+}
+
+.product-card-detail-2 {
+    text-align: center;               /* Center text horizontally */
+    background-color: #fff;           /* White background */
+    display: flex;                    /* Use flexbox for alignment */
+    flex-direction: column;           /* Arrange items vertically */
+    justify-content: center;          /* Center content vertically */
+    align-items: center;              /* Center content horizontally */
+    padding: 16px;                    /* Optional: Add padding */
+    height: auto;                     /* Adjust height dynamically based on content */
+    width: 100%;                      /* Ensure it spans the full width of its container */
+    border: none;                     /* Remove the border */
+    box-shadow: none;                 /* Remove the shadow */
+}
+
+.product-image-detail {
+    max-width: 100%;                 /* Ensure the image takes full width */
+    height: auto;                    /* Maintain aspect ratio */
+    max-height: 100%;                /* Scale image to fit within the container */
+    object-fit: contain;             /* Maintain the aspect ratio of the image */
+    margin: auto;                    /* Center the image vertically and horizontally */
+}
+
+.product-image {
+    max-width: 100%;                 /* Make the image take up the full width */
+    max-height: 150px;               /* Limit the image height */
+    object-fit: contain;             /* Scale the image while maintaining aspect ratio */
+    margin-bottom: 10px;             /* Space below the image */
+}
+
+.product-title {
+    font-size: 16px;                 /* Adjust title size */
+    font-weight: bold;
+    margin-bottom: 8px;              /* Space below the title */
+    overflow: hidden;                /* Prevent text overflow */
+    text-overflow: ellipsis;         /* Add ellipsis if text overflows */
+    white-space: nowrap;             /* Prevent text from wrapping */
+}
+
+.product-price,
+.product-rating {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.product-link {
+    font-size: 14px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+}
+
+.canvas-image {
+    border: 2px solid #11100e;
+    border-radius: 8px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%
+}
