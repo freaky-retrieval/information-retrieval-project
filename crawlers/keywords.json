@@ -1,0 +1,21 @@
+[
+    "keyboard", "mouse", "monitor", "laptop", "headphones", "speakers", 
+    "webcam", "microphone", "printer", "scanner", "tablet", "phone", 
+    "charger", "cable", "usb drive", "external hard drive", "ssd", "gpu", 
+    "cpu", "ram", "motherboard", "power supply", "case", "fan", "cooler", 
+    "gaming chair", "desk", "mouse pad", "router", "modem", "switch", 
+    "projector", "camera", "tripod", "lens", "flash drive", "battery", 
+    "power bank", "stylus", "monitor stand", "audio mixer", "video card", 
+    "dock station", "smartwatch", "fitness tracker", "vr headset", 
+    "drone", "action camera", "e-reader", "keyboard case", "laptop stand", 
+    "gaming mouse", "gaming keyboard", "mechanical keyboard", "gaming headset",
+    "capture card", "streaming microphone", "led lights", "ring light", 
+    "smart speaker", "wireless earbuds", "wired headphones", "gaming monitor", 
+    "curved monitor", "4k monitor", "ultrawide monitor", "touchscreen monitor",
+    "portable projector", "soundbar", "bluetooth speaker", "noise cancelling headphones",
+    "usb hub", "hdmi cable", "ethernet cable", "network switch", "nas storage", 
+    "data cable", "car charger", "dash cam", "smart thermostat", "smart plug", 
+    "smart light", "robot vacuum", "action figure", "game controller", 
+    "vr controller", "drawing tablet", "laser printer", "inkjet printer", 
+    "photo printer", "thermal printer", "ip camera", "security camera"
+]
