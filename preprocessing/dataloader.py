@@ -10,17 +10,13 @@ class DataInfo:
     sampler: DistributedSampler
     
 class SimpleImageFolder(Dataset):
-    def __init__(self, image_paths, transform=None):
+    def __init__(self, image_paths):
         self.image_paths = image_paths
-        self.transform = transform
         
     def __getitem__(self, index):
         image_path = self.image_paths[index]
        
-        x = Image.open(image_path)
-        if self.transform is not None:
-            x = self.transform(x)
-        return x, image_path
+        return image_path
        
         
     

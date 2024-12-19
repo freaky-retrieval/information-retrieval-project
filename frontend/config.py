@@ -1,0 +1,1 @@
+NUM_COLUMNS = 3
