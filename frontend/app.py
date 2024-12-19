@@ -5,10 +5,10 @@ import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import io
 import base64
-from PIL import Image, ImageOps
-from config import NUM_COLUMNS
-from product import products
-from testNe import test_loading, diffusion_image
+from PIL import ImageOps
+from frontend.config import NUM_COLUMNS
+from frontend.product import products
+from frontend.testNe import test_loading, diffusion_image, Image
 
 def run():
     # Streamlit layout (wide mode)
@@ -41,27 +41,27 @@ def run():
     def increase_uploader_key():
         st.session_state["uploader_key"] += 1
 
-# Define the function to show the canvas in a modal dialog
-@st.dialog("Canvas Dialog", width="large")
-def canvas_dialog():
-    increase_uploader_key()
-    st.write("Draw something in the canvas below:")
-    canvas_result = st_canvas(
-        fill_color="rgba(0, 0, 0, 0)",
-        stroke_width=2,
-        stroke_color="#000000",
-        background_color="#ffffff",
-        update_streamlit=True,
-        height=200,
-        width=700,
-        drawing_mode="freedraw",
-        key="canvas",
-    )
-    if st.button("Save"):    
-        if canvas_result.image_data is not None:
-            img = Image.fromarray(canvas_result.image_data.astype("uint8"), "RGBA")
-            st.session_state["saved_canvas_images"].append(img)
-            st.rerun()
+    # Define the function to show the canvas in a modal dialog
+    @st.dialog("Canvas Dialog", width="large")
+    def canvas_dialog():
+        increase_uploader_key()
+        st.write("Draw something in the canvas below:")
+        canvas_result = st_canvas(
+            fill_color="rgba(0, 0, 0, 0)",
+            stroke_width=2,
+            stroke_color="#000000",
+            background_color="#ffffff",
+            update_streamlit=True,
+            height=200,
+            width=700,
+            drawing_mode="freedraw",
+            key="canvas",
+        )
+        if st.button("Save"):
+            if canvas_result.image_data is not None:
+                img = Image.fromarray(canvas_result.image_data.astype("uint8"), "RGBA")
+                st.session_state["saved_canvas_images"].append(img)
+                st.rerun()
 
     # Function to display product details in a pop-up
     @st.dialog("Product Details", width="large")
@@ -94,46 +94,44 @@ def canvas_dialog():
                         </div>
                     """, unsafe_allow_html=True)
 
-# Function to input text to diffusion model
-@st.dialog("Input text to Diffusion Model", width="large")
-def diffusion_dialog():
-    input_to_diffusion = st.text_input("Input", label_visibility="collapsed")
-    if st.button("Submit"):
-        with st.spinner('Wait for Diffusion Model...'):
-            test_loading()
-        try:
-            st.session_state["saved_canvas_images"].append(diffusion_image)
-            st.rerun()
-        except Exception as e:
-            st.error(f"An error occurred: {e}")
-
-# Function to clear all canvas
-def clear_canvas():
-    increase_uploader_key()
-    if "saved_canvas_images" in st.session_state:
-        st.session_state.pop("saved_canvas_images")
+    # Function to clear all canvas
+    def clear_canvas():
+        increase_uploader_key()
+        if "saved_canvas_images" in st.session_state:
+            st.session_state.pop("saved_canvas_images")
 
     # Function to retrieve from product list
     def products_retrieval(products):
         filtered_products = [product for product in products if st.session_state["search_query"].lower() in product.title.lower()]
         return filtered_products
 
+    # Function to input text to diffusion model
+    @st.dialog("Input text to Diffusion Model", width="large")
+    def diffusion_dialog():
+        increase_uploader_key()
+        input_to_diffusion = st.text_input("Input", label_visibility="collapsed")
+        if st.button("Submit"):
+            with st.spinner('Wait for Diffusion Model...'):
+                test_loading()
+            try:
+                st.session_state["saved_canvas_images"].append(diffusion_image)
+                st.rerun()
+            except Exception as e:
+                st.error(f"An error occurred: {e}")
+
     # Left and Right Column layout
     col1, col2 = st.columns([1, 4])
 
-# Search bar on the left (col1)
-with col1:
-    st.session_state["search_query"] = st.text_input("Search", placeholder="Type product name or description...", label_visibility="collapsed", on_change=increase_uploader_key)
-    
-    st.button("Open Canvas", use_container_width=True, on_click=canvas_dialog)
-
-    st.button("Prompt Diffusion", use_container_width=True, on_click=diffusion_dialog)
-
-    uploaded_file = st.file_uploader("Upload image", label_visibility="collapsed", key=st.session_state["uploader_key"])
-    if uploaded_file is not None:
-        image = Image.open(uploaded_file)
-        image = ImageOps.exif_transpose(image)
-        st.session_state["saved_canvas_images"].append(image)
+    # Search bar on the left (col1)
+    with col1:
+        st.session_state["search_query"] = st.text_input("Search", placeholder="Type product name or description...", label_visibility="collapsed", on_change=increase_uploader_key)
+        st.button("Open Canvas", use_container_width=True, on_click=canvas_dialog)
+        st.button("Prompt Diffusion", use_container_width=True, on_click=diffusion_dialog)
+        uploaded_file = st.file_uploader("Upload image", label_visibility="collapsed", key=st.session_state["uploader_key"])
+        if uploaded_file is not None:
+            image = Image.open(uploaded_file)
+            image = ImageOps.exif_transpose(image)
+            st.session_state["saved_canvas_images"].append(image)
 
         # Show saved canvas images if any
         if st.session_state["saved_canvas_images"]:
