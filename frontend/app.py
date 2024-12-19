@@ -7,8 +7,10 @@ import io
 import base64
 from PIL import ImageOps
 from frontend.config import NUM_COLUMNS
-from frontend.product import products
-from frontend.testNe import test_loading, diffusion_image, Image
+from frontend.button_handler.product import products
+from frontend.button_handler.testNe import test_loading, Image
+from frontend.button_handler.diffusion_submit import getImageFromDiffusion
+from frontend.button_handler.search_products import getProducts
 
 def run():
     # Streamlit layout (wide mode)
@@ -63,6 +65,12 @@ def run():
                 st.session_state["saved_canvas_images"].append(img)
                 st.rerun()
 
+    # Function to clear all canvas
+    def clear_canvas():
+        increase_uploader_key()
+        if "saved_canvas_images" in st.session_state:
+            st.session_state.pop("saved_canvas_images")
+
     # Function to display product details in a pop-up
     @st.dialog("Product Details", width="large")
     def product_details(product):
@@ -94,17 +102,6 @@ def run():
                         </div>
                     """, unsafe_allow_html=True)
 
-    # Function to clear all canvas
-    def clear_canvas():
-        increase_uploader_key()
-        if "saved_canvas_images" in st.session_state:
-            st.session_state.pop("saved_canvas_images")
-
-    # Function to retrieve from product list
-    def products_retrieval(products):
-        filtered_products = [product for product in products if st.session_state["search_query"].lower() in product.title.lower()]
-        return filtered_products
-
     # Function to input text to diffusion model
     @st.dialog("Input text to Diffusion Model", width="large")
     def diffusion_dialog():
@@ -114,7 +111,7 @@ def run():
             with st.spinner('Wait for Diffusion Model...'):
                 test_loading()
             try:
-                st.session_state["saved_canvas_images"].append(diffusion_image)
+                st.session_state["saved_canvas_images"].append(getImageFromDiffusion(input_to_diffusion))
                 st.rerun()
             except Exception as e:
                 st.error(f"An error occurred: {e}")
@@ -125,8 +122,11 @@ def run():
     # Search bar on the left (col1)
     with col1:
         st.session_state["search_query"] = st.text_input("Search", placeholder="Type product name or description...", label_visibility="collapsed", on_change=increase_uploader_key)
+
         st.button("Open Canvas", use_container_width=True, on_click=canvas_dialog)
+
         st.button("Prompt Diffusion", use_container_width=True, on_click=diffusion_dialog)
+        
         uploaded_file = st.file_uploader("Upload image", label_visibility="collapsed", key=st.session_state["uploader_key"])
         if uploaded_file is not None:
             image = Image.open(uploaded_file)
@@ -149,7 +149,7 @@ def run():
             st.button("Search", icon = ":material/search:", use_container_width=True)
 
     # Filter products based on search query and images
-    filtered_products = products_retrieval(products)
+    filtered_products = getProducts(st.session_state["search_query"], products)
 
     # Display the filtered products in the right column (col2)
     with col2:
