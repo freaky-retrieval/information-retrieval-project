@@ -85,6 +85,6 @@ class ProductFinalist:
 
 class TopKFinalists:
     def __init__(self, finalists: List[ProductFinalist]):
-        self.finalists = finalists
+        self.state = finalists
         self.k = len(finalists)
-        sorted(self.finalists, key=lambda x: x.score, reverse=True)
+        sorted(self.state, key=lambda x: x.score, reverse=True)

@@ -170,7 +170,9 @@ def run():
             st.button("Search", icon=":material/search:", use_container_width=True)
 
     # Filter products based on search query and images
-    filtered_products = get_products(st.session_state["search_query"], products)
+    search_term = st.session_state["search_query"] if len(st.session_state["search_query"]) > 0 else None
+    search_img = st.session_state["saved_canvas_images"][-1] if st.session_state["saved_canvas_images"] else None
+    filtered_products = get_products(search_term, search_img)
 
     # Display the filtered products in the right column (col2)
     with col2:
