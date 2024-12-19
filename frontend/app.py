@@ -5,6 +5,7 @@ import base64
 from PIL import Image, ImageOps
 from config import NUM_COLUMNS
 from product import products
+from testNe import test_loading, diffusion_image
 
 # Streamlit layout (wide mode)
 st.set_page_config(layout="wide")
@@ -52,7 +53,7 @@ def canvas_dialog():
         drawing_mode="freedraw",
         key="canvas",
     )
-    if st.button("Save"):
+    if st.button("Save"):    
         if canvas_result.image_data is not None:
             img = Image.fromarray(canvas_result.image_data.astype("uint8"), "RGBA")
             st.session_state["saved_canvas_images"].append(img)
@@ -89,6 +90,19 @@ def product_details(product):
                     </div>
                 """, unsafe_allow_html=True)
 
+# Function to input text to diffusion model
+@st.dialog("Input text to Diffusion Model", width="large")
+def diffusion_dialog():
+    input_to_diffusion = st.text_input("Input", label_visibility="collapsed")
+    if st.button("Submit"):
+        with st.spinner('Wait for Diffusion Model...'):
+            test_loading()
+        try:
+            st.session_state["saved_canvas_images"].append(diffusion_image)
+            st.rerun()
+        except Exception as e:
+            st.error(f"An error occurred: {e}")
+
 # Function to clear all canvas
 def clear_canvas():
     increase_uploader_key()
@@ -106,8 +120,11 @@ col1, col2 = st.columns([1, 4])
 # Search bar on the left (col1)
 with col1:
     st.session_state["search_query"] = st.text_input("Search", placeholder="Type product name or description...", label_visibility="collapsed", on_change=increase_uploader_key)
-    st.button("Open Canvas", use_container_width=True, on_click=canvas_dialog)
     
+    st.button("Open Canvas", use_container_width=True, on_click=canvas_dialog)
+
+    st.button("Prompt Diffusion", use_container_width=True, on_click=diffusion_dialog)
+
     uploaded_file = st.file_uploader("Upload image", label_visibility="collapsed", key=st.session_state["uploader_key"])
     if uploaded_file is not None:
         image = Image.open(uploaded_file)
