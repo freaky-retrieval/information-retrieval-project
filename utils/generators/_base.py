@@ -1,7 +1,7 @@
+import logging
 import os
 from typing import Optional
 from PIL import Image
-import dotenv
 from huggingface_hub import InferenceClient
 
 from base import BasePipelineModule
@@ -13,7 +13,6 @@ class GenerativeHuggingFaceModuleConfig:
 
     @classmethod
     def from_env(cls):
-        dotenv.load_dotenv()
         return cls(token=os.getenv("HUGGINGFACE_TOKEN"))
 
 
@@ -30,16 +29,21 @@ class GenerativeModule(BasePipelineModule):
         inference_steps: int = None,
         guidance_scale: float = None,
         negative_prompts: str = None,
-    ) -> Image.Image:
-        image = self.client.text_to_image(
-            query,
-            negative_prompt=negative_prompts,
-            width=width,
-            height=height,
-            num_inference_steps=inference_steps,
-            guidance_scale=guidance_scale,
-        )
-        return image
+    ) -> Optional[Image.Image]:
+        try:
+            image = self.client.text_to_image(
+                query,
+                negative_prompt=negative_prompts,
+                width=width,
+                height=height,
+                num_inference_steps=inference_steps,
+                guidance_scale=guidance_scale,
+            )
+            return image
+        except Exception as e:
+            logging.error(f"Request to HuggingFace for image generation failed: {e}")
+
+        return None
 
     def get_name(self) -> str:
         return self.MODEL_NAME
