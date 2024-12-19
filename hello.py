@@ -1,19 +1,25 @@
-import logging
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from utils.llms._ollama import OllamaLLMPipelineModule
+from utils.generators import FluxHuggingFaceGenerator
+from base import GenerativeQuery
+import dotenv
 
-from utils.generators._diffuser import StableDiffuserV3HuggingFaceGenerator
-from utils.generators._flux import FluxHuggingFaceGenerator
-
-logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
-
-logging.info("Starting pipeline")
+dotenv.load_dotenv()
 
 
 def main():
-    flux = StableDiffuserV3HuggingFaceGenerator.from_env()
+    mod = OllamaLLMPipelineModule.from_env()
+    flux = FluxHuggingFaceGenerator.from_env()
 
-    image = flux.generate("A beautiful sunset over the mountains")
+    query = GenerativeQuery("an Iphone 15", 4)
 
-    image.save("sunset.jpg")
+    response = mod.generate(query)
+
+    print(response.descriptions)
+
+    img = flux.generate(response.descriptions[0], inference_steps=20, guidance_scale=3.5)
+
+    img.show()
 
 
 if __name__ == "__main__":
