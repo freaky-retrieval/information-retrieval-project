@@ -41,7 +41,7 @@ def _download_image(url: str) -> Image.Image:
     return Image.open(io.BytesIO(response.content))
 
 
-class ImageDownloaderModule(BasePipelineModule):
+class ParallelImageFetcher(BasePipelineModule):
     def __init__(self, config: ImageDownloaderConfig):
         self.config = config
 

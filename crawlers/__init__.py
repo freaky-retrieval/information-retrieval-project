@@ -7,4 +7,4 @@ class CrawlingModule(BasePipelineModule):
 
     @classmethod
     def from_env(cls):
-        pass
+        return cls()
