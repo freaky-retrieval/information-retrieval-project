@@ -1,5 +1,5 @@
 from PIL import Image
-from typing import Dict, List
+from typing import Dict, List, Optional
 from PIL import Image
 
 
@@ -14,7 +14,7 @@ class BaseQuery:
 class TextQuery(BaseQuery):
     def __init__(self, query: str):
         super(TextQuery, self).__init__()
-        self.query = query
+        self.content = query
 
 
 "Image query"
@@ -23,7 +23,7 @@ class TextQuery(BaseQuery):
 class ImageQuery(BaseQuery):
     def __init__(self, query: Image.Image):
         super(ImageQuery, self).__init__()
-        self.query = query
+        self.content = query
 
 
 "Text + Image query"
@@ -32,7 +32,7 @@ class ImageQuery(BaseQuery):
 class ComplexQuery(BaseQuery):
     def __init__(self, query: str, image: Image.Image):
         super(ComplexQuery, self).__init__()
-        self.query = query
+        self.text = query
         self.image = image
 
 
@@ -54,30 +54,21 @@ class GenerativeQueryResponse:
         self.descriptions = samples
 
 
-"Product data fetched from Milvus by similarity scores. This is the candidate one."
-
-
-class ProductCandidate:
-    def __init__(self, data: Dict):
-        self.id = data.get("id")
-        self.embedding = data.get("embedding")
-        self.metadata = data.get("metadata")
-        # TODO: Add more fields as needed
-
-
 "Product data after filtering and ranking. This is the finalist for UI rendering."
 
 
 class ProductFinalist:
     def __init__(self, data: Dict):
-        assert "score" in data, "Score is required for ranking"
-
-        self.title = data.get("title")
-        self.price = data.get("price")
-        self.images = data.get("images")
-        self.description = data.get("description")
-        self.features = data.get("features")
-        # TODO: Add more fields as needed
+        self.title: str = data.get("title")
+        self.price: Optional[float] = (
+            data.get("price").get("value") if data.get("price") else None
+        )
+        self.url: str = data.get("url")
+        self.rating: float = data.get("stars")
+        self.rating_details: Dict[str, float] = data.get("starsBreakdown")
+        self.review_count: int = data.get("reviewsCount")
+        self.galleryThumbnail: List[str] = data.get("galleryThumbnail")
+        self.thumbnailImage: str = data.get("thumbnailImage")
 
 
 "Top-K response"
@@ -87,4 +78,3 @@ class TopKFinalists:
     def __init__(self, finalists: List[ProductFinalist]):
         self.state = finalists
         self.k = len(finalists)
-        sorted(self.state, key=lambda x: x.score, reverse=True)

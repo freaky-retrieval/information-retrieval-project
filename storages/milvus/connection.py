@@ -10,6 +10,8 @@ class MilvusConnection:
         Ensures only one connection is created.
         """
         if MilvusConnection._instance is None:
-            MilvusConnection._instance = connections.connect("default", host=host, port=port)
+            MilvusConnection._instance = connections.connect(
+                "default", host=host, port=port
+            )
             print(f"Connected to Milvus at {host}:{port}")
         return MilvusConnection._instance

@@ -2,19 +2,17 @@ import logging
 
 from crawlers import CrawlingModule
 from utils.downloaders.image_downloader import ParallelImageFetcher
-from embedding import EmbeddingModule
 from base import BaseQuery, ComplexQuery, ImageQuery, TextQuery, TopKFinalists
 from storages.aws_s3.s3_client import S3StorageClient
+
 
 class PipelineBase:
     def __init__(
         self,
-        embedding_module: EmbeddingModule,
         s3_storage: S3StorageClient,
         downloader: ParallelImageFetcher,
         crawler: CrawlingModule,
     ):
-        self.embedding_module: EmbeddingModule = embedding_module
         self.s3_storage: S3StorageClient = s3_storage
         self.downloader: ParallelImageFetcher = downloader
         self.crawler: CrawlingModule = crawler

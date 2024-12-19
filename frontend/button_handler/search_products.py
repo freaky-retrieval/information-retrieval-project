@@ -18,17 +18,18 @@ def _map_to_ui_product(product: ProductFinalist) -> UIProduct:
 
 
 def get_products(text: Optional[str], image: Optional[Image.Image]) -> List[UIProduct]:
-    assert text or image, "At least one of text or image should be provided."
     if text and image:
         query = ComplexQuery(text, image)
     elif text:
         query = TextQuery(text)
+    elif image:
+        query = ImageQuery(image)
     else:
-        query = ImageQuery(image=image)
+        return []
 
-    finalists = pipeline_v1.serve(query)
+    finalists = pipeline_v1.instance.serve(query)
 
     if not finalists:
         return []
 
-    return list(map(_map_to_ui_product, finalists))
+    return list(map(_map_to_ui_product, finalists.state))

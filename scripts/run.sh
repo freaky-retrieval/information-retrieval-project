@@ -1,25 +1,25 @@
-chmod +x run_milvus.sh
-chmod +x run_minio.sh
+chmod +x ./scripts/run_milvus.sh
+chmod +x ./scripts/run_minio.sh
 
 start()
 {
-    ./run_minio.sh start
+    ./scripts/run_minio.sh start
 
-    ./run_milvus.sh start
+    ./scripts/run_milvus.sh start
 }
 
 stop()
 {
-    ./run_milvus.sh stop
+    ./scripts/run_milvus.sh stop
 
-    ./run_minio.sh stop
+    ./scripts/run_minio.sh stop
 }
 
 delete()
 {
-    ./run_milvus.sh delete
+    ./scripts/run_milvus.sh delete
 
-    ./run_minio.sh delete
+    ./scripts/run_minio.sh delete
 }
 
 case $1 in
