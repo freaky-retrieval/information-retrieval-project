@@ -3,7 +3,7 @@ import os
 from storages.milvus.connection import MilvusConnection
 from storages.milvus.query import search_by_embedding
 from storages.milvus.schema import get_collection
-from preprocessing.utils import get_fused_embedding
+from preprocessing.utils import get_fused_embedding, get_text_embedding
 from pymilvus import utility
 
 if __name__ == "__main__":
@@ -18,12 +18,16 @@ if __name__ == "__main__":
     # replace sketch query here
     sketch_path = 'data/sketches/shoes_sketch.jpg'
     text_query = "Sport shoes"
-    query_embedding = get_fused_embedding(sketch_path, text_query)
+    ts_embedding = get_fused_embedding(sketch_path, text_query)
+    text_embedding = get_text_embedding(text_query)
 
-    results = search_by_embedding(collection, query_embedding)
-    for idx, result in enumerate(results):
+    results = search_by_embedding(collection, ts_embedding, text_embedding)
+    for idx, (hit_id, result) in enumerate(results):
         print(f"Result {idx+1}")
-        print(f"Product ID: {result['product_id']}")
-        print(f"Image path: {result['image_path']}")
-        print(f"Distance: {result['distance']}")
-        print(f"Asin: {result['metadata']['asin']}")
+        # result[0]: float
+        # result[1]: pymilvus.client.abstract.Hit
+        entity = result[1].entity
+        print(f"Product ID: {entity.get('product_id')}")
+        print(f"Image path: {entity.get('image_path')}")
+        print(f"Distance: {entity.get('distance')}")
+        print(f"Asin: {entity.get('metadata')['asin']}")

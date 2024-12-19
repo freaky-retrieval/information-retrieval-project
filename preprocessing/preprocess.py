@@ -7,7 +7,7 @@ from storages.milvus.connection import MilvusConnection
 from storages.milvus.schema import get_collection
 from storages.milvus.insert import insert_records
 from storages.milvus.query import search_by_embedding
-from utils import get_image_embedding
+from utils import get_image_embedding, get_text_embedding
 import json
 from parse import get_data
 import numpy as np
@@ -22,7 +22,7 @@ def insert_product_images(collection, product):
         product: A Product object with img_links, text, and metadata.
     """
     product_id = product.metadata.get("asin", "")  # Unique product ID
-    # text_embedding = generate_text_embedding(model, product.text)  # Shared text embedding
+    text_embedding = get_text_embedding(product.text)
 
     for img_link in product.img_links:
         # Generate image embedding
@@ -32,7 +32,7 @@ def insert_product_images(collection, product):
         record = {
             "product_id": product_id,
             "image_embedding": image_embedding,
-            "text_embedding": np.zeros(512).tolist(),
+            "text_embedding": text_embedding,
             "image_path": img_link,
             "metadata": product.metadata
         }

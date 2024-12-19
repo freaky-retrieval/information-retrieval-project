@@ -113,4 +113,41 @@ def get_image_embedding(image_input: str | Path, is_url: bool = False) -> list:
         print(f'status code: {response.status_code}')
         print(f'error: {response.text}')
         return None
-    
+
+def get_text_embedding(text: str) -> list:
+    """
+    Get text embedding from an Inference Endpoint.
+    Args:
+        text (str): text query
+    Returns:
+        list: Embedding vector for the text.
+    """
+    API_URL = "https://rybvz9jrlmmdy0eo.us-east-1.aws.endpoints.huggingface.cloud"
+    API_TOKEN = "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"
+
+    # Headers for the API request
+    headers = {"Authorization": f"Bearer {API_TOKEN}"}
+
+    # Prepare payload
+    payload = {
+        "inputs": {
+            "text": text
+        }
+    }
+
+    # Send API request
+    response = requests.post(API_URL, headers=headers, json=payload)
+
+    # Parse the API response
+    if response.status_code == 200:
+        result = response.json()
+        # print(f'result: {result}')
+        if "error" in result:
+            print("Error:", result["error"])
+            return None
+        emb = result["embedding"][0]
+        return emb
+    else:
+        print(f'status code: {response.status_code}')
+        print(f'error: {response.text}')
+        return None
