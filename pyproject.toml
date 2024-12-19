@@ -14,4 +14,5 @@ dependencies = [
     "tenacity>=9.0.0",
     "pillow>=11.0.0",
     "huggingface-hub>=0.27.0",
+    "torch>=2.5.1",
 ]
