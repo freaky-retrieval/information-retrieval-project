@@ -2,14 +2,14 @@ import os
 import tenacity
 from typing import Optional
 from base._dtos import GenerativeQuery, GenerativeQueryResponse
-from utils.llms._base import BaseLLMPipelineModule, BaseLLMPipelineModuleConfig
+from utils.llms._base import LLMModule, LLMModuleConfig
 from langchain.prompts import PromptTemplate
 from langchain_ollama import ChatOllama
 from langchain.output_parsers.json import SimpleJsonOutputParser
 from langchain_core.exceptions import OutputParserException
 
 
-class OllamaLLMPipelineModuleConfig(BaseLLMPipelineModuleConfig):
+class OllamaLLMModuleConfig(LLMModuleConfig):
     def __init__(
         self,
         model: str,
@@ -34,8 +34,8 @@ class OllamaLLMPipelineModuleConfig(BaseLLMPipelineModuleConfig):
         )
 
 
-class OllamaLLMPipelineModule(BaseLLMPipelineModule):
-    def __init__(self, config: OllamaLLMPipelineModuleConfig):
+class OllamaLLMModule(LLMModule):
+    def __init__(self, config: OllamaLLMModuleConfig):
         super().__init__(config)
 
         self.llm = ChatOllama(
@@ -65,7 +65,7 @@ class OllamaLLMPipelineModule(BaseLLMPipelineModule):
         def _vunerable_call():
             response = self.chain.invoke(
                 {
-                    "prompt": prompt.query,
+                    "prompt": prompt.description,
                     "samples": prompt.samples,
                     "max_tokens": self.config.max_length_per_caption,
                 }
@@ -85,4 +85,4 @@ class OllamaLLMPipelineModule(BaseLLMPipelineModule):
 
     @classmethod
     def from_env(cls):
-        return cls(config=OllamaLLMPipelineModuleConfig.from_env())
+        return cls(config=OllamaLLMModuleConfig.from_env())

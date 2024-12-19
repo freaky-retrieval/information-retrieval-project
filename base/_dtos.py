@@ -42,7 +42,7 @@ class ComplexQuery(BaseQuery):
 class GenerativeQuery(BaseQuery):
     def __init__(self, query: str, samples: int = 3):
         super(GenerativeQuery, self).__init__()
-        self.query = query
+        self.description = query
         self.samples = samples  # number of samples to generate
 
 

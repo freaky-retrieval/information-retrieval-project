@@ -3,7 +3,7 @@ from base._core import BasePipelineModule
 from base._dtos import GenerativeQuery, GenerativeQueryResponse
 
 
-class BaseLLMPipelineModuleConfig:
+class LLMModuleConfig:
     def __init__(
         self,
         model: str,
@@ -26,8 +26,8 @@ class BaseLLMPipelineModuleConfig:
         )
 
 
-class BaseLLMPipelineModule(BasePipelineModule):
-    def __init__(self, config: BaseLLMPipelineModuleConfig):
+class LLMModule(BasePipelineModule):
+    def __init__(self, config: LLMModuleConfig):
         super().__init__()
         self.config = config
 

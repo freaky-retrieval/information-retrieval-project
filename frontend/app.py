@@ -1,16 +1,13 @@
-import os
-os.chdir(os.path.dirname(__file__))
-
 import streamlit as st
 from streamlit_drawable_canvas import st_canvas
 import io
 import base64
-from PIL import ImageOps
+from PIL import ImageOps, Image
 from frontend.config import NUM_COLUMNS
 from frontend.button_handler.product import products
-from frontend.button_handler.testNe import test_loading, Image
-from frontend.button_handler.diffusion_submit import getImageFromDiffusion
-from frontend.button_handler.search_products import getProducts
+from frontend.button_handler.diffusion_submit import get_image_from_diffusion
+from frontend.button_handler.search_products import get_products
+
 
 def run():
     # Streamlit layout (wide mode)
@@ -27,9 +24,9 @@ def run():
     st.markdown(hide_st_style, unsafe_allow_html=True)
 
     # Load external CSS file for styling
-    with open('style.css', 'r', encoding='utf-8') as f:
+    with open("frontend/style.css", "r", encoding="utf-8") as f:
         css = f.read()
-        st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+        st.markdown(f"<style>{css}</style>", unsafe_allow_html=True)
 
     # Initialize session state
     if "search_query" not in st.session_state:
@@ -78,12 +75,14 @@ def run():
         st.write(f"### {product.title}")
 
         # Main product image
-        st.markdown(f"""
+        st.markdown(
+            f"""
                         <div class="product-card-detail">
                             <img src="{product.thumbnailImage}" class="product-image-detail" alt="{product.title}"/>
                         </div>
-                    """
-                    , unsafe_allow_html=True)
+                    """,
+            unsafe_allow_html=True,
+        )
 
         # Display additional images in a horizontal row
         cols = st.columns(len(product.galleryThumbnail))
@@ -92,7 +91,8 @@ def run():
                 st.image(image_url, use_container_width=True)
 
         # Product details
-        st.markdown(f"""
+        st.markdown(
+            f"""
                         <div class="product-card-detail-2">
                             <p class="product-price"><span style="font-size: 20px;">Price: ${product.price:.2f}🪙</span></p>
                             <p class="product-rating"><span style="font-size: 20px;">Rating: {product.rating}⭐</span></p>
@@ -100,7 +100,9 @@ def run():
                                 View Product on Website
                             </a>
                         </div>
-                    """, unsafe_allow_html=True)
+                    """,
+            unsafe_allow_html=True,
+        )
 
     # Function to input text to diffusion model
     @st.dialog("Input text to Diffusion Model", width="large")
@@ -108,26 +110,40 @@ def run():
         increase_uploader_key()
         input_to_diffusion = st.text_input("Input", label_visibility="collapsed")
         if st.button("Submit"):
-            with st.spinner('Wait for Diffusion Model...'):
-                test_loading()
-            try:
-                st.session_state["saved_canvas_images"].append(getImageFromDiffusion(input_to_diffusion))
+            with st.spinner("Wait for Diffusion Model..."):
+                image = get_image_from_diffusion(input_to_diffusion)
+                print(image)
+            if image is not None:
+                st.session_state["saved_canvas_images"].append(image)
                 st.rerun()
-            except Exception as e:
-                st.error(f"An error occurred: {e}")
+            else:
+                st.error(
+                    "Failed to generate image from Diffusion Model. Please try again."
+                )
 
     # Left and Right Column layout
     col1, col2 = st.columns([1, 4])
 
     # Search bar on the left (col1)
     with col1:
-        st.session_state["search_query"] = st.text_input("Search", placeholder="Type product name or description...", label_visibility="collapsed", on_change=increase_uploader_key)
+        st.session_state["search_query"] = st.text_input(
+            "Search",
+            placeholder="Type product name or description...",
+            label_visibility="collapsed",
+            on_change=increase_uploader_key,
+        )
 
         st.button("Open Canvas", use_container_width=True, on_click=canvas_dialog)
 
-        st.button("Prompt Diffusion", use_container_width=True, on_click=diffusion_dialog)
-        
-        uploaded_file = st.file_uploader("Upload image", label_visibility="collapsed", key=st.session_state["uploader_key"])
+        st.button(
+            "Prompt Diffusion", use_container_width=True, on_click=diffusion_dialog
+        )
+
+        uploaded_file = st.file_uploader(
+            "Upload image",
+            label_visibility="collapsed",
+            key=st.session_state["uploader_key"],
+        )
         if uploaded_file is not None:
             image = Image.open(uploaded_file)
             image = ImageOps.exif_transpose(image)
@@ -144,12 +160,17 @@ def run():
 
         cols = st.columns(2)
         with cols[0]:
-            st.button("Clear Canvas", on_click=clear_canvas, icon=":material/delete:", use_container_width=True)
+            st.button(
+                "Clear Canvas",
+                on_click=clear_canvas,
+                icon=":material/delete:",
+                use_container_width=True,
+            )
         with cols[1]:
-            st.button("Search", icon = ":material/search:", use_container_width=True)
+            st.button("Search", icon=":material/search:", use_container_width=True)
 
     # Filter products based on search query and images
-    filtered_products = getProducts(st.session_state["search_query"], products)
+    filtered_products = get_products(st.session_state["search_query"], products)
 
     # Display the filtered products in the right column (col2)
     with col2:
@@ -168,7 +189,8 @@ def run():
                         with cols[j]:
 
                             # Display each product inside a block
-                            st.markdown(f"""
+                            st.markdown(
+                                f"""
                                 <div class="product-card">
                                     <img src="{product.thumbnailImage}" class="product-image" alt="{product.title}"/>
                                     <p class="product-title">{product.title}</p>
@@ -176,18 +198,23 @@ def run():
                                     <p class="product-rating">Rating: {product.rating} ⭐</p>
                                     <a href="{product.url}" class="product-link" target="_blank">View Product</a>
                                 </div>
-                            """, unsafe_allow_html=True)
+                            """,
+                                unsafe_allow_html=True,
+                            )
 
                             button_placeholder = st.container()
                             with button_placeholder:
-                                st.markdown('<div class="small-centered-button">', unsafe_allow_html=True)
+                                st.markdown(
+                                    '<div class="small-centered-button">',
+                                    unsafe_allow_html=True,
+                                )
                                 if st.button(
                                     label="View Details",
                                     key=f"view_details_{i}_{j}",
-                                    on_click=increase_uploader_key
+                                    on_click=increase_uploader_key,
                                 ):
                                     product_details(product)
-                                st.markdown('</div>', unsafe_allow_html=True)
+                                st.markdown("</div>", unsafe_allow_html=True)
 
                 # After displaying a row of products, update columns for the next row
                 cols = st.columns(NUM_COLUMNS)  # Create new set of columns

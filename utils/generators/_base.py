@@ -16,7 +16,7 @@ class GenerativeHuggingFaceModuleConfig:
         return cls(token=os.getenv("HUGGINGFACE_TOKEN"))
 
 
-class GenerativeModule(BasePipelineModule):
+class Text2ImgGenerativeModule(BasePipelineModule):
     def __init__(self, config: GenerativeHuggingFaceModuleConfig):
         self.token = config.token
         self.client = InferenceClient(self.MODEL_NAME, token=self.token)
@@ -26,8 +26,8 @@ class GenerativeModule(BasePipelineModule):
         query: str,
         width: int = 512,
         height: int = 512,
-        inference_steps: int = None,
-        guidance_scale: float = None,
+        inference_steps: int = 20,
+        guidance_scale: float = 4.5,
         negative_prompts: str = None,
     ) -> Optional[Image.Image]:
         try:
