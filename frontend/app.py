@@ -4,10 +4,10 @@ import io
 import base64
 from PIL import ImageOps, Image
 from frontend.config import NUM_COLUMNS
-from frontend.button_handler.product import products
 from frontend.button_handler.diffusion_submit import get_image_from_diffusion
 from frontend.button_handler.search_products import get_products
-
+from frontend.components.product_card import render_product_card
+from frontend.components.product_detail_card import render_product_detail_card
 
 def run():
     # Streamlit layout (wide mode)
@@ -35,15 +35,36 @@ def run():
         st.session_state["saved_canvas_images"] = []
     if "uploader_key" not in st.session_state:
         st.session_state["uploader_key"] = 0
+    if "search_activate" not in st.session_state:
+        st.session_state["search_activate"] = False
+    if "search_image_results" not in st.session_state:
+        st.session_state["search_image_results"] = []
 
     # Increase uploader key
     def increase_uploader_key():
         st.session_state["uploader_key"] += 1
 
+    # Function to activate search
+    def activate_search():
+        st.session_state["search_activate"] = True
+
+    # Function to deactivate search
+    def deactivate_search():
+        st.session_state["search_activate"] = False
+
+    def view_details():
+        increase_uploader_key()
+        deactivate_search()
+
+    def search():
+        increase_uploader_key()
+        activate_search()
+
     # Define the function to show the canvas in a modal dialog
     @st.dialog("Canvas Dialog", width="large")
     def canvas_dialog():
         increase_uploader_key()
+        deactivate_search()
         st.write("Draw something in the canvas below:")
         canvas_result = st_canvas(
             fill_color="rgba(0, 0, 0, 0)",
@@ -59,55 +80,22 @@ def run():
         if st.button("Save"):
             if canvas_result.image_data is not None:
                 img = Image.fromarray(canvas_result.image_data.astype("uint8"), "RGBA")
+                img = img.convert("RGB")
                 st.session_state["saved_canvas_images"].append(img)
                 st.rerun()
 
     # Function to clear all canvas
     def clear_canvas():
         increase_uploader_key()
+        deactivate_search()
         if "saved_canvas_images" in st.session_state:
             st.session_state.pop("saved_canvas_images")
-
-    # Function to display product details in a pop-up
-    @st.dialog("Product Details", width="large")
-    def product_details(product):
-        # Product title
-        st.write(f"### {product.title}")
-
-        # Main product image
-        st.markdown(
-            f"""
-                        <div class="product-card-detail">
-                            <img src="{product.thumbnailImage}" class="product-image-detail" alt="{product.title}"/>
-                        </div>
-                    """,
-            unsafe_allow_html=True,
-        )
-
-        # Display additional images in a horizontal row
-        cols = st.columns(len(product.galleryThumbnail))
-        for idx, image_url in enumerate(product.galleryThumbnail):
-            with cols[idx]:
-                st.image(image_url, use_container_width=True)
-
-        # Product details
-        st.markdown(
-            f"""
-                        <div class="product-card-detail-2">
-                            <p class="product-price"><span style="font-size: 20px;">Price: ${product.price:.2f}🪙</span></p>
-                            <p class="product-rating"><span style="font-size: 20px;">Rating: {product.rating}⭐</span></p>
-                            <a href="{product.url}" target="_blank" class="product-link">
-                                View Product on Website
-                            </a>
-                        </div>
-                    """,
-            unsafe_allow_html=True,
-        )
 
     # Function to input text to diffusion model
     @st.dialog("Input text to Diffusion Model", width="large")
     def diffusion_dialog():
         increase_uploader_key()
+        deactivate_search()
         input_to_diffusion = st.text_input("Input", label_visibility="collapsed")
         if st.button("Submit"):
             with st.spinner("Wait for Diffusion Model..."):
@@ -120,6 +108,7 @@ def run():
                 st.error(
                     "Failed to generate image from Diffusion Model. Please try again."
                 )
+
 
     # Left and Right Column layout
     col1, col2 = st.columns([1, 4])
@@ -142,8 +131,10 @@ def run():
         uploaded_file = st.file_uploader(
             "Upload image",
             label_visibility="collapsed",
+            on_change = deactivate_search,
             key=st.session_state["uploader_key"],
         )
+        print("UPLOADED FILE:", uploaded_file)
         if uploaded_file is not None:
             image = Image.open(uploaded_file)
             image = ImageOps.exif_transpose(image)
@@ -167,16 +158,25 @@ def run():
                 use_container_width=True,
             )
         with cols[1]:
-            st.button("Search", icon=":material/search:", use_container_width=True)
+            st.button(
+                "Search",
+                on_click=search,
+                icon=":material/search:",
+                use_container_width=True
+            )
 
     # Filter products based on search query and images
     search_term = st.session_state["search_query"] if len(st.session_state["search_query"]) > 0 else None
     search_img = st.session_state["saved_canvas_images"][-1] if st.session_state["saved_canvas_images"] else None
-    filtered_products = get_products(search_term, search_img)
+
+    filtered_products = get_products(search_term, search_img) if (st.session_state["search_activate"]) else st.session_state["search_image_results"]
+    print("TEXT DE SEARCH:", search_term)
+    print("ANH DE SEARCH:", search_img)
+    print("TIM RA:", filtered_products)
+    st.session_state["search_image_results"] = filtered_products
 
     # Display the filtered products in the right column (col2)
     with col2:
-        # If no products match the search, display a message
         if not filtered_products:
             st.write("No products found. Please try a different search.")
         else:
@@ -191,18 +191,7 @@ def run():
                         with cols[j]:
 
                             # Display each product inside a block
-                            st.markdown(
-                                f"""
-                                <div class="product-card">
-                                    <img src="{product.thumbnailImage}" class="product-image" alt="{product.title}"/>
-                                    <p class="product-title">{product.title}</p>
-                                    <p class="product-price">Price: ${product.price}</p>
-                                    <p class="product-rating">Rating: {product.rating} ⭐</p>
-                                    <a href="{product.url}" class="product-link" target="_blank">View Product</a>
-                                </div>
-                            """,
-                                unsafe_allow_html=True,
-                            )
+                            render_product_card(product)
 
                             button_placeholder = st.container()
                             with button_placeholder:
@@ -213,9 +202,9 @@ def run():
                                 if st.button(
                                     label="View Details",
                                     key=f"view_details_{i}_{j}",
-                                    on_click=increase_uploader_key,
+                                    on_click= view_details,
                                 ):
-                                    product_details(product)
+                                    render_product_detail_card(product)
                                 st.markdown("</div>", unsafe_allow_html=True)
 
                 # After displaying a row of products, update columns for the next row

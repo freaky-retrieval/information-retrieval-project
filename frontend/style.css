@@ -4,7 +4,7 @@
     margin-bottom: 8px;                    /* Space between products */
     text-align: center;             /* Center the text */
     border-radius: 8px;             /* Rounded corners */
-    background-color: #fff;         /* White background for the product */
+    background-color: #000;         /* White background for the product */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for the block */
     height: 350px;                  /* Set height for uniform blocks */
     display: flex;                  /* Use flexbox to align items */
@@ -24,7 +24,7 @@
 
 .product-card-detail-2 {
     text-align: center;               /* Center text horizontally */
-    background-color: #fff;           /* White background */
+    background-color: #000;           /* White background */
     display: flex;                    /* Use flexbox for alignment */
     flex-direction: column;           /* Arrange items vertically */
     justify-content: center;          /* Center content vertically */
@@ -61,7 +61,8 @@
 }
 
 .product-price,
-.product-rating {
+.product-rating,
+.product-description {
     font-size: 14px;
     margin-bottom: 4px;
 }

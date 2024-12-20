@@ -69,7 +69,7 @@ class ProductFinalist:
         self.review_count: int = data.get("reviewsCount")
         self.galleryThumbnail: List[str] = data.get("galleryThumbnail")
         self.thumbnailImage: str = data.get("thumbnailImage")
-
+        self.description: str = data.get("description")
 
 "Top-K response"
 
