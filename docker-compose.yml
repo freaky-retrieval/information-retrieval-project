@@ -10,6 +10,19 @@ services:
     networks:
       - app_network
 
+  mongo-express:
+    image: mongo-express:latest
+    container_name: mongo-express
+    ports:
+      - "8081:8081"
+    environment:
+      ME_CONFIG_MONGODB_URL: "mongodb://mongo:27017/"
+    depends_on:
+      - mongo
+    restart: unless-stopped
+    networks:
+      - app_network
+
   minio:
     image: quay.io/minio/minio
     container_name: minio
@@ -37,14 +50,11 @@ services:
     networks:
       - app_network
 
-  app:
+  celery_worker:
     build: .
-    container_name: streamlit_app
-    ports:
-      - "8501:8501"
+    container_name: celery_worker
+    command: celery -A schedulers worker -l info
     depends_on:
-      - mongo
-      - minio
       - redis
     volumes:
       - ./app:/app
@@ -52,15 +62,18 @@ services:
     networks:
       - app_network
 
-  mongo-express:
-    image: mongo-express:latest
-    container_name: mongo-express
+  app:
+    build: ./
+    command: streamlit run app/main.py --server.port 8501
     ports:
-      - "8081:8081"
-    environment:
-      ME_CONFIG_MONGODB_URL: "mongodb://mongo:27017/"
+        - 8501:8501
+    image: streamlit_app:latest
     depends_on:
       - mongo
+      - minio
+      - redis
+    volumes:
+      - ./app:/app
     restart: unless-stopped
     networks:
       - app_network
