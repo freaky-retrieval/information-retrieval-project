@@ -11,8 +11,9 @@ from preprocessing.utils import (
     get_image_embedding,
     get_text_embedding,
 )
-from storages.milvus.query import search_by_embedding
-from storages.milvus.schema import get_collection
+# from storages.milvus.query import search_by_embedding
+# from storages.milvus.schema import get_collection
+from storages.milvus.milvus_db import MilvusDB
 from utils.downloaders.image_downloader import ParallelImageFetcher
 from embedding import EmbeddingModule
 from base import BaseQuery, ComplexQuery, ImageQuery, TextQuery, TopKFinalists
@@ -27,12 +28,13 @@ class PipelineV1(PipelineBase):
     def __init__(
         self,
         s3_storage: S3StorageClient,
+        milvus: MilvusDB,
         downloader: ParallelImageFetcher,
         crawler: CrawlingModule,
         generator: Optional[Text2ImgGenerativeModule] = None,
         llm: Optional[LLMModule] = None,
     ):
-        super(PipelineV1, self).__init__(s3_storage, downloader, crawler)
+        super(PipelineV1, self).__init__(s3_storage, milvus, downloader, crawler)
         self.generator: Optional[Text2ImgGenerativeModule] = generator
         self.llm: Optional[LLMModule] = llm
 
@@ -62,6 +64,7 @@ class PipelineV1(PipelineBase):
         downloader = ParallelImageFetcher.from_env()
         crawler = CrawlingModule.from_env()
         generator = FluxHuggingFaceGenerator.from_env() if with_generator else None
+        milvus = MilvusDB.from_env()
         llm = OllamaLLMModule.from_env() if with_llm else None
         return cls(s3_storage, downloader, crawler, generator, llm)
 
@@ -77,7 +80,7 @@ class PipelineV1(PipelineBase):
         )(get_text_embedding)(query.content)
 
         # Query Dbs and Post-processing
-        candidates = search_by_embedding(get_collection(), None, embedding)
+        candidates = self.milvus.search_by_embedding(text_embedding=embedding)
 
         "Logic to serve text query"
         return TopKFinalists(
@@ -96,7 +99,7 @@ class PipelineV1(PipelineBase):
         )(get_image_embedding)(query.content)
 
         # Query Dbs and Post-processing
-        candidates = search_by_embedding(get_collection(), embedding, None)
+        candidates = self.milvus.search_by_embedding(ts_embedding=embedding)
 
         "Logic to serve text query"
         return TopKFinalists(
@@ -115,7 +118,7 @@ class PipelineV1(PipelineBase):
         )(get_fused_embedding)(query.image, query.text)
 
         # Query Dbs and Post-processing
-        candidates = search_by_embedding(get_collection(), embedding, None)
+        candidates = self.milvus.search_by_embedding(ts_embedding=embedding)
 
         "Logic to serve text query"
         return TopKFinalists(

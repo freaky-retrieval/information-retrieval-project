@@ -1,10 +1,13 @@
 from frontend import app
-from storages.milvus.connection import MilvusConnection
+# from storages.milvus.connection import MilvusConnection
+from storages.milvus.milvus_db import MilvusDB
 
 import logging
+import os
 
-
-MilvusConnection.connect()
+MilvusDB.connect(
+    db_path = os.path.join(os.getcwd(), "infras/products.db")
+)
 
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"

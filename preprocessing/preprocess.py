@@ -6,17 +6,17 @@ sys.path.append(str(Path.cwd()))
 print(sys.path)
 
 from preprocessing.utils import get_text_embedding
-from storages.milvus.connection import MilvusConnection
-from storages.milvus.schema import get_collection
-from storages.milvus.insert import insert_records
-from storages.milvus.query import search_by_embedding
+# from storages.milvus.connection import MilvusConnection
+# from storages.milvus.schema import get_collection
+# from storages.milvus.insert import insert_records
+from storages.milvus.milvus_db import MilvusDB
 from utils import get_image_embedding
 import json
 from parse import get_data
 import numpy as np
 
 
-def insert_product_images(collection, product):
+def insert_product_images(client, collection_name, product):
     """
     Insert all image embeddings for a product into Milvus.
 
@@ -41,7 +41,7 @@ def insert_product_images(collection, product):
         }
 
         # Insert into Milvus
-        insert_records(collection, [record])
+        client.insert_records(collection_name=collection_name, records=[record])
 
     print(f"Inserted {len(product.img_links)} images for product: {product_id}")
 
@@ -53,8 +53,11 @@ def populate_milvus(json_paths=["data/shoes.json"]):
         product: A Product object with img_links, text, and metadata.
     """
 
-    MilvusConnection.connect()
-    collection = get_collection()
+    milvus_client = MilvusDB.from_env()
+    collection_name = milvus_client.add_collection(
+        collection_name="product_embeddings",
+        dimension=512,
+    )
 
     for json_path in json_paths:
 
@@ -63,7 +66,7 @@ def populate_milvus(json_paths=["data/shoes.json"]):
         with ThreadPoolExecutor(max_workers=20) as executor:
             tasks = []
             for product in products_list:
-                task = executor.submit(insert_product_images, collection, product)
+                task = executor.submit(insert_product_images, milvus_client, collection_name, product)
                 tasks.append(task)
 
             for task in as_completed(tasks):
