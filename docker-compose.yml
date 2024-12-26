@@ -50,34 +50,6 @@ services:
     networks:
       - app_network
 
-  celery_worker:
-    build: .
-    container_name: celery_worker
-    command: celery -A schedulers worker -l info
-    depends_on:
-      - redis
-    volumes:
-      - ./app:/app
-    restart: unless-stopped
-    networks:
-      - app_network
-
-  app:
-    build: ./
-    command: streamlit run app/main.py --server.port 8501
-    ports:
-        - 8501:8501
-    image: streamlit_app:latest
-    depends_on:
-      - mongo
-      - minio
-      - redis
-    volumes:
-      - ./app:/app
-    restart: unless-stopped
-    networks:
-      - app_network
-
 volumes:
   mongo_data:
   minio_data:

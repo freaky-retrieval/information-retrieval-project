@@ -1,26 +1,20 @@
-FROM python:3.10-slim-buster as builder
+FROM python:3.10
 
 WORKDIR /app
 
-# Install uv
-RUN pip install uv
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    software-properties-common \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
-# Copy pyproject.toml and lock file (if available)
-COPY pyproject.toml pyproject.toml
-COPY poetry.lock poetry.lock
+RUN git clone https://github.com/streamlit/streamlit-example.git .
 
-# Install dependencies with uv (using lock file for reproducibility)
-RUN uv pip install .
+RUN pip3 install -r requirements.txt
 
-
-FROM python:3.10-slim-buster
-
-WORKDIR /app
-
-COPY --from=builder /app /app
-
-# Expose the port
 EXPOSE 8501
 
-# Run the application
-CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]
+HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+
+ENTRYPOINT ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
