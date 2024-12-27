@@ -4,6 +4,7 @@ from crawlers import CrawlingModule
 from utils.downloaders.image_downloader import ParallelImageFetcher
 from base import BaseQuery, ComplexQuery, ImageQuery, TextQuery, TopKFinalists
 from storages.aws_s3.s3_client import S3StorageClient
+# from storages.milvus.milvus_db import MilvusDB
 
 
 class PipelineBase:

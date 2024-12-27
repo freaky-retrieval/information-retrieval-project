@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+volumes/
+volumes/milvus/
+
 # C extensions
 *.so
 
