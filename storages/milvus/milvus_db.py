@@ -1,21 +1,88 @@
-from pymilvus import MilvusClient, DataType
+from pymilvus import connections, utility, FieldSchema, CollectionSchema, DataType, Collection, Index
 from base import BasePipelineModule
-import os
 
 class MilvusDB(BasePipelineModule):
-    _instance = None
 
-    @staticmethod
-    def connect(db_path):
+    _instance = None
+    _collection = None
+
+    @classmethod
+    def connect(cls, host="localhost", port="19530"):
         """
-        Singleton connection to Milvus Lite.
+        Singleton connection to Milvus.
         Ensures only one connection is created.
         """
-        if MilvusDB._instance is None:
-            MilvusDB._instance = MilvusClient(db_path)
-            print(f"Connected to Milvus Lite at {db_path}")
-        return MilvusDB._instance
+        if cls._instance is None:
+            cls._instance = connections.connect(
+                "default", host=host, port=port
+            )
+            print(f"Connected to Milvus at {host}:{port}")
+        cls.get_collection()
+        return cls._instance
+    
+    @classmethod
+    def get_collection(cls):
+        """
+        Get or create the Milvus collection.
+        """
+        # Define fields
+        fields = [
+            FieldSchema(name="id", dtype=DataType.INT64, is_primary=True, auto_id=True),
+            FieldSchema(name="product_id", dtype=DataType.VARCHAR, max_length=100),
+            FieldSchema(name="image_embedding", dtype=DataType.FLOAT_VECTOR, dim=512),
+            FieldSchema(name="text_embedding", dtype=DataType.FLOAT_VECTOR, dim=512),
+            FieldSchema(name="image_path", dtype=DataType.VARCHAR, max_length=500),
+            FieldSchema(name="metadata", dtype=DataType.JSON)
+        ]
 
+        # Define schema
+        schema = CollectionSchema(fields, description="Product embeddings for image-text retrieval")
+
+        # Check if collection exists using utility.has_collection()
+        collection_name = "product_embeddings"
+        if not utility.has_collection(collection_name):
+            # Create the collection
+            cls._collection = Collection(name=collection_name, schema=schema)
+            print(f"Collection '{collection_name}' created.")
+            
+            # Create index for 'image_embedding'
+            cls._collection.create_index(
+                field_name="image_embedding",
+                index_params={"metric_type": "IP", "index_type": "IVF_FLAT", "params": {"nlist": 128}}
+            )
+            print("Index created for 'image_embedding' field.")
+
+            # Create index for 'text_embedding'
+            cls._collection.create_index(
+                field_name="text_embedding",
+                index_params={"metric_type": "IP", "index_type": "IVF_FLAT", "params": {"nlist": 128}}
+            )
+            print("Index created for 'text_embedding' field.")
+        else:
+            # Load existing collection
+            cls._collection = Collection(name=collection_name)
+            print(f"Collection '{collection_name}' loaded.")
+            
+            # Ensure indices for both fields
+            index_params = {"metric_type": "IP", "index_type": "IVF_FLAT", "params": {"nlist": 128}}
+            existing_indexes = {index.field_name: index for index in MilvusDB._collection.indexes}
+
+            # Check and create 'image_embedding' index if missing
+            if "image_embedding" not in existing_indexes:
+                cls._collection.create_index(field_name="image_embedding", index_params=index_params)
+                print("Index created for 'image_embedding' field.")
+            else:
+                print("Index for 'image_embedding' already exists.")
+
+            # Check and create 'text_embedding' index if missing
+            if "text_embedding" not in existing_indexes:
+                cls._collection.create_index(field_name="text_embedding", index_params=index_params)
+                print("Index created for 'text_embedding' field.")
+            else:
+                print("Index for 'text_embedding' already exists.")
+        
+        return cls._collection
+    
     @classmethod
     def from_env(cls):
         """
@@ -23,132 +90,53 @@ class MilvusDB(BasePipelineModule):
         Returns:
             An instance of MilvusDB ready to use.
         """
-        cur_directory = os.getcwd()
-        db_path = os.getenv("MILVUS_DB_PATH", os.path.join(cur_directory, "infras/products.db"))
-        cls.connect(db_path)
+        cls.connect()
         return cls
-
-    def add_collection(collection_name="product_embeddings", dimension=512):
+    
+    @classmethod
+    def query(cls, product_id):
         """
-        Get or create a Milvus Lite collection and ensure indexes are created.
-        """
-        if not MilvusDB._instance.has_collection(collection_name):
-            # Create the schema
-            schema = MilvusDB._instance.create_schema(auto_id=True, enable_dynamic_field=False)
-            
-            # Add fields to the schema
-            schema.add_field(field_name="id", datatype=DataType.INT64, is_primary=True, auto_id=True)
-            schema.add_field(field_name="product_id", datatype=DataType.VARCHAR, max_length=100)
-            schema.add_field(field_name="image_embedding", datatype=DataType.FLOAT_VECTOR, dim=dimension)
-            schema.add_field(field_name="text_embedding", datatype=DataType.FLOAT_VECTOR, dim=dimension)
-            schema.add_field(field_name="image_path", datatype=DataType.VARCHAR, max_length=500)
-            schema.add_field(field_name="metadata", datatype=DataType.JSON)
-
-            # Create the collection
-            MilvusDB._instance.create_collection(
-                collection_name=collection_name,
-                schema=schema
-            )
-            print(f"Collection '{collection_name}' created.")
-
-            # Prepare index parameters
-            index_params = MilvusDB._instance.prepare_index_params()
-            
-            # Add index for 'image_embedding'
-            index_params.add_index(
-                field_name="image_embedding",
-                index_type="FLAT",  # Updated to use FLAT
-                metric_type="IP",  # Inner Product metric
-                params={}  # FLAT does not require additional parameters
-            )
-
-            # Add index for 'text_embedding'
-            index_params.add_index(
-                field_name="text_embedding",
-                index_type="FLAT",  # Updated to use FLAT
-                metric_type="IP",  # Inner Product metric
-                params={}  # FLAT does not require additional parameters
-            )
-
-            # Create indexes
-            MilvusDB._instance.create_index(
-                collection_name=collection_name,
-                index_params=index_params,
-                sync=True  # Ensure synchronous execution
-            )
-            print(f"Indexes created for collection '{collection_name}'.")
-        else:
-            print(f"Collection '{collection_name}' already exists.")
-
-            # Ensure indexes exist
-            index_params = MilvusDB._instance.prepare_index_params()
-
-            # Check and create 'image_embedding' index if missing
-            try:
-                MilvusDB._instance.describe_index(collection_name, index_name="image_embedding")
-                print("Index for 'image_embedding' already exists.")
-            except Exception:
-                print("Creating missing 'image_embedding' index...")
-                index_params.add_index(
-                    field_name="image_embedding",
-                    index_type="FLAT",  # Updated to use FLAT
-                    metric_type="IP",  # Inner Product metric
-                    params={}
-                )
-                MilvusDB._instance.create_index(
-                    collection_name=collection_name,
-                    index_params=index_params,
-                    sync=True
-                )
-                print("Index created for 'image_embedding' field.")
-
-            # Check and create 'text_embedding' index if missing
-            try:
-                MilvusDB._instance.describe_index(collection_name, index_name="text_embedding")
-                print("Index for 'text_embedding' already exists.")
-            except Exception:
-                print("Creating missing 'text_embedding' index...")
-                index_params.add_index(
-                    field_name="text_embedding",
-                    index_type="FLAT",  # Updated to use FLAT
-                    metric_type="IP",  # Inner Product metric
-                    params={}
-                )
-                MilvusDB._instance.create_index(
-                    collection_name=collection_name,
-                    index_params=index_params,
-                    sync=True
-                )
-                print("Index created for 'text_embedding' field.")
-
-        return collection_name
-
-
-
-
-
-
-    def insert_records(records, collection_name="product_embeddings"):
-        """
-        Insert records into the Milvus Lite collection.
+        Query Milvus for a specific product.
         Args:
-            collection_name: Name of the collection.
+            product_id: Product ID to search for.
+        Returns:
+            List of matching products.
+        """
+        # Ensure collection existed
+        if not utility.has_collection(cls._collection.name):
+            print(f"Loading collection: {cls._collection.name}")
+            cls._get_collection()
+
+        cls._collection.load()
+        # Perform search
+        results = cls._collection.query(
+            expr=f"product_id == '{product_id}'",
+            output_fields=["product_id"],
+        )
+
+        # print(f"Found {len(results)} results.")
+        return results
+    
+    @classmethod
+    def insert_records(cls, records):
+        """
+        Insert records into the Milvus collection.
+        Args:
             records: List of records to insert.
         """
         try:
-            res = MilvusDB._instance.insert(collection_name=collection_name, data=records)
-            print(f"Inserted {len(records)} records.")
-            return res
+            cls._collection.insert(records)
+            print(f"Inserted {len(records)} record(s).")
         except Exception as e:
             print(f"Failed to insert records: {str(e)}")
 
-    def search_by_embedding(collection_name="product_embeddings", ts_embedding=None, text_embedding=None, top_k=300):
+    @classmethod
+    def search_by_embedding(cls, ts_embedding, text_embedding, top_k=300):
         """
-        Retrieve products from Milvus Lite based on the closest match to an embedding.
+        Retrieve products from Milvus based on the closest match to an embedding.
         Args:
-            collection_name: Name of the collection.
-            ts_embedding: Query embedding vector for images (list or numpy array).
-            text_embedding: Query embedding vector for text (list or numpy array).
+            collection: Milvus collection object.
+            query_embedding: Query embedding vector (list or numpy array).
             top_k: Number of nearest neighbors to retrieve.
         Returns:
             List of matching products.
@@ -157,54 +145,68 @@ class MilvusDB(BasePipelineModule):
             ts_embedding is not None or text_embedding is not None
         ), "At least one of the embeddings must be provided."
 
-        # Define search parameters
+        # Ensure collection existed
+        if not utility.has_collection(cls._collection.name):
+            print(f"Loading collection: {cls._collection.name}")
+            cls._get_collection()
+
+        cls._collection.load()
+        # Combine results
+        alpha = 0.9375
+        if ts_embedding is None:
+            alpha = 0
+        elif text_embedding is None:
+            alpha = 1
+        combined_scores = {}
         search_params = {"metric_type": "IP", "params": {"nprobe": 10}}
 
-        # Combine results
-        alpha = 0.5
-        combined_scores = {}
-
         if ts_embedding:
-            # Perform search for image embedding
-            ts_results = MilvusDB._instance.search(
-                collection_name=collection_name,
+            # Perform search
+            ts_results = cls._collection.search(
                 data=[ts_embedding],
                 anns_field="image_embedding",
-                search_params=search_params,
+                param=search_params,
                 limit=top_k,
-                output_fields=["product_id", "metadata", "image_path"]
+                output_fields=["product_id", "metadata", "image_path"],
             )
-            for result in ts_results:
-                combined_scores[result["id"]] = (alpha * result["distance"], result)
+
+            for result in ts_results[0]:
+                combined_scores[result.id] = [alpha * result.distance, result.entity]
 
         if text_embedding:
-            # Perform search for text embedding
-            text_results = MilvusDB._instance.search(
-                collection_name=collection_name,
+            # Search by text embedding against text embeddings
+            text_results = cls._collection.search(
                 data=[text_embedding],
                 anns_field="text_embedding",
-                search_params=search_params,
+                param=search_params,
                 limit=top_k,
-                output_fields=["product_id", "metadata", "image_path"]
+                output_fields=["product_id", "metadata", "image_path"],
             )
-            for result in text_results:
-                if result["id"] in combined_scores:
-                    combined_scores[result["id"]][0] += (1 - alpha) * result["distance"]
+
+            for result in text_results[0]:
+                if result.id in combined_scores:
+                    combined_scores[result.id][0] += (1 - alpha) * result.distance
                 else:
-                    combined_scores[result["id"]] = ((1 - alpha) * result["distance"], result)
+                    combined_scores[result.id] = [
+                        (1 - alpha) * result.distance,
+                        result.entity,
+                    ]
 
         # Sort combined results
-        sorted_results = sorted(combined_scores.items(), key=lambda x: x[1][0], reverse=True)
+        sorted_results = sorted(
+            combined_scores.items(), key=lambda x: x[1][0], reverse=True
+        )
 
         print(f"Found {len(sorted_results)} results.")
 
         results = []
+
         unique_product_ids = set()
 
-        for _, obj in sorted_results:
-            entity = obj[1]
+        for hit_id, obj in sorted_results:
+            entity = obj[1].entity
             if entity.get("product_id") not in unique_product_ids:
                 unique_product_ids.add(entity.get("product_id"))
-                results.append(entity)
+                results.append((hit_id, obj))
 
         return results[:30]

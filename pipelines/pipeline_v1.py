@@ -13,7 +13,6 @@ from preprocessing.utils import (
 )
 # from storages.milvus.query import search_by_embedding
 # from storages.milvus.schema import get_collection
-from storages.milvus.milvus_db import MilvusDB
 from utils.downloaders.image_downloader import ParallelImageFetcher
 from embedding import EmbeddingModule
 from base import BaseQuery, ComplexQuery, ImageQuery, TextQuery, TopKFinalists
@@ -22,6 +21,7 @@ from utils.generators._base import Text2ImgGenerativeModule
 from utils.generators._flux import FluxHuggingFaceGenerator
 from utils.llms._base import LLMModule
 from utils.llms._ollama import OllamaLLMModule
+from storages.milvus.milvus_db import MilvusDB
 
 
 class PipelineV1(PipelineBase):
@@ -63,6 +63,7 @@ class PipelineV1(PipelineBase):
         s3_storage = S3StorageClient.from_env()
         downloader = ParallelImageFetcher.from_env()
         crawler = CrawlingModule.from_env()
+        MilvusDB.from_env()
         generator = FluxHuggingFaceGenerator.from_env() if with_generator else None
         milvus = MilvusDB.from_env()
         llm = OllamaLLMModule.from_env() if with_llm else None
@@ -80,7 +81,7 @@ class PipelineV1(PipelineBase):
         )(get_text_embedding)(query.content)
 
         # Query Dbs and Post-processing
-        candidates = self.milvus.search_by_embedding(text_embedding=embedding)
+        candidates = MilvusDB.search_by_embedding(ts_embedding=None, text_embedding=embedding)
 
         "Logic to serve text query"
         return TopKFinalists(
@@ -99,7 +100,7 @@ class PipelineV1(PipelineBase):
         )(get_image_embedding)(query.content)
 
         # Query Dbs and Post-processing
-        candidates = self.milvus.search_by_embedding(ts_embedding=embedding)
+        candidates = MilvusDB.search_by_embedding(ts_embedding=embedding, text_embedding=None)
 
         "Logic to serve text query"
         return TopKFinalists(
@@ -111,14 +112,21 @@ class PipelineV1(PipelineBase):
 
     def _serve_complex(self, query: ComplexQuery) -> TopKFinalists:
         # Get embedding
-        embedding = tenacity.retry(
+        ts_embedding = tenacity.retry(
             wait=tenacity.wait_fixed(2),
             stop=tenacity.stop_after_delay(10),
             retry=tenacity.retry_if_exception_type(Exception),
         )(get_fused_embedding)(query.image, query.text)
 
+        # Get embedding
+        text_embedding = tenacity.retry(
+            wait=tenacity.wait_fixed(2),
+            stop=tenacity.stop_after_delay(10),
+            retry=tenacity.retry_if_exception_type(Exception),
+        )(get_text_embedding)(query.text)
+
         # Query Dbs and Post-processing
-        candidates = self.milvus.search_by_embedding(ts_embedding=embedding)
+        candidates = MilvusDB.search_by_embedding(ts_embedding=ts_embedding, text_embedding=text_embedding)
 
         "Logic to serve text query"
         return TopKFinalists(

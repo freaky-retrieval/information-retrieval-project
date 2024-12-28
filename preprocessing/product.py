@@ -1,6 +1,6 @@
 class Product:
 
-    def __init__(self, img_links, text, metadata):
-        self.img_links = img_links
+    def __init__(self, img_link, text, metadata):
+        self.img_link = img_link
         self.text = text
         self.metadata = metadata
