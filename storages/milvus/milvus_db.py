@@ -19,7 +19,7 @@ class MilvusDB(BasePipelineModule):
             print(f"Connected to Milvus at {host}:{port}")
         cls.get_collection()
         return cls._instance
-    
+
     @classmethod
     def get_collection(cls):
         """
@@ -44,7 +44,7 @@ class MilvusDB(BasePipelineModule):
             # Create the collection
             cls._collection = Collection(name=collection_name, schema=schema)
             print(f"Collection '{collection_name}' created.")
-            
+
             # Create index for 'image_embedding'
             cls._collection.create_index(
                 field_name="image_embedding",
@@ -62,7 +62,7 @@ class MilvusDB(BasePipelineModule):
             # Load existing collection
             cls._collection = Collection(name=collection_name)
             print(f"Collection '{collection_name}' loaded.")
-            
+
             # Ensure indices for both fields
             index_params = {"metric_type": "IP", "index_type": "IVF_FLAT", "params": {"nlist": 128}}
             existing_indexes = {index.field_name: index for index in MilvusDB._collection.indexes}
@@ -80,9 +80,9 @@ class MilvusDB(BasePipelineModule):
                 print("Index created for 'text_embedding' field.")
             else:
                 print("Index for 'text_embedding' already exists.")
-        
+
         return cls._collection
-    
+
     @classmethod
     def from_env(cls):
         """
@@ -92,7 +92,7 @@ class MilvusDB(BasePipelineModule):
         """
         cls.connect()
         return cls
-    
+
     @classmethod
     def query(cls, product_id):
         """
@@ -116,7 +116,7 @@ class MilvusDB(BasePipelineModule):
 
         # print(f"Found {len(results)} results.")
         return results
-    
+
     @classmethod
     def insert_records(cls, records):
         """
