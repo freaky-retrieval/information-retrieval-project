@@ -1,5 +1,3 @@
-version: '3.10'
-
 services:
   mongo:
     image: mongo:latest
@@ -72,7 +70,7 @@ services:
     image: milvusdb/milvus:v2.5.1
     command: ["milvus", "run", "standalone"]
     security_opt:
-    - seccomp:unconfined
+      - seccomp:unconfined
     environment:
       ETCD_ENDPOINTS: etcd:2379
       MINIO_ADDRESS: minio:9000
@@ -116,6 +114,24 @@ services:
     environment:
       REDIS_URL: redis://redis:6379/0
       APP_NAME: tasks
+      APIFY_API_TOKEN: "apify_api_08lblaM23BxTNFhNCIjCWoYYQo7wO52Aoi3g"
+      KEYWORDS: "keyboard, mouse, monitor, laptop, headphones, speakers, webcam, microphone, printer, scanner, tablet, phone, charger, cable, usb drive, external hard drive, ssd, gpu, cpu, ram, motherboard, power supply, case, fan, cooler, gaming chair, desk, mouse pad, router, modem, switch, projector, camera, tripod, lens, flash drive, battery, power bank, stylus, monitor stand, audio mixer, video card, dock station, smartwatch, fitness tracker, vr headset, drone, action camera, e-reader, keyboard case, laptop stand, gaming mouse, gaming keyboard, mechanical keyboard, gaming headset, capture card, streaming microphone, led lights, ring light, smart speaker, wireless earbuds, wired headphones, gaming monitor, curved monitor, 4k monitor, ultrawide monitor, touchscreen monitor, portable projector, soundbar, bluetooth speaker, noise cancelling headphones, usb hub, hdmi cable, ethernet cable, network switch, nas storage, data cable, car charger, dash cam, smart thermostat, smart plug, smart light, robot vacuum, action figure, game controller, vr controller, drawing tablet, laser printer, inkjet printer, photo printer, thermal printer, ip camera, security camera"
+      APIFY_ACTOR_ID: "XVDTQc4a7MDTqSTMJ"
+      MONGO_URI: mongodb://mongo:27017
+      MONGO_DB: products
+      MONGO_RAW_COLLECTION: raw
+      MONGO_PROCESSED_COLLECTION: processed
+      S3_ENDPOINT: "http://127.0.0.1:9000"
+      S3_ACCESS_KEY: bIKNqybbTA7XoXZBZsTQ
+      S3_SECRET_KEY: kKGbdj8p9xWDiAhqWI9uOd2cpgW9WgsGCXJWiDC4
+      S3_BUCKET: server
+      S3_NUM_WORKERS: 10
+      S3_TIMEOUT: 5
+      S3_MAX_RETRIES: 3
+      PREPROCESSING_URL: "https://rybvz9jrlmmdy0eo.us-east-1.aws.endpoints.huggingface.cloud"
+      PREPROCESSING_TOKEN: "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"
+      PREPROCESSING_WARMUP_TIMEOUT: 60
+      PREPROCESSING_RETRIES: 3
     restart: on-failure
     networks:
       - app_network

@@ -47,15 +47,24 @@ class OllamaLLMModule(LLMModule):
         self.prompt_template = PromptTemplate(
             input_variables=["prompt", "samples", "max_tokens"],
             template="""
-            You are an expert in refining user's prompt with {samples} enhanced descriptions for a diffusion model to generate a SKETCH image.
+            You are an expert in refining a user's prompt with {samples} enhanced descriptions for a diffusion model to generate a black-and-white human-like sketch.
 
-            The caption must emphasize a black-and-white sketch with no color. The length of each description should be {max_tokens} tokens.
+            The generated sketch must reflect a loose and abstract style with flowing, uneven, and organic linework that feels spontaneous and hand-drawn. Forms should be simplified, using minimal shapes and contours to represent objects and figures, avoiding intricate details or heavy shading.
+
+            The sketch must emphasize patterns and composition, incorporating repetition or structural balance to create a cohesive and visually pleasing image. Negative space should be utilized to balance the drawing and maintain an open, light feeling. No colors or gradients should be present. The lines should vary in thickness and texture, creating an expressive, dynamic visual effect.
 
             You are given a prompt:
 
             {prompt}
 
-            Format the output as a JSON object with the following key-value pair: "descriptions": ["description1", "description2", "description3", ...]
+            For each enhanced description:
+
+                Ensure it adheres to the above requirements.
+                Expand details to include specific artistic elements such as patterns, line style, or use of negative space.
+                Use descriptive language to guide the model toward creating the desired artistic characteristics.
+                Limit each description to {max_tokens} tokens.
+
+            Format the output as a JSON object with the following key-value pair: "descriptions": ["description1", "description2", "description3", ...].
             """,
         )
 

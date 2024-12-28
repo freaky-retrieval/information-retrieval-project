@@ -5,6 +5,16 @@ from io import BytesIO
 from PIL import Image
 
 
+class CustomException(Exception):
+    def __init__(self):
+        self.message = "Service is not available. Please try again later."
+
+
+def throw_if_503(response):
+    if response.status_code == 503:
+        raise CustomException()
+
+
 def encode_image_to_base64(image_path):
     """
     Encode an image to a base64 string.
@@ -62,6 +72,8 @@ def get_fused_embedding(sketch_path: str | Image.Image, text_query: str) -> list
     response = requests.post(API_URL, headers=headers, json=payload)
 
     # Parse the API Response
+    throw_if_503(response)
+
     if response.status_code == 200:
         result = response.json()
         if "error" in result:
@@ -109,6 +121,8 @@ def get_image_embedding(
     response = requests.post(API_URL, headers=headers, json=payload)
 
     # Parse the API response
+    throw_if_503(response)
+
     if response.status_code == 200:
         result = response.json()
         # print(f'result: {result}')
@@ -144,6 +158,8 @@ def get_text_embedding(text: str) -> list:
     response = requests.post(API_URL, headers=headers, json=payload)
 
     # Parse the API response
+    throw_if_503(response)
+
     if response.status_code == 200:
         result = response.json()
         # print(f'result: {result}')

@@ -14,7 +14,7 @@ class MongoDbConfig:
         dotenv.load_dotenv()
         return cls(
             uri=os.getenv("MONGO_URI"),
-            database=os.getenv("MONGO_COLLECTION"),
+            database=os.getenv("MONGO_DB"),
             collections={
                 "raw": os.getenv("MONGO_RAW_COLLECTION", "raw"),
                 "processed": os.getenv("MONGO_PROCESSED_COLLECTION", "processed"),

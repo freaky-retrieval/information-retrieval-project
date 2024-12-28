@@ -1,3 +1,4 @@
+import logging
 from typing import Dict, List
 from base._core import BasePipelineModule
 from storages.mongo._config import MongoDbConfig
@@ -13,6 +14,7 @@ class MongoDbClient(BasePipelineModule):
         "Fetch processed data by asins"
 
         assert len(ids) > 0, "Ids cannot be empty"
+        
         return list(self._processed().find({"asin": {"$in": ids}}))
 
     def pull(self) -> List[Dict]:
@@ -22,7 +24,19 @@ class MongoDbClient(BasePipelineModule):
     def push(self, data: List[Dict]):
         "Push data to raw collection"
         assert len(data) > 0, "Data cannot be empty"
+        assert all("asin" in datum for datum in data), "All data must have asin"
+
+        asins = [datum["asin"] for datum in data]
+
+        existing_asins = set(
+            [datum["asin"] for datum in self._raw().find({"asin": {"$in": asins}})]
+        )
+
+        data = [datum for datum in data if datum["asin"] not in existing_asins]
+
         self._raw().bulk_write([InsertOne(datum) for datum in data])
+
+        logging.info(f"Pushed {len(data)} new items to raw collection")
 
     def process(self, data: List[Dict]):
         "Process data and move to processed collection, mark as processed in raw collection"
