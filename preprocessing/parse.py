@@ -13,7 +13,10 @@ def get_data(json_path):
             product.pop("variantAsins", None)
             product.pop("variantDetails", None)
             
-            img_link = product["highResolutionImages"][0] # take the 1st image only
+            if len(product["highResolutionImages"]) > 0:
+                img_link = product["highResolutionImages"][0] # take the 1st image only
+            else:
+                img_link = product["thumbnailImage"]
             # description = product.get("description", "")
             # features = " ".join(product.get("features", []))  # Combine all feature strings
             # text = f"{description} {features}".strip()
