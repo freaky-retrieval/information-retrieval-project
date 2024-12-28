@@ -94,6 +94,30 @@ class MilvusDB(BasePipelineModule):
         return cls
     
     @classmethod
+    def query(cls, product_id):
+        """
+        Query Milvus for a specific product.
+        Args:
+            product_id: Product ID to search for.
+        Returns:
+            List of matching products.
+        """
+        # Ensure collection existed
+        if not utility.has_collection(cls._collection.name):
+            print(f"Loading collection: {cls._collection.name}")
+            cls._get_collection()
+
+        cls._collection.load()
+        # Perform search
+        results = cls._collection.query(
+            expr=f"product_id == '{product_id}'",
+            output_fields=["product_id"],
+        )
+
+        # print(f"Found {len(results)} results.")
+        return results
+    
+    @classmethod
     def insert_records(cls, records):
         """
         Insert records into the Milvus collection.
@@ -129,6 +153,10 @@ class MilvusDB(BasePipelineModule):
         cls._collection.load()
         # Combine results
         alpha = 0.9375
+        if ts_embedding is None:
+            alpha = 0
+        elif text_embedding is None:
+            alpha = 1
         combined_scores = {}
         search_params = {"metric_type": "IP", "params": {"nprobe": 10}}
 

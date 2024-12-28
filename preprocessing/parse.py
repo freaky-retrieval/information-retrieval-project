@@ -14,9 +14,10 @@ def get_data(json_path):
             product.pop("variantDetails", None)
             
             img_link = product["highResolutionImages"][0] # take the 1st image only
-            description = product.get("description", "")
-            features = " ".join(product.get("features", []))  # Combine all feature strings
-            text = f"{description} {features}".strip()
+            # description = product.get("description", "")
+            # features = " ".join(product.get("features", []))  # Combine all feature strings
+            # text = f"{description} {features}".strip()
+            text = product.get("title", "")
             products_list.append(Product(img_link, text, product))
 
     return products_list

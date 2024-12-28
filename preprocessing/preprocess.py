@@ -25,7 +25,12 @@ def insert_product_images(product):
         collection: Milvus collection object.
         product: A Product object with img_link, text, and metadata.
     """
+
     product_id = product.metadata.get("asin", "")  # Unique product ID
+    if len(MilvusDB.query(product_id)) > 0:
+        print(f"Product {product_id} already exists in Milvus.")
+        return
+    
     text_embedding = get_text_embedding(product.text)
     img_link = product.img_link
 
@@ -40,7 +45,7 @@ def insert_product_images(product):
         "image_path": img_link,
         "metadata": product.metadata
     }
-
+    
     # Insert into Milvus
     MilvusDB.insert_records([record])
 

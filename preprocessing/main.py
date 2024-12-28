@@ -1,19 +1,17 @@
 from preprocess import populate_milvus
+import os
 
 if __name__ == "__main__":
-    populate_milvus(
-        json_paths=[
-            # "data/applicance.json",
-            "data/computers.json",
-            # "data/game_controller.json",
-            # "data/headphones.json",
-            # "data/keyboards.json",
-            # "data/photo_printer.json",
-            # "data/soundbar.json",
-            # "data/comic_books.json",
-            # "data/desks.json",
-            # "data/vr_gaming.json",
-            # "data/smartwatches.json",
-            # "data/fitness_trackers.json",
-        ]
-    )
+    json_paths = []
+    for json_file in os.listdir('data'):
+        if json_file.endswith('.json'):
+            json_paths.append(f"data/{json_file}")
+    # test with first 3 categories
+    json_paths = json_paths[:6]
+    # json_paths = [
+    #     'data/CPU Processors.json',
+    #     'data/Fashion Sneakers.json',
+    #     'data/Gaming Keyboards.json'
+    # ]
+    print(f'Populating milvus from: {json_paths}')
+    populate_milvus(json_paths)
