@@ -1,3 +1,5 @@
+version: '3.10'
+
 services:
   mongo:
     image: mongo:latest
@@ -6,7 +8,7 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
-    restart: unless-stopped
+    restart: on-failure
     networks:
       - app_network
 
@@ -19,23 +21,70 @@ services:
       ME_CONFIG_MONGODB_URL: "mongodb://mongo:27017/"
     depends_on:
       - mongo
-    restart: unless-stopped
+    restart: on-failure
     networks:
       - app_network
 
-  minio:
+  minio_images:
     image: quay.io/minio/minio
-    container_name: minio
+    container_name: minio_images
     ports:
       - "9000:9000"
       - "9001:9001"
     volumes:
-      - minio_data:/data
+      - minio_data_images:/data
     environment:
       MINIO_ROOT_USER: "minioadmin"
       MINIO_ROOT_PASSWORD: "minioadmin"
     command: server /data --console-address ":9001"
-    restart: unless-stopped
+    restart: on-failure
+    networks:
+      - app_network
+
+  etcd:
+    container_name: milvus-etcd
+    image: quay.io/coreos/etcd:v3.5.0
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+    volumes:
+      - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/etcd:/etcd
+    command: etcd -advertise-client-urls=http://127.0.0.1:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
+    networks:
+      - app_network
+
+  minio:
+    container_name: milvus-minio
+    image: minio/minio:RELEASE.2020-12-03T00-03-10Z
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    volumes:
+      - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/minio:/minio_data
+    command: minio server /minio_data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+    networks:
+      - app_network
+
+  standalone:
+    container_name: milvus-standalone
+    image: milvusdb/milvus:v2.0.2
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+    volumes:
+      - ${DOCKER_VOLUME_DIRECTORY:-.}/volumes/milvus:/var/lib/milvus
+    ports:
+      - "19530:19530"
+    depends_on:
+      - "etcd"
+      - "minio"
     networks:
       - app_network
 
@@ -46,15 +95,31 @@ services:
       - "6379:6379"
     volumes:
       - redis_data:/data
-    restart: unless-stopped
+    restart: on-failure
+    networks:
+      - app_network
+
+  schedulers:
+    build: .
+    container_name: schedulers
+    command: celery -A schedulers worker --loglevel=info
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - mongo
+      - redis
+    environment:
+      REDIS_URL: redis://redis:6379/0
+      APP_NAME: tasks
+    restart: on-failure
     networks:
       - app_network
 
 volumes:
   mongo_data:
-  minio_data:
+  minio_data_images:
   redis_data:
 
 networks:
   app_network:
-    driver: bridge
+    external: true

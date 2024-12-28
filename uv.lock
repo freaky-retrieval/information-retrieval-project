@@ -433,11 +433,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/90/c4/6a4d3772e5407622feb93dd25c86ce3c0fee746fa822a777a627d56b4f2a/celery-5.4.0-py3-none-any.whl", hash = "sha256:369631eb580cf8c51a82721ec538684994f8277637edde2dfc0dacd73ed97f64", size = 425983 },
 ]
 
-[package.optional-dependencies]
-redis = [
-    { name = "redis" },
-]
-
 [[package]]
 name = "certifi"
 version = "2024.8.30"
@@ -2440,7 +2435,7 @@ dependencies = [
     { name = "apify" },
     { name = "apify-client" },
     { name = "boto3" },
-    { name = "celery", extra = ["redis"] },
+    { name = "celery" },
     { name = "huggingface-hub" },
     { name = "langchain" },
     { name = "langchain-ollama" },
@@ -2448,6 +2443,7 @@ dependencies = [
     { name = "pymilvus" },
     { name = "pymongo" },
     { name = "python-dotenv" },
+    { name = "redis" },
     { name = "requests" },
     { name = "streamlit" },
     { name = "streamlit-drawable-canvas" },
@@ -2459,7 +2455,7 @@ requires-dist = [
     { name = "apify", specifier = ">=2.1.0" },
     { name = "apify-client", specifier = ">=1.8.1" },
     { name = "boto3", specifier = ">=1.35.76" },
-    { name = "celery", extras = ["redis"], specifier = ">=5.4.0" },
+    { name = "celery", specifier = ">=5.4.0" },
     { name = "huggingface-hub", specifier = ">=0.27.0" },
     { name = "langchain", specifier = ">=0.3.13" },
     { name = "langchain-ollama", specifier = ">=0.2.2" },
@@ -2467,6 +2463,7 @@ requires-dist = [
     { name = "pymilvus" },
     { name = "pymongo", specifier = ">=4.10.1" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
+    { name = "redis", specifier = ">=5.2.1" },
     { name = "requests", specifier = ">=2.32.3" },
     { name = "streamlit", specifier = ">=1.41.1" },
     { name = "streamlit-drawable-canvas", specifier = ">=0.9.3" },

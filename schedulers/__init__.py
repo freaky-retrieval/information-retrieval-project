@@ -1,14 +1,9 @@
 from celery import Celery
 import os
 
-# Initialize Celery
-uri = "redis://{host}:{port}/{db}".format(
-    host=os.getenv("REDIS_HOST", "localhost"),
-    port=os.getenv("REDIS_PORT", 6379),
-    db=os.getenv("REDIS_DB", 0),
-)
 
-app_name = os.getenv("CELERY_APP_NAME", "tasks")
+app_name = os.getenv("APP_NAME")
+uri = os.getenv("REDIS_URL")
 
 app = Celery(app_name, broker=uri, backend=uri)
 
