@@ -1,15 +1,17 @@
-from pymilvus import MilvusClient
+# from pymilvus import connections
 
-class MilvusLiteConnection:
-    _instance = None
+# class MilvusConnection:
+#     _instance = None
 
-    @staticmethod
-    def connect(db_path="../../infras/products.db"):
-        """
-        Singleton connection to Milvus Lite.
-        Ensures only one connection is created.
-        """
-        if MilvusLiteConnection._instance is None:
-            MilvusLiteConnection._instance = MilvusClient(db_path)
-            print(f"Connected to Milvus Lite at {db_path}")
-        return MilvusLiteConnection._instance
+#     @staticmethod
+#     def connect(host="localhost", port="19530"):
+#         """
+#         Singleton connection to Milvus.
+#         Ensures only one connection is created.
+#         """
+#         if MilvusConnection._instance is None:
+#             MilvusConnection._instance = connections.connect(
+#                 "default", host=host, port=port
+#             )
+#             print(f"Connected to Milvus at {host}:{port}")
+#         return MilvusConnection._instance
