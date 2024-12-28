@@ -10,21 +10,21 @@ services:
     networks:
       - app_network
 
-  minio_images:
-    image: quay.io/minio/minio
-    container_name: minio_images
-    ports:
-      - "9010:9010"
-      - "9011:9011"
-    volumes:
-      - minio_data_images:/data
-    environment:
-      MINIO_ROOT_USER: "minioadmin"
-      MINIO_ROOT_PASSWORD: "minioadmin"
-    command: server /data --console-address ":9011"
-    restart: on-failure
-    networks:
-      - app_network
+  # minio_images:
+  #   image: quay.io/minio/minio
+  #   container_name: minio_images
+  #   ports:
+  #     - "9010:9010"
+  #     - "9011:9011"
+  #   volumes:
+  #     - minio_data_images:/data
+  #   environment:
+  #     MINIO_ROOT_USER: "minioadmin"
+  #     MINIO_ROOT_PASSWORD: "minioadmin"
+  #   command: server /data --console-address ":9011"
+  #   restart: on-failure
+  #   networks:
+  #     - app_network
 
   etcd:
     container_name: milvus-etcd
@@ -121,13 +121,6 @@ services:
       MONGO_DB: products
       MONGO_RAW_COLLECTION: raw
       MONGO_PROCESSED_COLLECTION: processed
-      S3_ENDPOINT: "http://127.0.0.1:9000"
-      S3_ACCESS_KEY: bIKNqybbTA7XoXZBZsTQ
-      S3_SECRET_KEY: kKGbdj8p9xWDiAhqWI9uOd2cpgW9WgsGCXJWiDC4
-      S3_BUCKET: server
-      S3_NUM_WORKERS: 10
-      S3_TIMEOUT: 5
-      S3_MAX_RETRIES: 3
       PREPROCESSING_URL: "https://rybvz9jrlmmdy0eo.us-east-1.aws.endpoints.huggingface.cloud"
       PREPROCESSING_TOKEN: "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"
       PREPROCESSING_WARMUP_TIMEOUT: 60
