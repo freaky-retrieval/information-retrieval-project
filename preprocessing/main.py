@@ -7,7 +7,7 @@ if __name__ == "__main__":
         if json_file.endswith('.json'):
             json_paths.append(f"data/{json_file}")
     # test with first 3 categories
-    json_paths = json_paths[:6]
+    # json_paths = json_paths[:6]
     # json_paths = [
     #     'data/CPU Processors.json',
     #     'data/Fashion Sneakers.json',
