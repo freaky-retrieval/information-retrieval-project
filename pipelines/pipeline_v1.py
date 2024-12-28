@@ -28,13 +28,12 @@ class PipelineV1(PipelineBase):
     def __init__(
         self,
         s3_storage: S3StorageClient,
-        milvus: MilvusDB,
         downloader: ParallelImageFetcher,
         crawler: CrawlingModule,
         generator: Optional[Text2ImgGenerativeModule] = None,
         llm: Optional[LLMModule] = None,
     ):
-        super(PipelineV1, self).__init__(s3_storage, milvus, downloader, crawler)
+        super(PipelineV1, self).__init__(s3_storage, downloader, crawler)
         self.generator: Optional[Text2ImgGenerativeModule] = generator
         self.llm: Optional[LLMModule] = llm
 
@@ -65,7 +64,6 @@ class PipelineV1(PipelineBase):
         crawler = CrawlingModule.from_env()
         MilvusDB.from_env()
         generator = FluxHuggingFaceGenerator.from_env() if with_generator else None
-        milvus = MilvusDB.from_env()
         llm = OllamaLLMModule.from_env() if with_llm else None
         return cls(s3_storage, downloader, crawler, generator, llm)
 
