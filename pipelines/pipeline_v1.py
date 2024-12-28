@@ -64,7 +64,6 @@ class PipelineV1(PipelineBase):
         crawler = CrawlingModule.from_env()
         MilvusDB.from_env()
         generator = FluxHuggingFaceGenerator.from_env() if with_generator else None
-        milvus = MilvusDB.from_env()
         llm = OllamaLLMModule.from_env() if with_llm else None
         return cls(s3_storage, downloader, crawler, generator, llm)
 
