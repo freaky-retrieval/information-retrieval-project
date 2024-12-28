@@ -45,9 +45,12 @@ def get_products(text: Optional[str], image: Optional[Image.Image]) -> List[UIPr
         query = ImageQuery(image)
     else:
         return []
-
-    finalists = pipeline_v1.instance.serve(query)
-
+    
+    try:
+        finalists = pipeline_v1.instance.serve(query)
+    except Exception as e:
+        return []
+    
     if not finalists:
         return []
 

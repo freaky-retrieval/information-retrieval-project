@@ -1,4 +1,3 @@
-import json
 from preprocess import populate_milvus
 import os
 
@@ -15,11 +14,4 @@ if __name__ == "__main__":
     #     'data/Gaming Keyboards.json'
     # ]
     print(f'Populating milvus from: {json_paths}')
-    objects = []
-
-    for json_path in json_paths:
-        with open(json_path, 'r') as f:
-            objects.extend(json.load(f))
-
-    with open('data/objects.json', 'w') as f:
-        json.dump(objects, f)
+    populate_milvus(json_paths)
