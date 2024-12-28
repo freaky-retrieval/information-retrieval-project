@@ -191,7 +191,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 16
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5 4500 6-Core Processor with Wraith Stealth Cooler"
     },
     {
         "title": "AMD Ryzen 5 5600X 6-core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
@@ -474,7 +475,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 8
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5 5600X Processor"
     },
     {
         "title": "AMD Ryzen 9 7900X 12-Core, 24-Thread Unlocked Desktop Processor",
@@ -794,7 +796,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 13
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 9 7900X processor"
     },
     {
         "title": "Intel Core Ultra 9 Desktop Processor 285K - 24 cores (8 P-cores + 16 E-cores) up to 5.7 GHz",
@@ -1039,7 +1042,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 9
-        }
+        },
+        "summarizedTitle": "Intel Core Ultra 9 Processor"
     },
     {
         "title": "AMD Ryzen 7 7800X3D 8-Core, 16-Thread Desktop Processor",
@@ -1303,7 +1307,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 11
-        }
+        },
+        "summarizedTitle": "AMD Ryzen processor"
     },
     {
         "title": "AMD Ryzen 7 5700X 8-Core, 16-Thread Unlocked Desktop Processor",
@@ -1498,7 +1503,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 48
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 7 5700X Processor"
     },
     {
         "title": "Intel Core i5-13600K Desktop Processor 14 (6 P-cores + 8 E-cores) with Integrated Graphics - Unlocked",
@@ -1948,7 +1954,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i5 processor with integrated graphics"
     },
     {
         "title": "Intel Core i7-13700K Gaming Desktop Processor 16 cores (8 P-cores + 8 E-cores) with Integrated Graphics - Unlocked",
@@ -2398,7 +2405,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i7-13700K Gaming Processor"
     },
     {
         "title": "Intel Core i7-12700KF Gaming Desktop Processor 12 (8P+4E) Cores up to 5.0 GHz Unlocked LGA1700 600 Series Chipset 125W",
@@ -2841,7 +2849,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 20
-        }
+        },
+        "summarizedTitle": "Intel Core i7-12700KF Processor"
     },
     {
         "title": "AMD Ryzen 9 5900X 12-core, 24-Thread Unlocked Desktop Processor",
@@ -3121,7 +3130,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 19
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 9 5900X Processor"
     },
     {
         "title": "AMD Ryzen 7 7700X 8-Core, 16-Thread Unlocked Desktop Processor",
@@ -3400,7 +3410,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 10
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 7 7700X processor"
     },
     {
         "title": "AMD Ryzen 5 5500 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
@@ -3593,7 +3604,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 4
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5 5500 Processor with Wraith Stealth Cooler"
     },
     {
         "title": "AMD Ryzen 9 7950X 16-Core, 32-Thread Unlocked Desktop Processor",
@@ -3854,7 +3866,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 18
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 9 desktop processor"
     },
     {
         "title": "AMD Ryzen 7 5800X 8-core, 16-Thread Unlocked Desktop Processor",
@@ -3990,7 +4003,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 14
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 7 5800X processor"
     },
     {
         "title": "AMD Ryzen 7 5700X3D 8-Core, 16-Thread Desktop Processor",
@@ -4107,7 +4121,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 6
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 7 processor"
     },
     {
         "title": "AMD Ryzen 5 7600X 6-Core, 12-Thread Unlocked Desktop Processor",
@@ -4300,7 +4315,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 7
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5 7600X processor"
     },
     {
         "title": "Intel Core Ultra 7 Desktop Processor 265K - 20 cores (8 P-cores + 12 E-cores) up to 5.5 GHz",
@@ -4422,7 +4438,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 5
-        }
+        },
+        "summarizedTitle": "Intel Core Ultra 7 Desktop Processor"
     },
     {
         "title": "Intel Core i7-12700K Gaming Desktop Processor with Integrated Graphics and 12 (8P+4E) Cores up to 5.0 GHz Unlocked LGA1700 600 Series Chipset 125W",
@@ -4564,7 +4581,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 1
-        }
+        },
+        "summarizedTitle": "Intel Core i7 gaming processor"
     },
     {
         "title": "Intel Core i5-13600KF Desktop Processor 14 cores (6 P-cores + 8 E-cores) - Unlocked",
@@ -4685,7 +4703,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i5-13600KF Processor"
     },
     {
         "title": "Intel® Core™ i9-14900KF New Gaming Desktop Processor 24 cores (8 P-cores + 16 E-cores) - Unlocked",
@@ -4892,7 +4911,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i9-14900KF Gaming Processor"
     },
     {
         "title": "Intel Core i5-12600K Desktop Processor with Integrated Graphics and 10 (6P+4E) Cores up to 4.9 GHz Unlocked LGA1700 600 Series Chipset 125W",
@@ -5021,7 +5041,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 20
-        }
+        },
+        "summarizedTitle": "Intel Core i5-12600K Desktop Processor with Integrated Graphics and 10 Cores"
     },
     {
         "title": "AMD Ryzen 5 8500G 6-Core, 12-Thread Desktop Processor",
@@ -5145,7 +5166,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 25
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5 processor"
     },
     {
         "title": "Intel® Core™ i9-14900K Desktop Processor 24 cores (8 P-cores + 16 E-cores) up to 6.0 GHz",
@@ -5366,7 +5388,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 24
-        }
+        },
+        "summarizedTitle": "Intel Core i9 processor"
     },
     {
         "title": "Intel Core i5 Core 12400F Desktop Processor 18M Cache, up to 4.40 GHz",
@@ -5508,7 +5531,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 21
-        }
+        },
+        "summarizedTitle": "Intel Core i5 Desktop Processor"
     },
     {
         "title": "AMD Ryzen 5 7600 6-Core, 12-Thread Unlocked Desktop Processor",
@@ -5635,7 +5659,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 35
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5 7600 Processor"
     },
     {
         "title": "AMD Ryzen™ 9 7900X3D 12-Core, 24-Thread Desktop Processor",
@@ -5744,7 +5769,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 32
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 9 7900X3D Processor"
     },
     {
         "title": "AMD Ryzen™ 9 9950X 16-Core, 32-Thread Unlocked Desktop Processor",
@@ -5863,7 +5889,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 31
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 9 9950X desktop processor"
     },
     {
         "title": "Intel Core i5-12600KF Desktop Processor 10 (6P+4E) Cores up to 4.9 GHz Unlocked LGA1700 600 Series Chipset 125W",
@@ -5993,7 +6020,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 30
-        }
+        },
+        "summarizedTitle": "Intel Core i5-12600KF Desktop Processor"
     },
     {
         "title": "Intel Core i9-13900KF Gaming Desktop Processor 24 cores (8 P-cores + 16 E-cores) - Unlocked",
@@ -6128,7 +6156,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 33
-        }
+        },
+        "summarizedTitle": "Intel Core i9-13900KF Gaming Processor"
     },
     {
         "title": "Intel® Core™ i7-14700KF New Gaming Desktop Processor 20 cores (8 P-cores + 12 E-cores) - Unlocked",
@@ -6335,7 +6364,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i7 gaming desktop processor"
     },
     {
         "title": "Intel Core i3-14100F Desktop Processor 4 cores (4 P-cores + 0 E-cores) up to 4.7 GHz",
@@ -6468,7 +6498,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 52
-        }
+        },
+        "summarizedTitle": "Intel Core i3 Desktop Processor"
     },
     {
         "title": "Intel Core i3-12100F 12th Generation Desktop Processor (Base Clock: 3.3GHz, 4 Cores, LGA1700, RAM DDR4 and DDR5 up to 128GB) BX8071512100F",
@@ -6582,7 +6613,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 51
-        }
+        },
+        "summarizedTitle": "Intel Core i3-12100F Processor"
     },
     {
         "title": "AMD Ryzen 7 8700G 8-Core, 16-Thread Desktop Processor",
@@ -6705,7 +6737,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 49
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 7 8700G Processor"
     },
     {
         "title": "Intel Core i9-12900KF Gaming Desktop Processor 16 (8P+8E) Cores up to 5.2 GHz Unlocked LGA1700 600 Series Chipset 125W",
@@ -6835,7 +6868,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 39
-        }
+        },
+        "summarizedTitle": "Intel Core i9-12900KF processor"
     },
     {
         "title": "AMD Ryzen™ 7 9700X 8-Core, 16-Thread Unlocked Desktop Processor",
@@ -6954,7 +6988,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 50
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 7 9700X processor"
     },
     {
         "title": "Intel Core i5-14500 Desktop Processor 14 cores (6 P-cores + 8 E-cores) up to 5.0 GHz",
@@ -7089,7 +7124,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i5 Processor, 14 cores, 5.0 GHz"
     },
     {
         "title": "Intel Core i9-13900K Desktop Processor 24 (8 P-cores + 16 E-cores) with Integrated Graphics - Unlocked",
@@ -7222,7 +7258,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 47
-        }
+        },
+        "summarizedTitle": "Intel Core i9-13900K Processor with Integrated Graphics"
     },
     {
         "title": "AMD Ryzen™ 5 9600X 6-Core, 12-Thread Unlocked Desktop Processor",
@@ -7338,7 +7375,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 48
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5 9600X processor"
     },
     {
         "title": "AMD Ryzen 7 5700G 8-Core, 16-Thread Unlocked Desktop Processor with Radeon Graphics",
@@ -7477,7 +7515,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 45
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 7 5700G Desktop Processor"
     },
     {
         "title": "Intel Core i5-14400F Desktop Processor 10 cores (6 P-cores + 4 E-cores) up to 4.7 GHz",
@@ -7608,7 +7647,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i5 desktop processor"
     },
     {
         "title": "AMD RYZEN 7 9800X3D 8-Core, 16-Thread Desktop Processor",
@@ -7704,7 +7744,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 35
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 7 Processor"
     },
     {
         "title": "Intel Core i3 (12th Gen) i3-12100 Quad-core (4 Core) 3.30 GHz Processor - Retail Pack, Blue",
@@ -7847,7 +7888,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 36
-        }
+        },
+        "summarizedTitle": "Intel Core i3 processor"
     },
     {
         "title": "Intel Core i9 (12th Gen) i9-12900KS Gaming Desktop Processor with Integrated Graphics and Hexadeca-core (16 Core) 2.50 GHz",
@@ -7973,7 +8015,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 37
-        }
+        },
+        "summarizedTitle": "Intel Core i9 Gaming Processor"
     },
     {
         "title": "AMD Ryzen™ 7 8700F",
@@ -8142,7 +8185,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 62
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 7 8700F"
     },
     {
         "title": "AMD Ryzen 5 8600G",
@@ -8302,7 +8346,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 55
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5"
     },
     {
         "title": "AMD Ryzen™ 9 5900XT 16-Core, 32-Thread Unlocked Desktop Processor",
@@ -8446,7 +8491,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 57
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5900XT desktop processor"
     },
     {
         "title": "Intel Core i7-14700F Desktop Processor 20 cores (8 P-cores + 12 E-cores) up to 5.4 GHz",
@@ -8775,7 +8821,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i7-14700F Processor"
     },
     {
         "title": "AMD FX-Series FX6300 FX 6300 3.5 GHz Six-Core CPU Processor FD6300WMW6KHK Socket AM3+",
@@ -8920,7 +8967,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 61
-        }
+        },
+        "summarizedTitle": "AMD FX6300 CPU Processor"
     },
     {
         "title": "AMD Ryzen 3 4100 4-Core, 8-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
@@ -9117,7 +9165,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 51
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 3 4100 processor with Wraith Stealth Cooler"
     },
     {
         "title": "Intel® Core™ i9-11900KF Desktop Processor 8 Cores up to 5.3 GHz Unlocked LGA1200 (Intel® 500 Series & Select 400 Series Chipset) 125W",
@@ -9604,7 +9653,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 52
-        }
+        },
+        "summarizedTitle": "Intel Core i9-11900KF Desktop Processor, 8 Cores, 5.3 GHz, Unlocked, LGA1200, 125W"
     },
     {
         "title": "AMD Ryzen 3 3200G 4-Core Unlocked Desktop Processor with Radeon Graphics",
@@ -9914,7 +9964,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 66
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 3 3200G processor with Radeon graphics"
     },
     {
         "title": "Intel Core i7-10700K Desktop Processor 8 Cores up to 5.1 GHz Unlocked LGA1200 (Intel 400 Series Chipset) 125W (BX8070110700K)",
@@ -10326,7 +10377,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i7 Processor"
     },
     {
         "title": "Intel i3-13100F Desktop Processor - 4 Cores, 12MB Cache, up to 4.5 GHz",
@@ -10717,7 +10769,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 70
-        }
+        },
+        "summarizedTitle": "Intel desktop processor"
     },
     {
         "title": "Intel Core i5-9500 Desktop Processor 6 Cores up to 4.GHz LGA1151 300 Series 65W (BX80684I59500)",
@@ -10978,7 +11031,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 63
-        }
+        },
+        "summarizedTitle": "Intel Core i5-9500 Processor"
     },
     {
         "title": "Intel® CoreTM i5-14600K New Gaming Desktop Processor 14 (6 P-cores + 8 E-cores) with Integrated Graphics - Unlocked",
@@ -11427,7 +11481,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Intel Core i5-14600K Gaming Processor"
     },
     {
         "title": "AMD Ryzen™ Threadripper™ PRO 7995WX 96-Core, 192-Thread Processor",
@@ -11600,7 +11655,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 53
-        }
+        },
+        "summarizedTitle": "AMD Ryzen Threadripper PRO Processor"
     },
     {
         "title": "Intel Core i7-8700K Desktop Processor 6 Cores up to 4.7GHz Turbo Unlocked LGA1151 300 Series 95W",
@@ -11864,7 +11920,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 67
-        }
+        },
+        "summarizedTitle": "Intel Core i7-8700K Desktop Processor"
     },
     {
         "title": "AMD Ryzen 5 4600G, 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
@@ -12055,7 +12112,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 68
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5 4600G Processor with Wraith Stealth Cooler"
     },
     {
         "title": "AMD Ryzen™ Threadripper™ 7980X 64-Core, 128-Thread Processor",
@@ -12224,7 +12282,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 67
-        }
+        },
+        "summarizedTitle": "AMD Ryzen Threadripper Processor"
     },
     {
         "title": "Intel Core i3-10105F 4-Core Comet Lake Processor 3.70GHz 8GT/s 6MB LGA 1200 CPU Retail",
@@ -12334,7 +12393,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 100
-        }
+        },
+        "summarizedTitle": "Intel Core i3-10105F Processor"
     },
     {
         "title": "Intel Core i5-7500 LGA 1151 7th Gen Core Desktop Processor",
@@ -12533,7 +12593,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 69
-        }
+        },
+        "summarizedTitle": "Intel Core i5-7500 Desktop Processor"
     },
     {
         "title": "AMD Ryzen 9 7900 12-Core, 24-Thread Unlocked Desktop Processor",
@@ -12721,7 +12782,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 95
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 9 7900 desktop processor"
     },
     {
         "title": "Intel CPU BX8070110100F Core i3-10100F / 3.6GHz / 6MB LGA1200 4C / 8T",
@@ -12919,7 +12981,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 88
-        }
+        },
+        "summarizedTitle": "Intel CPU Core i3-10100F"
     },
     {
         "title": "Intel Core i5-13600K 3.5GHz (5.1 Turbo) 14 Core LGA1700 Desktop Processor Boxed - Raptor Lake",
@@ -13080,7 +13143,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 87
-        }
+        },
+        "summarizedTitle": "Intel Core i5-13600K Processor"
     },
     {
         "title": "Intel Core i7-8700 6 Cores 3.2GHz 12MB 8 GT/s 65W LGA 1151 CPU SR3QS (Renewed)",
@@ -13279,7 +13343,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 85
-        }
+        },
+        "summarizedTitle": "Intel Core i7-8700 CPU"
     },
     {
         "title": "Intel Core i9-11900K Desktop Processor 8 Cores up to 5.3 GHz Unlocked LGA1200 (Intel 500 Series & Select 400 Chipset) 125W",
@@ -13769,7 +13834,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 86
-        }
+        },
+        "summarizedTitle": "Intel Core i9-11900K Processor"
     },
     {
         "title": "Intel Core i9-12900K Gaming Desktop Processor with Integrated Graphics and 16 (8P+8E) Cores up to 5.2 GHz Unlocked LGA1700 600 Series Chipset 125W",
@@ -14229,7 +14295,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 86
-        }
+        },
+        "summarizedTitle": "Intel Core i9-12900K Processor"
     },
     {
         "title": "AMD Ryzen 5 5600 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
@@ -14431,6 +14498,7 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 51
-        }
+        },
+        "summarizedTitle": "AMD Ryzen 5 5600 processor"
     }
 ]

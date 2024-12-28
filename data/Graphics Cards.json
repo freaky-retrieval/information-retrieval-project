@@ -272,7 +272,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Radeon RX 580 8GB Graphics Card for Gaming PC"
     },
     {
         "title": "Reborn USB to HDMI Adapter, USB 3.0/2.0 to HDMI Multi-Display Cable, 1080P@60Hz USB-A 3.0 Male to HDMI Female Converter Suitable for Windows XP/7/8/10/11 - BIOS Interface Out of Use",
@@ -527,7 +528,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 55
-        }
+        },
+        "summarizedTitle": "USB to HDMI Adapter"
     },
     {
         "title": "GIGABYTE GV-R76GAMING OC-8GD Radeon RX 7600 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans 8GB 128-bit GDDR6, Video Card",
@@ -720,7 +722,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 7
-        }
+        },
+        "summarizedTitle": "GIGABYTE Radeon RX 7600 Gaming OC Graphics Card"
     },
     {
         "title": "RX 580 8GB Graphics Card, 2048SP 1289MHz GDDR5 256bit Radeon RX580 AMD GPU Video Card with Dual Cooling Fan, HDMI, 3*DP, DVI-Output, 8K PCIE 3.0 Computer Graphics Card for Gaming PC",
@@ -1101,7 +1104,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 5
-        }
+        },
+        "summarizedTitle": "RX 580 8GB Graphics Card"
     },
     {
         "title": "XFX Speedster SWFT 210 Radeon RX 6600 CORE Gaming Graphics Card with 8GB GDDR6 HDMI 3xDP, AMD RDNA 2 RX-66XL8LFDQ",
@@ -1631,7 +1635,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 6
-        }
+        },
+        "summarizedTitle": "Radeon RX 6600 gaming graphics card"
     },
     {
         "title": "maxsun AMD Radeon RX 580 8GB 2048SP GDDR5 Computer Video Graphics Card GPU for PC Gaming 256-Bit DirectX 12 DVI, HDMI, DisplayPort Multi Monitors Extend (White)",
@@ -1936,7 +1941,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 580 graphics card for PC gaming"
     },
     {
         "title": "KAER RX580 8GB Graphics Card GDDR5 256bit Computer Graphics Card with Dual Fans 1284/7000MHz,PCI Express 3.0 Gaming Graphics Card, DVI HDMI DP Desktop",
@@ -2218,7 +2224,8 @@
             "saleSummary": "Save $10.00 with coupon",
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "graphics card with dual fans"
     },
     {
         "title": "XFX Radeon RX 580 GTS XXX Edition 1386MHz OC+, 8GB GDDR5, VR Ready, Dual BIOS, 3xDP HDMI DVI, AMD Graphics Card (RX-580P8DFD6)",
@@ -2628,7 +2635,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 8
-        }
+        },
+        "summarizedTitle": "Radeon RX 580 graphics card"
     },
     {
         "title": "ASUS Dual NVIDIA GeForce RTX 3060 V2 OC Edition 12GB GDDR6 Gaming Graphics Card (PCIe 4.0, 12GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, 2-Slot, Axial-tech Fan Design, 0dB Technology)",
@@ -3078,7 +3086,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 3
-        }
+        },
+        "summarizedTitle": "ASUS GeForce RTX 3060 V2 OC Gaming Graphics Card"
     },
     {
         "title": "MSI GeForce RTX 3060 Ventus 2X 12G OC, Gaming Graphics Card - NVIDIA RTX 3060, 12GB GDDR6 Memory, 192-bit, 15 Gbps",
@@ -3350,7 +3359,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 4
-        }
+        },
+        "summarizedTitle": "GeForce RTX 3060 graphics card"
     },
     {
         "title": "Sonnet eGPU Breakaway Box 750ex - External GPU Chassis",
@@ -3600,7 +3610,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 22
-        }
+        },
+        "summarizedTitle": "eGPU Breakaway Box"
     },
     {
         "title": "MSI GeForce RTX 4070 Ti Super 16G Ventus 3X Black OC Graphics Card (NVIDIA RTX 4070 Ti Super, 256-Bit, Extreme Clock: 2655 MHz, 16GB GDRR6X 21Gbps, HDMI/DP, Ada Lovelace Architecture)",
@@ -3801,7 +3812,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 19
-        }
+        },
+        "summarizedTitle": "MSI RTX 4070 Ti Super Graphics Card"
     },
     {
         "title": "ASUS Dual NVIDIA GeForce RTX 3050 6GB OC Edition Gaming Graphics Card - PCIe 4.0, 6GB GDDR6 Memory, HDMI 2.1, DisplayPort 1.4a, 2-Slot Design, Axial-tech Fan Design, 0dB Technology, Steel Bracket",
@@ -4202,7 +4214,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 20
-        }
+        },
+        "summarizedTitle": "ASUS Gaming Graphics Card - GeForce RTX 3050 6GB"
     },
     {
         "title": "maxsun AMD Radeon RX 550 4GB Low Profile Small Form Factor Video Graphics Card for Gaming Computer PC GPU GDDR5 ITX SFF HDPC 128-Bit DirectX 12 PCI Express X16 3.0, HDMI, DisplayPort",
@@ -4618,7 +4631,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 2
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 550 4GB Video Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 3050 WINDFORCE OC 6G Graphics Card, 2X WINDFORCE Fans, 6GB GDDR6 96-bit GDDR6, GV-N3050WF2OC-6GD Video Card",
@@ -4919,7 +4933,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 18
-        }
+        },
+        "summarizedTitle": "GeForce RTX 3050 graphics card"
     },
     {
         "title": "VisionTek GT 730 LP 4GB GDDR Single Slot Graphics Card, HDMI/DVI/VGA, Low Power, Multi-Monitor Support, 4K Resolution, Passive Cooling, Compact Design",
@@ -5065,7 +5080,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 21
-        }
+        },
+        "summarizedTitle": "graphics card, 4GB, HDMI/DVI/VGA, low power, multi-monitor support, 4K resolution, compact design"
     },
     {
         "title": "maxsun AMD Radeon RX 550 4GB GDDR5 ITX Computer PC Gaming Video Graphics Card GPU 128-Bit DirectX 12 PCI Express X16 3.0 DVI-D Dual Link, HDMI, DisplayPort",
@@ -5622,7 +5638,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 1
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 550 4GB GDDR5 video graphics card"
     },
     {
         "title": "GIGABYTE Radeon RX 7600 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 128-bit GDDR6, GV-R76XTGAMING OC-16GD Video Card",
@@ -5885,7 +5902,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 15
-        }
+        },
+        "summarizedTitle": "GIGABYTE Radeon RX 7600 XT Gaming OC Graphics Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 3060 Gaming OC 12G (REV2.0) Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6, GV-N3060GAMING OC-12GD Video Card",
@@ -6171,7 +6189,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 16
-        }
+        },
+        "summarizedTitle": "GeForce RTX 3060 Gaming OC Graphics Card"
     },
     {
         "title": "ASUS Dual GeForce RTX™ 4070 Super EVO OC Edition 12GB GDDR6X (PCIe 4.0, 12GB GDDR6X, DLSS 3, HDMI 2.1a, DisplayPort 1.4a, 2.5-Slot Design, Axial-tech Fan Design, 0dB Technology, and More)",
@@ -6947,7 +6966,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 14
-        }
+        },
+        "summarizedTitle": "ASUS GeForce RTX 4070 Super EVO OC 12GB GDDR6X"
     },
     {
         "title": "MSI Gaming GeForce RTX 3060 12GB 15 Gbps GDRR6 192-Bit HDMI/DP PCIe 4 Torx Twin Fan Ampere OC Graphics Card",
@@ -7274,7 +7294,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 13
-        }
+        },
+        "summarizedTitle": "MSI GeForce RTX 3060 graphics card"
     },
     {
         "title": "XFX Speedster MERC310 AMD Radeon RX 7900XT Gaming Graphics Card with 20GB GDDR6, AMD RDNA 3 RX-79TMERCW9",
@@ -7444,7 +7465,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 11
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 7900XT Gaming Graphics Card"
     },
     {
         "title": "PowerColor Hellhound Spectral White AMD Radeon RX 7900XT Graphics Card 20GB GDDR6",
@@ -8136,7 +8158,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 36
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 7900XT Graphics Card"
     },
     {
         "title": "RX 580 8GB Graphics Card, 2048SP,GDDR5,256 Bit Graphics Card for Gaming PC,PCIE 3.0,Twin Freeze Fans Computer Video Card with HDMI/DP/Ports（Style 1）",
@@ -8400,7 +8423,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 12
-        }
+        },
+        "summarizedTitle": "RX 580 8GB Graphics Card for Gaming PC"
     },
     {
         "title": "ASRock AMD Radeon RX 6600 Challenger White 8GB GDDR6 Graphics Card 0dB Silent Cooling 128-bit 7680 x 4320 DisplayPort HDMI 14 Gbps Dual Fan 7nm",
@@ -8805,7 +8829,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 35
-        }
+        },
+        "summarizedTitle": "ASRock Radeon RX 6600 graphics card"
     },
     {
         "title": "QTHREE Radeon RX 560 XT 8GB GDDR5 Graphics Card,1792SP,128 Bits,DVI,HDMI,DP,Gaming Video Card for PC,Computer GPU,PCI Express x16 3.0",
@@ -9239,7 +9264,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Radeon RX 560 XT graphics card"
     },
     {
         "title": "ASRock AMD Radeon RX 7600 Steel Legend 8GB OC GDDR6 128-bit 0dB Silent Cooling Graphics Card DisplayPort 7680 x 4320 HDMI 18 Gbps 3 Fans PCI Express 4",
@@ -9634,7 +9660,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 10
-        }
+        },
+        "summarizedTitle": "ASRock Radeon RX 7600 Steel Legend Graphics Card"
     },
     {
         "title": "MSI Gaming GeForce GT 1030 4GB DDR4 64-bit HDCP Support DirectX 12 DP/HDMI Single Fan OC Graphics Card (GT 1030 4GD4 LP OC)",
@@ -9858,7 +9885,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 34
-        }
+        },
+        "summarizedTitle": "MSI Gaming GeForce GT 1030 Graphics Card"
     },
     {
         "title": "Sparkle Intel Arc A580 ORC OC Edition, 8GB GDDR6, ThermalSync, Torn Cooling, Axial Fan, Metal Backplate, SA580C-8GOC",
@@ -10364,7 +10392,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 29
-        }
+        },
+        "summarizedTitle": "Sparkle Intel Arc A580 Graphics Card"
     },
     {
         "title": "ASRock AMD Radeon RX 5500 XT Challenger D 4GB OC GDDR6 Graphic card, 3 x DisplayPort, 1 x HDMI, 4GB 128-bit GDDR6, AMD Eyefinity Technology, RDNA Architecture, RX5500XT CLD 4GO",
@@ -10503,7 +10532,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 31
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 5500 XT Challenger D 4GB OC GDDR6 Graphic card"
     },
     {
         "title": "GALAX GeForce RTX™ 4060 EX White 1-Click OC, Xtreme Tuner App Control, 8GB, GDDR6, 128-bit, DP*3/HDMI 2.1/DLSS 3/Gaming Graphics Card",
@@ -11013,7 +11043,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 33
-        }
+        },
+        "summarizedTitle": "GALAX GeForce RTX 4060 EX Gaming Graphics Card"
     },
     {
         "title": "ASUS TUF Gaming Radeon™ RX 7900 XTX OC Edition 24GB GDDR6 Graphics Card (PCIe 4.0, 24GB GDDR6, HDMI 2.1a, DisplayPort 2.1)",
@@ -11706,7 +11737,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 32
-        }
+        },
+        "summarizedTitle": "TUF Gaming Radeon™ RX 7900 XTX OC Graphics Card"
     },
     {
         "title": "GIGABYTE 2GB RAM DDR3 SDRAM Video Graphics Cards GV-N710D3-2GL REV2.0",
@@ -11921,7 +11953,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 30
-        }
+        },
+        "summarizedTitle": "Gigabyte 2GB RAM Graphics Card"
     },
     {
         "title": "XG76 EGPU Expansion Card, AMD Radeon RX 7600M Graphics Cards, 8 GB GDDR6 RDNA3 Architecture GPU Dock Station, Oculink/USB4 /HDMI/Type-c/DP*2",
@@ -12195,7 +12228,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 28
-        }
+        },
+        "summarizedTitle": "EGPU expansion card, AMD Radeon RX 7600M graphics cards"
     },
     {
         "title": "GIGABYTE Radeon RX 7800 XT Gaming OC 16G Graphics Card, 3X WINDFORCE Fans 16GB 256-bit GDDR6, GV-R78XTGAMING OC-16GD Video Card",
@@ -12455,7 +12489,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 25
-        }
+        },
+        "summarizedTitle": "Radeon RX 7800 XT Gaming OC Graphics Card"
     },
     {
         "title": "SRhonyra GeForce GTX 1050Ti 4GB Graphics Card GDDR5 128 Bit PCIe 3.0 x16 Bus Powered DisplayPort 1.4 HDMI 2.0 DVI Ports Gaming GPU",
@@ -12674,7 +12709,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 27
-        }
+        },
+        "summarizedTitle": "GeForce GTX 1050Ti graphics card"
     },
     {
         "title": "ASUS ProArt GeForce RTX™ 4060 Ti 16GB OC Edition GDDR6 Graphics Card (PCIe 4.0, 16GB GDDR6, DLSS 3, HDMI 2.1a, DisplayPort 1.4a)",
@@ -13247,7 +13283,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 24
-        }
+        },
+        "summarizedTitle": "ASUS GeForce RTX 4060 Ti Graphics Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 4060 AERO OC 8G Graphics Card, 3X WINDFORCE Fans, 8GB 128-bit GDDR6, GV-N4060AERO OC-8GD Video Card",
@@ -13437,7 +13474,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 26
-        }
+        },
+        "summarizedTitle": "geforce rtx 4060 graphics card"
     },
     {
         "title": "ASUS ProArt GeForce RTX™ 4070 Ti Super OC Edition Graphics Card (PCIe 4.0, 16GB GDDR6X, DLSS 3, HDMI 2.1a, DisplayPort 1.4a)",
@@ -13740,7 +13778,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 23
-        }
+        },
+        "summarizedTitle": "ASUS ProArt GeForce RTX 4070 Ti Super OC Graphics Card"
     },
     {
         "title": "ASUS The SFF-Ready Prime GeForce RTX™ 4070 Ti Super OC Edition 16GB GDDR6X Graphics Card (PCIe® 4.0, 16GB GDDR6X, DLSS 3, HDMI 2.1a, DisplayPort™ 1.4a)",
@@ -14141,7 +14180,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 22
-        }
+        },
+        "summarizedTitle": "ASUS GeForce RTX 4070 Ti Super OC Graphics Card"
     },
     {
         "title": "GT 730 2GB DDR3 4 Monitors HDMI Video Card for Desktop PC, 64 Bits Support U3D Quad Setup Multiple Screens Display GPU",
@@ -14643,7 +14683,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "video card for desktop pc"
     },
     {
         "title": "VisionTek Radeon 5450 1GB DDR3 (DVI-I, HDMI, VGA) Graphics Card - 900860",
@@ -15009,7 +15050,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Radeon 5450 graphics card"
     },
     {
         "title": "Radeon RX 550 4GB GDDR5 Graphics Card 2 Monitor Video Card Dual HDMI Ports 4K Low Profile GPU PCIe 3.0 X8 X16 Compatible 128-Bit SFF Placa De Video",
@@ -15376,7 +15418,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "graphics card 4gb dual hdmi 4k compatible"
     },
     {
         "title": "XUANMO GT 730 Low Profile PC 4GB Graphics Card DDR3 DirectX 11 128 Bit, VGA/DVI-D/HDMI, PCI Express 2.0 x 16, Nvidia Video Card, Computer GPU",
@@ -15718,7 +15761,8 @@
             "saleSummary": "Save 8% with coupon",
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "low profile graphics card"
     },
     {
         "title": "Sapphire 11319-07-20G Pulse AMD Radeon RX 6650 XT Gaming Graphics Card with 8GB GDDR6, AMD RDNA 2",
@@ -15873,7 +15917,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 19
-        }
+        },
+        "summarizedTitle": "Pulse AMD Radeon RX 6650 XT Gaming Graphics Card"
     },
     {
         "title": "NVIDIA GeForce RTX 3090 Founders Edition Graphics Card (Renewed)",
@@ -16025,7 +16070,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 50
-        }
+        },
+        "summarizedTitle": "NVIDIA GeForce RTX 3090 Graphics Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 4070 Ti Super Gaming OC 16G Graphics Card, 3X WINDFORCE Fans, 16GB 256-bit GDDR6X, GV-N407TSGAMING OC-16GD Video Card",
@@ -16292,7 +16338,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 49
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4070 Ti Super Gaming Graphics Card"
     },
     {
         "title": "XFX Quicksilver AMD Radeon RX 7800 XT Magnetic Air Gaming Graphics Card with 16GB GDDR6, RDNA3 RX-78TMAIRF9",
@@ -16658,7 +16705,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 52
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 7800 XT Gaming Graphics Card"
     },
     {
         "title": "GTX 1050 4G Graphics Card, 128 Bit GDDR5 PCI Express 3.0 Graphics Card, DVI VGA HDMI Graphics Card with Twin Freeze Fans",
@@ -16882,7 +16930,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 47
-        }
+        },
+        "summarizedTitle": "graphics card with freeze fans"
     },
     {
         "title": "GIGABYTE GeForce RTX 4070 Super AERO OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6X, GV-N407SAERO OC-12GD Video Card",
@@ -17127,7 +17176,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 41
-        }
+        },
+        "summarizedTitle": "GIGABYTE GeForce RTX 4070 Super AERO OC 12G Graphics Card"
     },
     {
         "title": "XUANMO AMD Radeon RX580 2048SP 8g Gpu Video Gaming Amd graphics card GDDR5 256-Bit Pc Gaming Video Card AMD 2XDP HDMI PCI Express 3.0 with Freeze Fan Stop for Desktop Computer Gaming Gpu",
@@ -17290,7 +17340,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 43
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX580 Graphics Card"
     },
     {
         "title": "ZOTAC Gaming GeForce RTX 4070 AMP AIRO Spider-Man: Across The Spider-Verse Inspired Graphics Card Bundle, ZT-D40700F-10SMP",
@@ -17488,7 +17539,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 42
-        }
+        },
+        "summarizedTitle": "ZOTAC Gaming GeForce RTX 4070 graphics card bundle"
     },
     {
         "title": "GIGABYTE GeForce RTX 4070 Super Gaming OC 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6X, GV-N407SGAMING OC-12GD Video Card",
@@ -17756,7 +17808,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 46
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4070 Super Gaming Graphics Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 4060 Gaming OC 8G Graphics Card, 3X WINDFORCE Fans, 8GB 128-bit GDDR6, GV-N4060GAMING OC-8GD Video Card",
@@ -17998,7 +18051,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 45
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4060 Graphics Card"
     },
     {
         "title": "RX 5700 XT Graphics Card, AMD Radeon RX 5700 XT 8GB GDDR6 2560SP 256bit PCI-e 4.0 x16 GPU Computer Graphics Cards, HDMI/DisplayPort*3 Interface, Video Cards Support Up to 8K",
@@ -18321,7 +18375,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 40
-        }
+        },
+        "summarizedTitle": "RX 5700 XT graphics card"
     },
     {
         "title": "QTHREE NVIDIA GT 710 Graphics Card,2GB,DRR3,64-bit,VGA,HDMI,PC Video Card,Low Profile Computer GPU,PCI Express 2.0 X8,HDCP Support,DirectX 11,Low Power",
@@ -18896,7 +18951,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "NVIDIA GT 710 Graphics Card"
     },
     {
         "title": "Geforce GTX 750 Ti 4GB Graphics Card GDDR5 Dual Slot 4HDMI Monitor Video Card 128-Bit PCIe Bus Powered",
@@ -19392,7 +19448,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "GTX 750 Ti graphics card"
     },
     {
         "title": "MSI Gaming GeForce RTX 4060 8GB GDRR6 Extreme Clock: 2505 MHz 128-Bit HDMI/DP Nvlink TORX Fan 4.0 Ada Lovelace Architecture Graphics Card (RTX 4060 Ventus 2X Black 8G OC)",
@@ -19802,7 +19859,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 37
-        }
+        },
+        "summarizedTitle": "MSI GeForce RTX 4060 Graphics Card"
     },
     {
         "title": "VisionTek Radeon RX 550 4GB GDDR5 4K Monitor Graphics Card, 4x DisplayPort Outputs, PCI Express 3.0, DirectX 12, Bus-Powered - 901458",
@@ -20137,7 +20195,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 70
-        }
+        },
+        "summarizedTitle": "Radeon RX 550 graphics card"
     },
     {
         "title": "ASUS TUF Gaming NVIDIA GeForce RTX 4080 Super OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)",
@@ -20331,7 +20390,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 68
-        }
+        },
+        "summarizedTitle": "ASUS TUF Gaming Graphics Card"
     },
     {
         "title": "MSI Gaming GeForce RTX 3060 12GB 15 Gbps GDRR6 Boost Clock: 1807 MHz 192-Bit HDMI/DP PCIe 4 Torx Triple Fan Ampere OC Graphics Card (RTX 3060 Ventus 3X 12G OC)",
@@ -20696,7 +20756,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 63
-        }
+        },
+        "summarizedTitle": "MSI GeForce RTX 3060 graphics card"
     },
     {
         "title": "ASUS TUF Gaming GeForce RTX™ 4070 Ti Super BTF White OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, Exclusive to BTF ATX Motherboards",
@@ -20959,7 +21020,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 65
-        }
+        },
+        "summarizedTitle": "ASUS TUF Gaming GeForce RTX 4070 Ti Super BTF White OC Edition Graphics Card"
     },
     {
         "title": "EVGA 06G-P4-1068-KR GeForce GTX 1660 Super Sc Ultra Gaming, 6GB GDDR6, Dual Fan, Metal Backplate",
@@ -21237,7 +21299,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 66
-        }
+        },
+        "summarizedTitle": "gtx 1660 super graphics card"
     },
     {
         "title": "Radeon RX 550 LP Graphics Card, Low Profile 4GB GDDR5 Small Form Factor Video Card for Gaming 4K Display Desktop/Mini PC SFF Video Card (RX 550 4GB Low Profile)",
@@ -21367,7 +21430,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 69
-        }
+        },
+        "summarizedTitle": "radeon graphics card"
     },
     {
         "title": "QTHREE Radeon RX 550 4GB Graphics Card,GDDR5,128-Bit,Small Form Factor Video Card for PC Gaming,Computer GPU,PCI Express X8 3.0,HDCP,DirectX 12,VGA,DVI,HDMI,Low Profile",
@@ -21964,7 +22028,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Radeon RX 550 4GB Graphics Card"
     },
     {
         "title": "ZOTAC Gaming GeForce RTX™ 3060 12GB GDDR6 192-bit 15 Gbps PCIE 4.0 Compact Gaming Graphics Card, Active Fan Control, Freeze Fan Stop, ZT-A30600P-10M",
@@ -22105,7 +22170,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 61
-        }
+        },
+        "summarizedTitle": "ZOTAC Gaming GeForce RTX 3060 Graphics Card"
     },
     {
         "title": "ZOTAC Gaming GeForce RTX 4070 Ti AMP AIRO Spider-Man: Across The Spider-Verse Inspired Graphics Card Bundle - ZT-D40710F-10SMP",
@@ -22303,7 +22369,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 56
-        }
+        },
+        "summarizedTitle": "ZOTAC Gaming GeForce RTX 4070 Ti AMP AIRO Spider-Man Graphics Card Bundle"
     },
     {
         "title": "ZOTAC Gaming GeForce RTX 4070 Ti Super Trinity OC White Edition DLSS 3 16GB GDDR6X 256-bit 21 Gbps PCIE 4.0 Gaming Graphics Card, IceStorm 2.0 Advanced Cooling, Spectra RGB Lighting, ZT-D40730Q-10P",
@@ -22494,7 +22561,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 53
-        }
+        },
+        "summarizedTitle": "Gaming GeForce RTX 4070 Ti Super Trinity OC White Edition"
     },
     {
         "title": "GeForce GT 610 2G DDR3 Low Profile Graphics Card, PCI Express 1.1 x16, HDMI/VGA, Entry Level GPU for PC, SFF and HTPC, Compatible with Win11",
@@ -22784,7 +22852,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 55
-        }
+        },
+        "summarizedTitle": "low profile graphics card"
     },
     {
         "title": "GIGABYTE GV-N1030D4-2GL GeForce GT 1030 Low Profile D4 2G Computer Graphics Card",
@@ -22986,7 +23055,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 58
-        }
+        },
+        "summarizedTitle": "geforce gt 1030 graphics card"
     },
     {
         "title": "PNY GeForce RTX™ 4080 Super 16GB Verto™ OC Triple Fan Graphics Card DLSS 3 (256-bit, PCIe 4.0, GDDR6X, HDMI/DisplayPort, Supports 4k, incl. Adapter Anti-Sag Support Bracket, 3 Slot)",
@@ -23405,7 +23475,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 57
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4080 Super Graphics Card"
     },
     {
         "title": "KAER AMD Radeon RX 580 Graphics Card, 8GB, GDDR5, 256 Bit, DirectX 12, PCI Express 3.0, DP/HDMI/DVI-D, Desktop Gaming Video Card, Computer GPU…",
@@ -23696,7 +23767,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 62
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 580 Graphics Card"
     },
     {
         "title": "Sapphire 11335-03-20G Pure AMD Radeon RX 7700 XT Gaming Graphics Card with 12GB GDDR6, AMD RDNA 3",
@@ -23947,7 +24019,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 54
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 7700 XT graphics card"
     },
     {
         "title": "GIGABYTE GeForce RTX 4060 WINDFORCE OC 8G Graphics Card, 2X WINDFORCE Fans, 8GB 128-bit GDDR6, GV-N4060WF2OC-8GD Video Card",
@@ -24141,7 +24214,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 51
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4060 Graphics Card"
     },
     {
         "title": "ZOTAC Gaming GeForce RTX 4080 Super Trinity OC White Edition DLSS 3 16GB GDDR6X 256-bit 23 Gbps PCIE 4.0 Gaming Graphics Card, IceStorm 2.0 Advanced Cooling, Spectra RGB Lighting, ZT-D40820Q-10P",
@@ -24328,7 +24402,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 73
-        }
+        },
+        "summarizedTitle": "gaming graphics card"
     },
     {
         "title": "NVIDIA Tesla A100 Ampere 40 GB Graphics Processor Accelerator - PCIe 4.0 x16 - Dual Slot",
@@ -24450,7 +24525,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 74
-        }
+        },
+        "summarizedTitle": "NVIDIA Tesla A100 Graphics Processor"
     },
     {
         "title": "MSI Gaming RTX 3050 Gaming X 6G Graphics Card (NVIDIA RTX 3050, 96-Bit, Boost Clock: 1507 MHz, 6GB GDDR6 14 Gbps, HDMI/DP, Ampere Architecture)",
@@ -24642,7 +24718,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 67
-        }
+        },
+        "summarizedTitle": "MSI Gaming Graphics Card"
     },
     {
         "title": "PNY GeForce RTX™ 3060 12GB Verto Dual Fan Graphics Card",
@@ -24907,7 +24984,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 70
-        }
+        },
+        "summarizedTitle": "GeForce RTX 3060 graphics card"
     },
     {
         "title": "MSI Gaming RTX 3050 Ventus 2X 6G OC Graphics Card (NVIDIA RTX 3050, 96-Bit, Boost Clock: 1492 MHz, 6GB GDDR6 14 Gbps, HDMI/DP, Ampere Architecture)",
@@ -25098,7 +25176,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 68
-        }
+        },
+        "summarizedTitle": "MSI Gaming Graphics Card"
     },
     {
         "title": "maxsun GEFORCE GT 1030 4GB GDDR4 Video Graphics Card GPU Mini ITX Design, HDMI, DVI-D, Single Fan Cooling System",
@@ -25616,7 +25695,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 69
-        }
+        },
+        "summarizedTitle": "GEFORCE GT 1030 graphics card"
     },
     {
         "title": "VisionTek Radeon 5450 1GB DDR3 (DVI-I, HDMI, VGA) Graphics Card",
@@ -25753,7 +25833,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 66
-        }
+        },
+        "summarizedTitle": "graphics card"
     },
     {
         "title": "Sapphire 11339-04-20G Pulse AMD Radeon RX 7600 XT Gaming Graphics Card with 16GB GDDR6, AMD RDNA 3",
@@ -26003,7 +26084,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 71
-        }
+        },
+        "summarizedTitle": "Sapphire Radeon RX 7600 XT Gaming Graphics Card"
     },
     {
         "title": "GTX 750Ti 4GB Graphics Card GDDR5 128bit Direct X12 640SP Gaming Video Card, PCI Express 3.0x16 Interface, HDMI, DVI-D, VGA, Dual Fan, Low Power GPU for Working Gaming",
@@ -26351,7 +26433,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 76
-        }
+        },
+        "summarizedTitle": "GTX 750Ti 4GB Graphics Card"
     },
     {
         "title": "ASUS ROG Strix GeForce RTX ™ 4090 White Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)",
@@ -26731,7 +26814,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 81
-        }
+        },
+        "summarizedTitle": "ASUS ROG Strix GeForce RTX Graphics Card"
     },
     {
         "title": "ASUS TUF RTX 4090 OC Graphics Card (PCIe 4.0, 24GB 384Bit GDRR6X, HDMI 2.1a, DP 1.4a, ARGB), w/SPS x Dino DP to HDMI Converter",
@@ -26870,7 +26954,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 82
-        }
+        },
+        "summarizedTitle": "ASUS TUF RTX 4090 graphics card"
     },
     {
         "title": "GTX 750Ti Graphics Card, 2GB GDDR5 128bit Direct X12 640SP Gaming Video Card, PCI Express 3.0x16 Interface, HDMI, DVI-D, VGA, Single Fan, Low Power GPU for Working Gaming",
@@ -27078,7 +27163,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 86
-        }
+        },
+        "summarizedTitle": "GTX 750Ti Graphics Card"
     },
     {
         "title": "MSI Gaming RTX 4070 Super 12G Gaming X Slim Graphics Card (NVIDIA RTX 4070 Super, 192-Bit, Extreme Clock: 2655 MHz, 12GB GDRR6X 21 Gbps, HDMI/DP, Ada Lovelace Architecture)",
@@ -27327,7 +27413,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 83
-        }
+        },
+        "summarizedTitle": "gaming graphics card"
     },
     {
         "title": "ZOTAC GeForce GTX 1660 Super 6GB GDDR6 192-bit Gaming Graphics Card, Super Compact, ZT-T16620F-10L",
@@ -27637,7 +27724,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 84
-        }
+        },
+        "summarizedTitle": "GTX 1660 Super Graphics Card"
     },
     {
         "title": "RX 5600 Graphics Card, 6GB GDDR6 192-bit PCIe 4.0×16 Gaming Video Card 1080p 2K Game Desktop GPU",
@@ -27778,7 +27866,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 100
-        }
+        },
+        "summarizedTitle": "RX 5600 graphics card"
     },
     {
         "title": "MSI Gaming RTX 3050 LP 6G OC Graphics Card (NVIDIA RTX 3050, 96-Bit, Boost Clock: 1492 MHz, 6GB GDDR6 14 Gbps, HDMI/DP, Ampere Architecture)",
@@ -27966,7 +28055,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 79
-        }
+        },
+        "summarizedTitle": "MSI Gaming RTX 3050 Graphics Card"
     },
     {
         "title": "MSI Gaming GeForce GT 710 2GB GDRR3 64-bit HDCP Support DirectX 12 OpenGL 4.5 Single Fan Low Profile Graphics Card (GT 710 2GD3 LP)",
@@ -28188,7 +28278,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 80
-        }
+        },
+        "summarizedTitle": "MSI GeForce GT 710 Graphics Card"
     },
     {
         "title": "Sapphire Technology Pulse AMD Radeon RX 6700 XT Gaming Graphics Card with 12GB GDDR6, AMD RDNA 2 (11306-02-20G) (Renewed)",
@@ -28329,7 +28420,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 99
-        }
+        },
+        "summarizedTitle": "Sapphire Radeon RX 6700 XT Gaming Graphics Card"
     },
     {
         "title": "ASRock AMD Radeon RX 5500 XT Challenger D 4G OC GDDR6 DisplayPort HDMI 128-bit 8K FreeSync 2 HDR 14 Gbps Video Card",
@@ -28470,7 +28562,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 93
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 5500 XT Challenger video card"
     },
     {
         "title": "GALAX GeForce RTX™ 4070 D6 1-Click OC 2X, Xtreme Tuner App Control, 12GB, GDDR6, 192-bit, DP*3/HDMI 2.1/DLSS 3/Gaming Graphics Card",
@@ -28694,7 +28787,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 97
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4070 Gaming Graphics Card"
     },
     {
         "title": "Sapphire 11322-01-40G Nitro+ AMD Radeon RX 7900 XTX Vapor-X Gaming Graphics Card with 24GB GDDR6, AMD RDNA 3",
@@ -28937,7 +29031,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 96
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 7900 XTX graphics card"
     },
     {
         "title": "ZOTAC GeForce RTX™ 3080 Trinity OC LHR 10GB GDDR6X 320-bit 19 Gbps PCIE 4.0 Gaming Graphics Card, IceStorm 2.0 Advanced Cooling, Spectra 2.0 RGB Lighting, ZT-A30800J-10PLHR",
@@ -29134,7 +29229,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 95
-        }
+        },
+        "summarizedTitle": "GeForce RTX 3080 graphics card"
     },
     {
         "title": "ZOTAC Gaming GeForce RTX 4070 Super Twin Edge DLSS 3 12GB GDDR6X 192-bit 21 Gbps PCIE 4.0 Compact Gaming Graphics Card, IceStorm 2.0 Advanced Cooling, Spectra RGB Lighting, ZT-D40720E-10M",
@@ -29392,7 +29488,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 98
-        }
+        },
+        "summarizedTitle": "ZOTAC Gaming GeForce RTX 4070 Super Twin Edge Graphics Card"
     },
     {
         "title": "ASUS TUF Gaming AMD Radeon RX 7900 XTX OC Edition 24GB GDDR6 Graphics Card (PCIe 4.0, 24GB GDDR6, HDMI 2.1a, DisplayPort 2.1)",
@@ -29619,7 +29716,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 90
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 7900 XTX OC Edition Graphics Card"
     },
     {
         "title": "GeForce GTX 1050 4GB Gaming Graphics Card GDDR5 128 Bit PCIe 3.0 x16 Bus Powered DisplayPort 1.4 HDMI 2.0 DVI Ports",
@@ -29865,7 +29963,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 91
-        }
+        },
+        "summarizedTitle": "gaming graphics card"
     },
     {
         "title": "PNY TECHNOLOGIES NVIDIA RTX A4000",
@@ -30047,7 +30146,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 94
-        }
+        },
+        "summarizedTitle": "Nvidia RTX A4000"
     },
     {
         "title": "GIGABYTE GeForce RTX 4070 WINDFORCE OC V2 12G Graphics Card, 3X WINDFORCE Fans, 12GB 192-bit GDDR6, GV-N4070WF3OCV2-12GD Video Card",
@@ -30357,7 +30457,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 89
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4070 Graphics Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 4070 Ti Super Eagle OC 16G Graphics Card, 3X WINDFORCE Fans, 16GB 256-bit GDDR6X, GV-N407TSEAGLE OC-16GD Video Card",
@@ -30458,7 +30559,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 115
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4070 Ti Super Eagle OC Graphics Card"
     },
     {
         "title": "PNY GeForce RTX™ 4070 Super 12GB XLR8 Gaming Verto™ Epic-X RGB™ OC Triple Fan Graphics Card DLSS 3 (NVIDIA GeForce SFF-Ready, ARGB, 192-bit, PCIe 4.0, GDDR6X, HDMI/Display, Supports 4k, 2 Slot)",
@@ -30905,7 +31007,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 111
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4070 Super Graphics Card"
     },
     {
         "title": "ASUS TUF GeForce RTX 4090 24GB OG Edition Gaming Graphics Card (NVIDIA GeForce RTX4090 DLSS 3, PCIe 4.0, 24GB GDDR6X, 2X HDMI 2.1a, 3X DisplayPort 1.4a, TUF-RTX4090-24G-OG-GAMING-GAMING.)",
@@ -31097,7 +31200,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 112
-        }
+        },
+        "summarizedTitle": "ASUS GeForce RTX 4090 Gaming Graphics Card"
     },
     {
         "title": "PNY TECHNOLOGIES NVIDIA RTX A6000",
@@ -31264,7 +31368,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 116
-        }
+        },
+        "summarizedTitle": "NVIDIA RTX A6000"
     },
     {
         "title": "MSI GT 1030 2GD4 LP OC Computer Graphics Cards (Renewed)",
@@ -31416,7 +31521,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 85
-        }
+        },
+        "summarizedTitle": "MSI computer graphics card"
     },
     {
         "title": "ZOTAC Gaming GeForce RTX 3060 Twin Edge OC 12GB GDDR6 192-bit 15 Gbps PCIE 4.0 Graphics Card, IceStorm 2.0 Cooling, Active Fan Control, Freeze Fan Stop ZT-A30600H-10M",
@@ -31669,7 +31775,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 88
-        }
+        },
+        "summarizedTitle": "geforce rtx 3060 graphics card"
     },
     {
         "title": "ASRock AMD Radeon RX 6600 XT Challenger D 8GB OC Graphic Card, 3 x DisplayPort, 1 x HDMI, 8GB 128bit GDDR6, Striped Axial Fan, ‎Ultra-fit Heat Pipe, Stylish Metal Backplate, (RX6600XT CLD 8GO)",
@@ -31811,7 +31918,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 114
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 6600 XT graphic card"
     },
     {
         "title": "ASUS TUF Gaming NVIDIA GeForce RTX™ 4080 Super OC Edition Gaming Graphics Card (PCIe 4.0, 16GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)",
@@ -32500,7 +32608,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 86
-        }
+        },
+        "summarizedTitle": "ASUS TUF Gaming GeForce RTX 4080 Super OC Graphics Card"
     },
     {
         "title": "MSI Gaming RTX 4070 Super 12G Gaming X Slim MLG Graphics Card (NVIDIA RTX 4070 Super, 192-Bit, Extreme Clock: 2655 MHz, 12GB GDRR6X 21 Gbps, HDMI/DP, Ada Lovelace Architecture)",
@@ -32692,7 +32801,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 110
-        }
+        },
+        "summarizedTitle": "MSI Gaming RTX 4070 Super Graphics Card"
     },
     {
         "title": "MSI Geforce 210 1024 MB DDR3 PCI-Express 2.0 Graphics Card MD1G/D3",
@@ -32876,7 +32986,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 105
-        }
+        },
+        "summarizedTitle": "MSI GeForce 210 Graphics Card"
     },
     {
         "title": "XUANMO AMD Radeon RX590 8GB Gpu 2304sp 256-Bit GDDR5 HDCP Ready CrossFireX Computer Graphics Video Card PCIe 3.0 ×16 1340MHz Base Clock video gaming amd graphics card",
@@ -33027,7 +33138,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 107
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX590 8GB Gpu 2304sp 256-Bit GDDR5 Graphics Card"
     },
     {
         "title": "MSI Gaming RTX 4070 Super 12G Ventus 3X OC Graphics Card (NVIDIA RTX 4070 Super, 192-Bit, Extreme Clock: 2520 MHz, 12GB GDRR6X 21 Gbps, HDMI/DP, Ada Lovelace Architecture)",
@@ -33282,7 +33394,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 103
-        }
+        },
+        "summarizedTitle": "MSI Gaming Graphics Card"
     },
     {
         "title": "MSI Gaming RTX 4080 Super 16G Ventus 3X OC Graphics Card (NVIDIA RTX 4080 Super, 256-Bit, Extreme Clock: 2595 MHz, 16GB GDRR6X 23 Gbps, HDMI/DP, Ada Lovelace Architecture)",
@@ -33512,7 +33625,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 106
-        }
+        },
+        "summarizedTitle": "MSI Gaming RTX 4080 Super 16G Graphics Card"
     },
     {
         "title": "Nvidia GeForce GTX 1070 Founders Edition (Renewed)",
@@ -33671,7 +33785,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 104
-        }
+        },
+        "summarizedTitle": "Nvidia GeForce GTX 1070 Founders Edition"
     },
     {
         "title": "ASUS ROG Herculx Graphics Card Anti-Sag Holder Bracket (Solid Zinc Alloy Construction, Easy Toolless Installation, Included Spirit Level, Adjustable Height, Wide Compatibility, Aura Sync RGB)",
@@ -34016,7 +34131,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 102
-        }
+        },
+        "summarizedTitle": "graphics card holder bracket"
     },
     {
         "title": "Radeon RX 550 Graphics Card, 4GB GDDR5 128-bit DirectX 12 PCI Express 3.0 DP/HDMI/DVI-D ATX/ITX Computer Gaming Video Card 4K Display Card",
@@ -34290,7 +34406,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Radeon RX 550 Graphics Card"
     },
     {
         "title": "GTX 750Ti Graphics Card, 2GB GDDR5 128bit Direct X12 640SP Gaming Video Card, PCI Express 3.0x16 Interface, HDMI, DVI-D, VGA, Single Fan, Low Power GPU for Working Gaming",
@@ -34638,7 +34755,8 @@
             "saleSummary": "Save 10% with coupon",
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "GTX 750Ti Graphics Card, 2GB GDDR5, Gaming Video Card, HDMI, DVI-D, VGA"
     },
     {
         "title": "GT610 2GB Graphics Card, 610 2G DDR3 64bit, Desktop Graphics Card for Business Office, PCI E 1.1 x 16, DVI, VGA, HDMIs, PC Video Card, Single Fan",
@@ -34856,7 +34974,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "graphics card for business office"
     },
     {
         "title": "XUANMO AMD Radeon RX580 2048SP 8g Gpu GDDR5 256-Bit Pc Gaming Video Card AMD 2XDP HDMI PCI Express 3.0 with Freeze Fan Stop for Desktop Computer Gaming Video AMD Graphics Card",
@@ -35205,7 +35324,8 @@
             "saleSummary": "Save 10% with coupon",
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX580 8GB GPU for PC Gaming"
     },
     {
         "title": "GIGABYTE Radeon RX 7700 XT Gaming OC 12G Graphics Card, 3X WINDFORCE Fans 12GB 192-bit GDDR6, GV-R77XTGAMING OC-12GD Video Card",
@@ -35377,7 +35497,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 100
-        }
+        },
+        "summarizedTitle": "Gigabyte Radeon RX 7700 XT Graphics Card"
     },
     {
         "title": "QTHREE AMD Radeon R7 240 2GB Graphics Card,Dual HDMI,GDDR5,128 Bits,Low Profile Video Card for PC Gaming,Computer GPU,PCI Express x8 3.0,DirectX11,Low Power",
@@ -35834,7 +35955,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "AMD Radeon R7 240 2GB Graphics Card for PC Gaming"
     },
     {
         "title": "Radeon RX 590 GME 8GB GDDR5 Graphics Card for Gaming PC Video Card 2304SP 256-Bit PCIe 3.0 x16 6-Pin Connector Desktop Computer Gaming GPU with HDMI, DisplayPort & DVI Ports (White Edition)",
@@ -36004,7 +36126,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 116
-        }
+        },
+        "summarizedTitle": "gaming graphics card"
     },
     {
         "title": "EVGA GeForce RTX 3090 FTW3 Ultra Gaming, 24GB GDDR6X, iCX3 Technology, ARGB LED, Metal Backplate, 24G-P5-3987-KR (Renewed)",
@@ -36146,7 +36269,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 118
-        }
+        },
+        "summarizedTitle": "geforce rtx 3090 gaming card"
     },
     {
         "title": "NVIDIA Tesla V100 Volta GPU Accelerator 32GB Graphics Card",
@@ -36281,7 +36405,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 132
-        }
+        },
+        "summarizedTitle": "NVIDIA Tesla V100 Graphics Card"
     },
     {
         "title": "MSI GTX 1650 4GB GDDR6 Ventus XS OCV1 GPU Graphics Card",
@@ -36416,7 +36541,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 120
-        }
+        },
+        "summarizedTitle": "gtx 1650 graphics card"
     },
     {
         "title": "AMD Radeon™ Pro W7900, Professional Graphics Card, Workstation, AI, 3D Rendering, 48GB GDDR6, DisplaPort™ 2.1, AV1, 61 TFLOPS, 96CUS, 295W TDP, 8K",
@@ -36588,7 +36714,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 129
-        }
+        },
+        "summarizedTitle": "AMD Radeon Pro W7900 graphics card"
     },
     {
         "title": "MSI GeForce RTX 4070 Ti SUPER 16G GAMING SLIM STALKER 2 EDITION Graphics Card - RTX 4070 Ti SUPER GPU, 16GB GDDR6X (21Gbps/256-bit), PCIe 4.0 - TRI FROZR 3, RGB - HDMI 2.1, DisplayPort 1.4a",
@@ -36960,7 +37087,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 145
-        }
+        },
+        "summarizedTitle": "MSI GeForce RTX 4070 Ti SUPER Graphics Card"
     },
     {
         "title": "ASUS GeForce GT 730 2GB GDDR5 Low Profile Graphics Card for Silent HTPC Builds (with I/O Port Brackets)",
@@ -37162,7 +37290,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 128
-        }
+        },
+        "summarizedTitle": "ASUS GeForce GT 730 graphics card"
     },
     {
         "title": "GeForce GT 730 4G Low Profile Graphics Card, 2X HDMI, DP, VGA, DDR3, PCI Express 2.0 x8, Entry Level GPU for PC, SFF and HTPC, Compatible with Windows 11",
@@ -37575,7 +37704,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 147
-        }
+        },
+        "summarizedTitle": "GeForce GT 730 graphics card"
     },
     {
         "title": "ZOTAC GeForce GT 730 Zone Edition 4GB DDR3 PCI Express 2.0 x16 (x8 lanes) Graphics Card (ZT-71115-20L)",
@@ -37803,7 +37933,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 121
-        }
+        },
+        "summarizedTitle": "ZOTAC GeForce GT 730 Graphics Card"
     },
     {
         "title": "MSI Gaming RTX 4070 Super 12G Ventus 2X OC Graphics Card (NVIDIA RTX 4070 Super, 192-Bit, Extreme Clock: 2520 MHz, 12GB GDRR6X 21 Gbps, HDMI/DP, Ada Lovelace Architecture)",
@@ -38050,7 +38181,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 126
-        }
+        },
+        "summarizedTitle": "MSI Gaming RTX 4070 Super Graphics Card"
     },
     {
         "title": "ASUS GeForce RTX 2060 Overclocked 6G GDDR6 Dual-Fan EVO Edition VR Ready HDMI DisplayPort DVI Graphics Card (DUAL-RTX2060-O6G-EVO)",
@@ -38271,7 +38403,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 125
-        }
+        },
+        "summarizedTitle": "ASUS GeForce RTX 2060 Graphics Card"
     },
     {
         "title": "GeForce GTX 1660 Super 6GB Graphics Card GDDR6 192 Bit PCI-e 3.0 x16 4 Monitors Video Card Support DirectX 12 OpenGL4.5 HDMI and 3*DisplayPort 1.4a",
@@ -38537,7 +38670,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 148
-        }
+        },
+        "summarizedTitle": "GeForce GTX 1660 Super Graphics Card"
     },
     {
         "title": "MSI Gaming GeForce RTX 4060 Ti 16GB GDRR6 Extreme Clock: 2685 MHz 128-Bit HDMI/DP Nvlink TORX Fan 4.0 Ada Lovelace Architecture Graphics Card (RTX 4060 Ti Gaming X Slim 16G)",
@@ -38695,7 +38829,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 144
-        }
+        },
+        "summarizedTitle": "MSI GeForce RTX 4060 Ti Gaming X Slim Graphics Card"
     },
     {
         "title": "Khadas Mind Graphics Card RTX 4060 Ti Desktop GPU, 16GB GDDR6, External GPU Dock with Speakers for Laptop, Up to PCIe 4.0 x8,128 GT/s, HDMI 2.1a×2, USB4×1, Supports 4K & 8K Display via Thunderbolt 4/3",
@@ -39119,7 +39254,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 143
-        }
+        },
+        "summarizedTitle": "Khadas Mind Graphics Card"
     },
     {
         "title": "ASUS TUF GeForce RTX® 4090 OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)",
@@ -39375,7 +39511,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 136
-        }
+        },
+        "summarizedTitle": "ASUS TUF GeForce RTX 4090 OC Graphics Card"
     },
     {
         "title": "ATI FirePro V3900 1GB DDR3 DVI/DisplayPort PCI-Express Video Card (Renewed)",
@@ -39509,7 +39646,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 135
-        }
+        },
+        "summarizedTitle": "ATI FirePro V3900 Video Card"
     },
     {
         "title": "ZOTAC Gaming GeForce GTX 1660 Ti 6GB GDDR6 192-Bit Gaming Graphics Card Super Compact - ZT-T16610F-10L",
@@ -39874,7 +40012,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 141
-        }
+        },
+        "summarizedTitle": "gaming graphics card"
     },
     {
         "title": "RX 550 4GB Low Profile Graphics Card GDDR5 128-Bit Radeon Video Card HDMI DisplayPort Dual Monitor Video Card PCI-e 3.0 Bus Powerred x8 x16 Compatible SFF PC Build",
@@ -40254,7 +40393,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "low profile graphics card"
     },
     {
         "title": "HPE Apollo 6500 Gen-10 G6148-8 x V100-2xPS NVIDIA Graphics Cards",
@@ -40388,7 +40528,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 142
-        }
+        },
+        "summarizedTitle": "HPE Apollo 6500 Gen-10 with NVIDIA Graphics Cards"
     },
     {
         "title": "Zotac VGA RTX3060 Twin Edge OC 12G (GDDR6, HDMI 2.1, 3xDP 1.4a) (RTX 3060 Twin Edge OC)",
@@ -40666,7 +40807,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 133
-        }
+        },
+        "summarizedTitle": "Zotac RTX3060 Twin Edge OC Graphics Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 4090 Gaming OC 24G Graphics Card, 3X WINDFORCE Fans, 24GB 384-bit GDDR6X, GV-N4090GAMING OC-24GD Video Card",
@@ -40887,7 +41029,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 137
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4090 Gaming Graphics Card"
     },
     {
         "title": "EVGA GeForce RTX 3080 Ti FTW3 ULTRA GAMING, 12G-P5-3967-KR, 12GB GDDR6X, iCX3 Technology, ARGB LED, Metal Backplate",
@@ -41145,7 +41288,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 134
-        }
+        },
+        "summarizedTitle": "EVGA RTX 3080 Ti FTW3 ULTRA GAMING"
     },
     {
         "title": "ASUS ROG Strix GeForce RTX® 4090 OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1a, DisplayPort 1.4a)",
@@ -41469,7 +41613,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 132
-        }
+        },
+        "summarizedTitle": "ASUS ROG Strix GeForce RTX® 4090 OC Gaming Graphics Card"
     },
     {
         "title": "GTX 1060 6GB Computer Graphics Card, GDDR5 192bit 8K HDR VR Ready, 1060 Video Cards for Gaming PC, Tarjeta Gráfica Support Direct X12 PCIe3.0 * 16, Dual Cooling Fans, HDMI + 2*DP",
@@ -41814,7 +41959,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 67
-        }
+        },
+        "summarizedTitle": "GTX 1060 6GB Computer Graphics Card"
     },
     {
         "title": "PowerColor Fighter AMD Radeon RX 6700 XT Gaming Graphics Card with 12GB GDDR6 Memory, Powered by AMD RDNA 2, Raytracing, PCI Express 4.0, HDMI 2.1, AMD Infinity Cache",
@@ -42055,7 +42201,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 164
-        }
+        },
+        "summarizedTitle": "AMD Radeon RX 6700 XT Graphics Card"
     },
     {
         "title": "PNY NVidia Quadro K1200 (Low Profile) PCIE 2.0 x 16 DP Graphics Cards VCQK1200DP-PB",
@@ -42229,7 +42376,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 162
-        }
+        },
+        "summarizedTitle": "PNY Quadro K1200 Graphics Card"
     },
     {
         "title": "Asus TUF Gaming GeForce GTX 1660 Super Overclocked 6GB Edition HDMI DP DVI Gaming Graphics Card (TUF-GTX1660S-O6G-GAMING) (Renewed)",
@@ -42382,7 +42530,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 161
-        }
+        },
+        "summarizedTitle": "Asus TUF Gaming GTX 1660 Super Graphics Card"
     },
     {
         "title": "RTX 2060 Super Graphics Card 8GB GDDR6 256Bit Video Card with Ray Tracing for PC Gaming, PCI Express x 16 3.0 HDMI Display Port DVI Dual Fans, Supports Up to 8K",
@@ -42736,7 +42885,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 165
-        }
+        },
+        "summarizedTitle": "RTX 2060 Super Graphics Card for PC Gaming"
     },
     {
         "title": "PNY NVIDIA NVS 510 Graphics Card with DisplayPort Accessories VCNVS510DP-PB",
@@ -43015,7 +43165,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 163
-        }
+        },
+        "summarizedTitle": "NVIDIA NVS 510 Graphics Card"
     },
     {
         "title": "ZOTAC GeForce GT 1030 2GB GDDR5 64-bit PCIe 3.0 DirectX 12 HDCP Ready Low Profile Video Card ZT-P10300A-10L",
@@ -43297,7 +43448,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 160
-        }
+        },
+        "summarizedTitle": "GeForce GT 1030 video card"
     },
     {
         "title": "ZOTAC GeForce GT 710 2GB DDR3 PCI-E2.0 DL-DVI VGA HDMI Passive Cooled Single Slot Low Profile Graphics Card (ZT-71302-20L)",
@@ -43577,7 +43729,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 158
-        }
+        },
+        "summarizedTitle": "GeForce GT 710 Graphics Card"
     },
     {
         "title": "PNY NVIDIA RTX A2000 12GB",
@@ -43750,7 +43903,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 159
-        }
+        },
+        "summarizedTitle": "NVIDIA RTX A2000"
     },
     {
         "title": "PNY TECHNOLOGIES NVIDIA RTX A5000",
@@ -43928,7 +44082,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 154
-        }
+        },
+        "summarizedTitle": "NVIDIA RTX A5000"
     },
     {
         "title": "ASUS GeForce GT 1030 2GB GDDR5 HDMI DVI Graphics Card (GT1030-2G-CSM)",
@@ -44195,7 +44350,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 153
-        }
+        },
+        "summarizedTitle": "GeForce GT 1030 Graphics Card"
     },
     {
         "title": "ASUS TUF Gaming AMD Radeon™ RX 6800 XT OC Edition Graphics Card (PCIe 4.0, 16GB GDDR6, HDMI 2.1, DisplayPort 1.4a, Dual Ball Fan Bearings, All-Aluminum Shroud, Reinforced Frame, GPU Tweak II)",
@@ -44489,7 +44645,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 178
-        }
+        },
+        "summarizedTitle": "ASUS TUF Gaming RX 6800 XT Graphics Card"
     },
     {
         "title": "AMD Radeon Pro WX 3100 Graphic Card - 1.22 GHz Core - 4 GB GDDR5 - Half-Length - Single Slot Space Required",
@@ -44677,7 +44834,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 163
-        }
+        },
+        "summarizedTitle": "AMD Radeon Pro WX 3100 Graphic Card"
     },
     {
         "title": "NVIDIA Quadro P4000",
@@ -44924,7 +45082,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 164
-        }
+        },
+        "summarizedTitle": "NVIDIA P4000"
     },
     {
         "title": "ZOTAC GeForce RTX™ 3070 Ti AMP Holo 8GB GDDR6X 256-bit 19 Gbps PCIE 4.0 Gaming Graphics Card, HoloBlack, IceStorm 2.0 Advanced Cooling, Spectra 2.0 RGB Lighting, ZT-A30710F-10P",
@@ -45148,7 +45307,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 179
-        }
+        },
+        "summarizedTitle": "GeForce RTX 3070 Ti graphics card"
     },
     {
         "title": "EVGA 06G-P4-1068-KR GeForce GTX 1660 Super Sc Ultra Gaming, 6GB GDDR6, Dual Fan, Metal Backplate (Renewed)",
@@ -45316,7 +45476,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 175
-        }
+        },
+        "summarizedTitle": "EVGA GeForce GTX 1660 Super Sc Ultra Gaming, 6GB GDDR6, Dual Fan"
     },
     {
         "title": "Nvidia Quadro P2000 5GB DDR5 160 BIT 4X DP Graphics Card",
@@ -45459,7 +45620,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 168
-        }
+        },
+        "summarizedTitle": "Nvidia Quadro P2000 Graphics Card"
     },
     {
         "title": "MSI Gaming GeForce RTX 4060 Ti 8GB GDRR6 Extreme Clock: 2580 MHz 128-Bit HDMI/DP Nvlink TORX Fan 4.0 Ada Lovelace Architecture Graphics Card (RTX 4060 Ti Ventus 2X Black 8G OC)",
@@ -45849,7 +46011,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 166
-        }
+        },
+        "summarizedTitle": "MSI Gaming GeForce RTX 4060 Ti Graphics Card"
     },
     {
         "title": "ASUS GeForce RTX™ 4080 16GB GDDR6X Noctua OC Edition (PCIe 4.0, 16GB GDDR6X, DLSS 3, HDMI 2.1a, DisplayPort 1.4a, Noctua NF-A12x25 PWM Fans, Optimized Vapor Chamber, GPU Tweak III)",
@@ -46108,7 +46271,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 167
-        }
+        },
+        "summarizedTitle": "ASUS GeForce RTX 4080 Noctua OC Edition"
     },
     {
         "title": "GIGABYTE AORUS GeForce RTX 3070 Master 8G Graphics Card, 3X WINDFORCE Fans, 8GB 256-bit GDDR6, GV-N3070AORUS M-8GD Video Card",
@@ -46315,7 +46479,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 174
-        }
+        },
+        "summarizedTitle": "GeForce RTX 3070 graphics card"
     },
     {
         "title": "GeForce GT 1030 Graphics Card 4GB Low Profile Graphics Card GDDR4 64 Bit PCI-e 3.0 x4 Compatible x8 x16 HDMI Display 2 Monitor Video Card Support DirectX 12 OpenGL 4.5 HDCP 2.2",
@@ -46711,7 +46876,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 169
-        }
+        },
+        "summarizedTitle": "GeForce GT 1030 Graphics Card"
     },
     {
         "title": "ASUS ROG STRIX NVIDIA GeForce RTX™ 3090 White OC Edition Gaming Graphics Card (PCIe 4.0, 24GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, White color scheme, Axial-tech Fan Design, 2.9-slot, Super Alloy Power",
@@ -46912,7 +47078,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 195
-        }
+        },
+        "summarizedTitle": "ASUS ROG STRIX NVIDIA GeForce RTX™ 3090 White OC Edition Gaming Graphics Card"
     },
     {
         "title": "Dell AMD Radeon R5 240 1GB DDR3 DVI/ D-Port Video Card F9P1R 0F9P1R (Renewed)",
@@ -47057,7 +47224,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 165
-        }
+        },
+        "summarizedTitle": "Dell Radeon R5 Video Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 4070 WINDFORCE OC 12GB Graphics Card - 12GB DDRX6 21Gbps, PCI-E 4.0, DisplayPort 1.4, HDMI 2.1a, NVIDIA DLSS 3, Ada Lovelace Arch, GV-N4070WF3OC-12GD, Black, 930g",
@@ -47348,7 +47516,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 193
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4070 Graphics Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 4060 Ti Gaming OC 16G Graphics Card, 3X WINDFORCE Fans, 16GB 128-bit GDDR6, GV-N406TGAMING OC-16GD Video Card",
@@ -47571,7 +47740,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 181
-        }
+        },
+        "summarizedTitle": "GeForce RTX 4060 Ti Gaming Graphics Card"
     },
     {
         "title": "MSI Gaming X Slim GeForce RTX 4090 Graphics Card (PCIe 4.0, 24GB 384Bit GDRR6X, HDMI 2.1a, DP 1.4a, TRI FROZR 3), w/Anti-Sag RGB Holder, HDMI 2.1 Cable",
@@ -47695,7 +47865,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 182
-        }
+        },
+        "summarizedTitle": "MSI Gaming X Slim GeForce RTX 4090 Graphics Card"
     },
     {
         "title": "ZOTAC Gaming GeForce GTX 1630 4GB GDDR6 12 Gbps 64-bit Gaming Graphics Card, Super Compact, ZT-T16300F-10L",
@@ -47884,7 +48055,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 189
-        }
+        },
+        "summarizedTitle": "GTX 1630 4GB GDDR6 graphics card"
     },
     {
         "title": "VISION COMPUTERS, INC. PNY RTX H100 NVL - 94GB HBM3-350-400W - PNY Bulk Packaging and Accessories",
@@ -48087,7 +48259,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 191
-        }
+        },
+        "summarizedTitle": "PNY RTX H100 NVL"
     },
     {
         "title": "MSI Gaming RTX 4070 TI Super 16G Expert Graphics Card (NVIDIA RTX 4070 Ti Super, 256-Bit, Extreme Clock: 2685 MHz, 16GB GDRR6X 21 Gbps, HDMI/DP, Ada Lovelace Architecture)",
@@ -48306,7 +48479,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 190
-        }
+        },
+        "summarizedTitle": "gaming graphics card"
     },
     {
         "title": "ASUS TUF RTX 4090 OC Graphics Card (PCIe 4.0, 24GB 384Bit GDRR6X, HDMI 2.1a, DP 1.4a, ARGB), w/Anti-Sag RGB Holder, SPS HDMI 2.1 Cable",
@@ -48442,7 +48616,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 185
-        }
+        },
+        "summarizedTitle": "ASUS TUF RTX 4090 OC Graphics Card"
     },
     {
         "title": "NZXT Vertical GPU Mounting Kit - AB-RH175-B1-175 mm PCIe 4.0x16 Riser Cable - GPU Holder - Sturdy Steel Bracket - Black",
@@ -48707,7 +48882,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 180
-        }
+        },
+        "summarizedTitle": "vertical gpu mounting kit"
     },
     {
         "title": "Radeon RX 580 8GB GDDR5 Graphics Card for Gaming PC Video Card 2048SP 256-Bit PCIe 3.0 x16 6-Pin Connector Desktop Computer Gaming GPU with HDMI, DisplayPort & DVI Ports (White Edition)",
@@ -48912,7 +49088,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "graphics card for gaming pc"
     },
     {
         "title": "MSI Gaming AMD Radeon RX 6500 XT 64-bit 4GB GDDR6 DP/HDMI PCIe 4 Torx Twin Fans FreeSync DirectX 12 VR Ready OC Graphics Card (RX 6500 XT MECH 2X 4G OC)",
@@ -49222,7 +49399,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 210
-        }
+        },
+        "summarizedTitle": "MSI Gaming Radeon RX 6500 XT Graphics Card"
     },
     {
         "title": "GIGABYTE GeForce RTX 3090 Vision OC 24G Graphics Card, 3X WINDFORCE Fans, 24GB 384-bit GDDR6X, GV-N3090VISION OC-24GD Video Card",
@@ -49393,7 +49571,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 212
-        }
+        },
+        "summarizedTitle": "GeForce RTX 3090 Graphics Card"
     },
     {
         "title": "ASUS ROG STRIX NVIDIA GeForce RTX 3090 Gaming Graphics Card- PCIe 4.0, 24GB GDDR6X, HDMI 2.1, DisplayPort 1.4a, Axial-Tech Fan Design, 2.9-Slot",
@@ -49678,7 +49857,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 211
-        }
+        },
+        "summarizedTitle": "ASUS GeForce RTX 3090 Gaming Graphics Card"
     },
     {
         "title": "AMD Radeon Pro WX4100 Graphics Card Blue (100-506008) (Renewed)",
@@ -49816,7 +49996,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 209
-        }
+        },
+        "summarizedTitle": "AMD Radeon Pro WX4100 Graphics Card"
     },
     {
         "title": "XUANMO Nvidia GTX960 4GB GDDR5 192bit PCIE Graphic Card, Dual Fans 8008MHz Memory Frequency Computer Graphics Card, HDMI DVI DP 4K HDR Gaming Graphics Card",
@@ -50165,7 +50346,8 @@
             "saleSummary": "Save 15% with coupon",
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "gtx960 4gb graphics card"
     },
     {
         "title": "XUANMO NIVIDIA Geforce GTX1060 6GB 5GB 3GB Gaming Graphics Card Video Card gem GDDR5 PCI Express x16 3.0 8008 MHz Output Interface HDMI DP DVI GTX1060 6GB Graphics Card",
@@ -50510,7 +50692,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 213
-        }
+        },
+        "summarizedTitle": "NIVIDIA Geforce GTX1060 6GB Gaming Graphics Card"
     },
     {
         "title": "GTX1060 GDDR5 192bit PCIE Graphic Card, Dual Fans 8008MHz Memory Frequency Computer Graphics Card, HDMI DVI DP 4K HDR Gaming Graphics Card(6GB)",
@@ -50722,7 +50905,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 204
-        }
+        },
+        "summarizedTitle": "GTX1060 Graphics Card"
     },
     {
         "title": "PNY VCNRTXA6000-PB NVIDIA 48GB GDDR6 Graphics Card",
@@ -50904,7 +51088,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 199
-        }
+        },
+        "summarizedTitle": "NVIDIA graphics card"
     },
     {
         "title": "MSI Gaming GeForce RTX 3070 8GB GDRR6 256-Bit HDMI/DP Tri-Frozr 2 TORX Fan 4.0 Ampere Architecture RGB OC Graphics Card (RTX 3070 Gaming X Trio)",
@@ -51155,7 +51340,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 195
-        }
+        },
+        "summarizedTitle": "MSI GeForce RTX 3070 Gaming X Trio graphics card"
     },
     {
         "title": "PNY TECHNOLOGIES NVIDIA T600",
@@ -51316,7 +51502,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 201
-        }
+        },
+        "summarizedTitle": "NVIDIA T600"
     },
     {
         "title": "PNY NVIDIA Quadro RTX 4000 8GB GDDR6 - The World’S First Ray Tracing GPU (Renewed)",
@@ -51461,7 +51648,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 196
-        }
+        },
+        "summarizedTitle": "NVIDIA Quadro RTX 4000 GPU"
     },
     {
         "title": "MSI Gaming GeForce RTX 4090, 24GB GDRR6X, 384-Bit, Extreme Clock: 2595 MHz, HDMI/DP Nvlink Tri-Frozr 3 Ada Lovelace Architecture OC Graphics Card (RTX 4090 Gaming X Slim 24G)",
@@ -51869,7 +52057,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 200
-        }
+        },
+        "summarizedTitle": "MSI GeForce RTX 4090 Gaming Graphics Card"
     },
     {
         "title": "EVGA GeForce GTX 1660 SC Ultra Gaming, 06G-P4-1067-KR, 6GB GDDR5, Dual Fan",
@@ -52119,7 +52308,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 202
-        }
+        },
+        "summarizedTitle": "EVGA GTX 1660 SC Ultra Gaming"
     },
     {
         "title": "PNY NVIDIA A2 16GB Ampere AI Graphics Card",
@@ -52335,7 +52525,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 228
-        }
+        },
+        "summarizedTitle": "NVIDIA graphics card"
     },
     {
         "title": "HP FirePro W7000 Graphic Card - 4 GB GDDR5 SDRAM C2K00AA (Renewed)",
@@ -52468,7 +52659,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 227
-        }
+        },
+        "summarizedTitle": "HP FirePro W7000 Graphic Card"
     },
     {
         "title": "GT610 Computer Graphics Card, 2GB DDR3 64bit PCI Express X16 Gaming Graphics Card with DVI, VGA, HDMI Interface for Computer Desktop",
@@ -52614,7 +52806,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 230
-        }
+        },
+        "summarizedTitle": "computer graphics card with 2GB memory"
     },
     {
         "title": "ZOTAC Gaming GeForce GTX 1660 Super 6GB GDDR6 192-bit Gaming Graphics Card, Super Compact, ZT-T16620F-10L (Renewed)",
@@ -52787,7 +52980,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 226
-        }
+        },
+        "summarizedTitle": "gaming graphics card, 6GB GDDR6, super compact"
     },
     {
         "title": "Sapphire Technology Sapphire 11296-01-20G Radeon Pulse RX 5600 XT 14GBPS 6GB GDDR6 HDMI Triple DP OC w Backplate (UEFI) PCIe 4.0 Graphics Card (Renewed)",
@@ -52930,7 +53124,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 225
-        }
+        },
+        "summarizedTitle": "Sapphire Radeon Pulse RX 5600 XT Graphics Card"
     },
     {
         "title": "PANO-MOUNTS 5V 3-Pin Infinity ARGB GPU Support Bracket Height Adjustable with Aluminum Perfect for RX6700,RTX3090 Graphics and Video Cards in Sleek Black",
@@ -53323,7 +53518,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 218
-        }
+        },
+        "summarizedTitle": "GPU support bracket"
     },
     {
         "title": "GIGABYTE AORUS GeForce RTX 3070 Ti Master 8G Graphics Card, MAX-Covered Cooling, 8GB 256-bit GDDR6X, GV-N307TAORUS M-8GD Video Card",
@@ -53565,7 +53761,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 221
-        }
+        },
+        "summarizedTitle": "Gigabyte GeForce RTX 3070 Ti Graphics Card"
     },
     {
         "title": "MSI Gaming GeForce RTX 3070 LHR 8GB GDRR6 256-Bit HDMI/DP Nvlink Torx Fan 4 RGB Ampere Architecture OC Graphics Card (RTX 3070 Gaming Z Trio 8G LHR)",
@@ -53942,7 +54139,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 222
-        }
+        },
+        "summarizedTitle": "MSI GeForce RTX 3070 Gaming Z Trio 8G"
     },
     {
         "title": "EVGA GeForce RTX 3080 12GB XC3 ULTRA HYDRO COPPER GAMING, 12G-P5-4869-KL, 12GB GDDR6X, ARGB LED, Metal Backplate, LHR",
@@ -54191,6 +54389,7 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 224
-        }
+        },
+        "summarizedTitle": "EVGA RTX 3080 ULTRA HYDRO COPPER GAMING"
     }
 ]

@@ -452,7 +452,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 16
-        }
+        },
+        "summarizedTitle": "HP 255 G10 Laptop, 16GB RAM, 1TB SSD, Ryzen 3 7330U"
     },
     {
         "title": "HP Flagship Touchscreen Laptop Computer • Win 11 Pro • 2024 Office Lifetime • 15.6\" Full HD Touchscreen • Intel i3 1215U • Wi-Fi 5 • Anti-Glare HD Display w/JAWFOAL Bundle (16G RAM • 512GB SSD)",
@@ -925,7 +926,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 8
-        }
+        },
+        "summarizedTitle": "HP touchscreen laptop with Win 11 Pro and 2024 Office lifetime"
     },
     {
         "title": "Dell Inspiron 3530 Laptop - 15.6-inch FHD 120Hz Display, Intel Core i5-1334U Processor, 16GB DDR4 RAM, 512GB SSD, Intel Iris Xe Graphics, Windows 11 Home, Migrate Services - Platinum Silver (Aluminum)",
@@ -1418,7 +1420,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 12
-        }
+        },
+        "summarizedTitle": "Dell Inspiron 3530 Laptop"
     },
     {
         "title": "ASUS 2024 Vivobook Go 11.6” HD Laptop, Intel Dual Core N4500, Intel Graphics, 4GB, 128GB, Windows 11 Home in S Mode, Star Black, L210KA-ES04",
@@ -1896,7 +1899,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 6
-        }
+        },
+        "summarizedTitle": "ASUS 11.6\" laptop, Intel Dual Core, Windows 11 Home, Star Black"
     },
     {
         "title": "Acer Aspire 3 A315-24P-R7VH Slim Laptop | 15.6\" Full HD IPS Display | AMD Ryzen 3 7320U Quad-Core Processor | AMD Radeon Graphics | 8GB LPDDR5 | 128GB NVMe SSD | Wi-Fi 6 | Windows 11 Home in S Mode",
@@ -2462,7 +2466,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 15
-        }
+        },
+        "summarizedTitle": "Acer Aspire 3 Laptop, 15.6\" Display, AMD Ryzen Processor, Radeon Graphics, 8GB RAM, 128GB SSD, Wi-Fi 6, Windows 11"
     },
     {
         "title": "Lenovo V15 G2 Laptop, 15.6\" FHD Screen, Intel Dual-core Processor, 16GB RAM, 1TB SSD, Webcam, HDMI, Wi-Fi, Windows 11 Home, Black",
@@ -3253,7 +3258,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 13
-        }
+        },
+        "summarizedTitle": "Lenovo V15 G2 Laptop, FHD Screen, Intel Processor, 16GB RAM, 1TB SSD, Webcam, HDMI, Wi-Fi, Windows 11 Home, Black"
     },
     {
         "title": "Dell 2024 Newest Inspiron 16 Laptop, 16\" FHD+ Display, AMD Ryzen 7-8840U, 16 GB DDR5, 1 TB SSD, Wi-Fi 6E, Backlit Keyboard, Windows 11 Pro & Microsoft Office Lifetime License",
@@ -3661,7 +3667,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 22
-        }
+        },
+        "summarizedTitle": "Dell Inspiron 16 Laptop, FHD+ Display, AMD Ryzen 7, 16 GB DDR5, 1 TB SSD, Wi-Fi 6E, Backlit Keyboard"
     },
     {
         "title": "HP 14 HD Laptop Computer Students Business, Quad-Core Intel Celeron Processor, 16GB RAM, 256GB Storage(128GB eMMC+128GB SD Card), 1 Year Office 365, HDMI, Win 12 w/TP Accessories",
@@ -4064,7 +4071,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 18
-        }
+        },
+        "summarizedTitle": "HP 14 laptop, quad-core processor, 16GB RAM, 256GB storage, 1 year Office 365, HDMI, Win 12"
     },
     {
         "title": "HP Stream 14\" HD BrightView Laptop, Intel Celeron N4120, 16GB RAM, 288GB Storage (128GB eMMC + 160GB Docking Station Set), Intel UHD Graphics, 720p Webcam, Wi-Fi, 1 Year Office 365, Win 11 S, Silver",
@@ -4534,7 +4542,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 3
-        }
+        },
+        "summarizedTitle": "HP Stream 14\" laptop with 16GB RAM and 288GB storage"
     },
     {
         "title": "HP 14 inch Laptop, HD Display, 12th Generation Intel Core i3-1215U, 8 GB RAM, 256 GB SSD, Intel UHD Graphics, Windows 11 Home in S Mode, 14-dq5009nr (2024)",
@@ -5040,7 +5049,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 4
-        }
+        },
+        "summarizedTitle": "HP 14 inch laptop with Intel Core i3, 8 GB RAM, 256 GB SSD, Windows 11 Home"
     },
     {
         "title": "Acer Aspire Go 15 Slim Laptop | 15.6\" Full HD IPS 1080P Display | Intel Core i3-N305| Intel UHD Graphics | 8GB LPDDR5 | 128GB HD | Wi-Fi 6 | AI PC | Windows 11 Home in S Mode | AG15-31P-3947",
@@ -5700,7 +5710,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 21
-        }
+        },
+        "summarizedTitle": "Acer Aspire 15 Laptop, Full HD Display, Intel Core i3, 8GB RAM, 128GB HD, Wi-Fi, Windows 11"
     },
     {
         "title": "Lenovo IdeaPad 3i Chromebook, 15.6” FHD Display, Intel Celeron N4500, 8GB RAM, 64GB eMMC, 1920x1080 px, 720p Camera, Chrome OS, Abyss Blue",
@@ -6330,7 +6341,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 20
-        }
+        },
+        "summarizedTitle": "Lenovo IdeaPad 3i Chromebook, 15.6\" FHD Display, Intel Celeron N4500, 8GB RAM, 64GB eMMC"
     },
     {
         "title": "acer Gateway Chromebook 311 CBO311-1H-C1MX Laptop | Intel Celeron N4500 | 11.6\" HD (1366 x 768) Display | 4GB LPDDR4X | 64GB eMMC | Wi-Fi 5 802.11ac | Chrome OS | Star Black",
@@ -6894,7 +6906,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 19
-        }
+        },
+        "summarizedTitle": "acer gateway chromebook"
     },
     {
         "title": "HP Portable Laptop, Student and Business, 14\" HD Display, Intel Quad-Core N4120, 16GB DDR4 RAM, 64GB eMMC, 1 Year Office 365, Webcam, RJ-45, HDMI, Wi-Fi, Windows 11 Home, Silver",
@@ -7775,7 +7788,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 9
-        }
+        },
+        "summarizedTitle": "portable laptop, 14\" display, intel quad-core, 16GB RAM, 64GB eMMC, windows 11, silver"
     },
     {
         "title": "ASUS 15.6” Vivobook Go Laptop, Intel Dual Core N4500, 4GB RAM, 128GB SSD, Windows 11 in S Mode, Star Black, L510KA-ES04",
@@ -8134,7 +8148,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 11
-        }
+        },
+        "summarizedTitle": "ASUS Vivobook Go Laptop"
     },
     {
         "title": "Dell Inspiron 5645 Laptop - 16.0 16:10 FHD+ (1920 x 1200) Display, AMD Ryzen 7-8840U, 16GB DDR5 RAM, 1TB SSD, AMD Radeon Graphics, Windows 11 Home, Onsite & Migrate Services - Midnight Blue",
@@ -8961,7 +8976,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 7
-        }
+        },
+        "summarizedTitle": "Dell Inspiron 5645 laptop"
     },
     {
         "title": "ASUS TUF Gaming A16 (2024) Gaming Laptop, 16” FHD+ 16:10 165Hz Display, AMD Ryzen™ 9 7940HX, NVIDIA® GeForce RTX™ 4060, 16GB DDR5, 512GB PCIe Gen4 SSD, Wi-Fi 6, Windows 11, FA607PV-AS93",
@@ -9339,7 +9355,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "ASUS TUF Gaming Laptop, 16” FHD+ Display, AMD Ryzen™ 9 Processor, NVIDIA® GeForce RTX™ Graphics, 16GB RAM, 512GB SSD, Wi-Fi 6, Windows"
     },
     {
         "title": "HP 14 Laptop, Intel Celeron N4020, 4 GB RAM, 64 GB Storage, 14-inch Micro-edge HD Display, Windows 11 Home, Thin & Portable, 4K Graphics, One Year of Microsoft 365 (14-dq0040nr, Snowflake White)",
@@ -10085,7 +10102,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": 14
-        }
+        },
+        "summarizedTitle": "HP 14 Laptop, Intel Celeron N4020, 4 GB RAM, 64 GB Storage, 14-inch Display, Windows 11 Home, Thin & Portable, 4K Graphics, Microsoft 365, Snowflake White"
     },
     {
         "title": "ASUS 2024 Zenbook S 13 OLED Laptop, 13.3” OLED 3K 60Hz Display, Intel Evo Certified, Intel Core Ultra 7 155U CPU, Intel Graphics, 16GB RAM, 512GB SSD, Windows 11 Home, Basalt Gray, UX5304MA-ES71",
@@ -10670,7 +10688,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 22
-        }
+        },
+        "summarizedTitle": "ASUS Zenbook S 13 OLED laptop"
     },
     {
         "title": "MSI Katana A15 AI 15.6” 165Hz QHD Gaming Laptop: Ryzen 9-8945HS, NVIDIA Geforce RTX 4070, 32GB DDR5, 1TB NVMe SSD, Cooler Boost 5, Win 11: Black B8VG-450US",
@@ -11447,7 +11466,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "gaming laptop, 15.6 inch, Ryzen 9, NVIDIA Geforce RTX 4070, 32GB DDR5, 1TB NVMe SSD, Win 11"
     },
     {
         "title": "ASUS TUF Gaming A15 (2024) Gaming Laptop, 15.6” FHD 144Hz Display, NVIDIA® GeForce RTX™ 3050, AMD Ryzen™ 5 7535HS, 8GB DDR5, 512GB PCIe® Gen4 NVMe™ SSD, Wi-Fi 6, Windows 11, FA506NC-ES51",
@@ -11876,7 +11896,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "TUF Gaming A15 Laptop"
     },
     {
         "title": "ASUS TUF Gaming A15 (2023) Gaming Laptop, 15.6” FHD 144Hz Display, GeForce RTX 4070, AMD Ryzen 7 7940HS, 16GB DDR5, 1TB PCIe SSD, Wi-Fi 6, Windows 11, FA507XI-EH94(Mecha Gray)",
@@ -12526,7 +12547,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "TUF Gaming A15 Laptop, 144Hz Display, RTX 4070, Ryzen 7, 16GB DDR5, 1TB SSD, Windows 11"
     },
     {
         "title": "jumper Laptop Computer 14 Inch, 12GB DDR4 512GB SSD, Laptops with Office 365 One Year, FHD 1920x1080 Display, Celeron N4000 CPU, 35.52WH Battery, 2.4G+5G WiFi, BT4.0, Portable Business Lapto, Gray.",
@@ -13021,7 +13043,8 @@
             "saleSummary": "Exclusive Prime price",
             "isSponsored": false,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "14 inch laptop computer with office 365, FHD display, 512GB SSD"
     },
     {
         "title": "jumper Laptop, 16GB RAM 128GB EMMC, 512GB SSD, Office 365 One Year, Laptop Computer with N95 CPU, 15.6 Inch FHD IPS 1080P Display, 2.4G+5G WiFi, BT4.2, 38WH Battery, 2 Speakers, Portable Laptops.",
@@ -13493,7 +13516,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 22
-        }
+        },
+        "summarizedTitle": "laptop, 16GB RAM, 512GB SSD, 15.6 Inch Display"
     },
     {
         "title": "ASUS TUF Gaming A16 (2024) Gaming Laptop, 16” QHD+ 165Hz 16:10 Display, AMD Ryzen™ 9 7940HX, NVIDIA® GeForce RTX™ 4070, 16GB DDR5, 1TB PCIe Gen4 SSD, Wi-Fi 6, Windows 11, FA607PI-AS94",
@@ -13974,7 +13998,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "ASUS TUF Gaming Laptop, 16\" QHD+ Display, Ryzen 9, RTX 4070, 16GB RAM, 1TB SSD, Wi-Fi 6, Windows 11"
     },
     {
         "title": "jumper Laptop 14\", 12GB RAM 512GB SSD, Laptop Computer with Office 365 One-Year, Celeron N4000 CPU, FHD 1080P Display, 35.52WH Battery, 2.4G+5G WiFi, BT4.0, 2 Speakers, Portable Business Laptops.",
@@ -14446,7 +14471,8 @@
             "saleSummary": "Save $60.00 with coupon",
             "isSponsored": false,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "jumper laptop 14"
     },
     {
         "title": "Lenovo V Series 15.6\" FHD Business Laptop, Intel Core i5-1235U, 16GB RAM, 1TB SSD, Webcam, HDMI, RJ-45, Wi-Fi, W11H, Black",
@@ -14812,7 +14838,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Lenovo Business Laptop"
     },
     {
         "title": "Lenovo V-Series V15 Business Laptop, 15.6\" FHD Display, AMD Ryzen 7 7730U, 16GB RAM, 512GB SSD, Numeric Keypad, HDMI, RJ45, Webcam, Wi-Fi, Windows 11 Pro, Black",
@@ -15263,7 +15290,8 @@
             "saleSummary": null,
             "isSponsored": false,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "Lenovo V15 Business Laptop, 15.6\" FHD Display, AMD Ryzen 7, 16GB RAM, 512GB SSD"
     },
     {
         "title": "jumper Laptop, 24GB LPDDR4X RAM, 1024GB NVMe SSD, 3.6GHz Core i5 CPU, 14 Inch FHD IPS Display, Laptops Computer with 4 Stereo Speakers, 51300mWH, USB3.0 * 3, Portable, Metal.",
@@ -15703,7 +15731,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 22
-        }
+        },
+        "summarizedTitle": "jumper laptop, 24GB RAM, 1024GB SSD, 3.6GHz CPU, 14 Inch Display, 4 Speakers, 51300mWH, USB3.0, portable, metal"
     },
     {
         "title": "jumper Laptop, Office 365 One-Year, 12GB RAM 512GB SSD, Celeron N4000 CPU, Notebook Computer with 14\" FHD 1080P Display, 35.52WH Battery, 2 Speakers, 2.4G+5G WiFi, Portable Business Laptops.(Gray)",
@@ -15905,7 +15934,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 21
-        }
+        },
+        "summarizedTitle": "jumper laptop, office 365, 12GB RAM, 512GB SSD, 14\" FHD display"
     },
     {
         "title": "Microsoft Surface Laptop 7 Copilot+ PC, 13.8\" HDR Touchscreen, 12-Core Qualcomm Snapdragon X Elite, Qualcomm Adreno GPU, 16GB RAM, 512GB SSD, WiFi 7, Backlit, 11-in-1 Hub, HDMI Cable, Win 11, Sapphire",
@@ -16253,7 +16283,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 117
-        }
+        },
+        "summarizedTitle": "Microsoft Surface Laptop 7 Copilot+ PC"
     },
     {
         "title": "Dell G16 7630 Gaming Laptop - 16-inch QHD+ 240Hz 3ms Display, Intel Core i9-13900HX, 16GB DDR5 RAM, 1TB SSD, NVIDIA GeForce RTX 4070 8GB GDDR6, Windows 11 Home, Onsite Service - Metallic Nightshade",
@@ -16799,6 +16830,7 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 214
-        }
+        },
+        "summarizedTitle": "Dell Gaming Laptop - 16-inch QHD+ Display, Core i9, 16GB RAM, 1TB SSD, RTX 4070, Windows 11"
     }
 ]

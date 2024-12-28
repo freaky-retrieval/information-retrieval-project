@@ -130,7 +130,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 3
-        }
+        },
+        "summarizedTitle": "cat kid comic club collection"
     },
     {
         "title": "Deadpool: Samurai, Vol. 1 (1)",
@@ -301,7 +302,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 5
-        }
+        },
+        "summarizedTitle": "Deadpool Samurai"
     },
     {
         "title": "Marvel Encyclopedia New Edition",
@@ -490,7 +492,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 4
-        }
+        },
+        "summarizedTitle": "Marvel Encyclopedia"
     },
     {
         "title": "Justice League vs. Godzilla vs. Kong",
@@ -605,7 +608,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 10
-        }
+        },
+        "summarizedTitle": "Justice League vs. Godzilla vs. Kong"
     },
     {
         "title": "Marvel Greatest Comics: 100 Comics that Built a Universe",
@@ -885,7 +889,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 6
-        }
+        },
+        "summarizedTitle": "Marvel Comics: 100 Comics"
     },
     {
         "title": "Dog Man: Big Jim Begins: A Graphic Novel (Dog Man #13): From the Creator of Captain Underpants",
@@ -1199,7 +1204,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 18
-        }
+        },
+        "summarizedTitle": "dog man graphic novel"
     },
     {
         "title": "Taco Cat Goat Cheese Pizza and the Case of the Missing Hat - Graphic Novel - Hilarious & Fun Hardback Book for Ages 7+, Full-Color Artwork - Family-Friendly, Great for Gifting",
@@ -1324,7 +1330,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": null
-        }
+        },
+        "summarizedTitle": "taco cat goat cheese pizza graphic novel"
     },
     {
         "title": "SPIDER-MAN: MILES MORALES VOL. 1",
@@ -1445,7 +1452,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 14
-        }
+        },
+        "summarizedTitle": "Spider-Man: Miles Morales Vol. 1"
     },
     {
         "title": "DEADPOOL & WOLVERINE: WWIII",
@@ -1555,7 +1563,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 30
-        }
+        },
+        "summarizedTitle": "deadpool and wolverine"
     },
     {
         "title": "MARVEL MASTERWORKS: THE AMAZING SPIDER-MAN VOL. 1",
@@ -1684,7 +1693,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 26
-        }
+        },
+        "summarizedTitle": "marvel masterworks amazing spider-man"
     },
     {
         "title": "Batman: Year One Deluxe",
@@ -1876,7 +1886,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 25
-        }
+        },
+        "summarizedTitle": "batman year one"
     },
     {
         "title": "Teenage Mutant Ninja Turtles: Saturday Morning Adventures, Vol. 1 (Teenage Mutant Ninja Turtles: Saturday Morning Adventures, 1)",
@@ -2108,7 +2119,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 34
-        }
+        },
+        "summarizedTitle": "Teenage Mutant Ninja Turtles: Saturday Morning Adventures"
     },
     {
         "title": "MIGHTY MARVEL MASTERWORKS: THE AMAZING SPIDER-MAN VOL. 1 - WITH GREAT POWER...",
@@ -2219,7 +2231,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 21
-        }
+        },
+        "summarizedTitle": "mighty marvel masterworks: the amazing spider-man vol. 1"
     },
     {
         "title": "The Hobbit: A Graphic Novel (Hobbit Fantasy Classic)",
@@ -2620,7 +2633,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 20
-        }
+        },
+        "summarizedTitle": "hobbit graphic novel"
     },
     {
         "title": "Spidey and His Amazing Friends: Team Spidey Does It All!: My First Comic Reader!",
@@ -2751,7 +2765,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 22
-        }
+        },
+        "summarizedTitle": "Spidey and His Amazing Friends comic reader"
     },
     {
         "title": "Invincible Compendium Volume 1",
@@ -2979,7 +2994,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 36
-        }
+        },
+        "summarizedTitle": "Invincible Compendium 1"
     },
     {
         "title": "Calvin and Hobbes (Volume 1)",
@@ -3252,7 +3268,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 29
-        }
+        },
+        "summarizedTitle": "calvin and hobbes volume 1"
     },
     {
         "title": "Dog Man: The Scarlet Shedder: A Graphic Novel (Dog Man #12): From the Creator of Captain Underpants",
@@ -3452,7 +3469,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 35
-        }
+        },
+        "summarizedTitle": "dog man graphic novel"
     },
     {
         "title": "Batman the Killing Joke: The Deluxe Edition",
@@ -3567,7 +3585,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 23
-        }
+        },
+        "summarizedTitle": "batman killing joke deluxe edition"
     },
     {
         "title": "Sonic the Hedgehog: Box Set, Vol. 1-3",
@@ -3685,7 +3704,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 50
-        }
+        },
+        "summarizedTitle": "Sonic the Hedgehog box set"
     },
     {
         "title": "The Walking Dead: Compendium One",
@@ -3814,7 +3834,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 40
-        }
+        },
+        "summarizedTitle": "walking dead compendium"
     },
     {
         "title": "Transformers Vol. 1: Robots in Disguise (1)",
@@ -3941,7 +3962,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 39
-        }
+        },
+        "summarizedTitle": "Transformers Robots in Disguise"
     },
     {
         "title": "Sonic the Hedgehog: Sonic & Tails: Best Buds Forever",
@@ -4181,7 +4203,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 36
-        }
+        },
+        "summarizedTitle": "Sonic and Tails"
     },
     {
         "title": "SPIDER-MAN BY TODD MCFARLANE: THE COMPLETE COLLECTION",
@@ -4293,7 +4316,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 54
-        }
+        },
+        "summarizedTitle": "spider-man todd mcfarlane complete collection"
     },
     {
         "title": "Kingdom Come",
@@ -4401,7 +4425,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 56
-        }
+        },
+        "summarizedTitle": "kingdom come"
     },
     {
         "title": "Jujutsu Kaisen, Vol. 1 (1)",
@@ -4522,7 +4547,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 64
-        }
+        },
+        "summarizedTitle": "Jujutsu Kaisen Vol 1"
     },
     {
         "title": "Garfield Fat Cat 3-Pack #1",
@@ -4650,7 +4676,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 62
-        }
+        },
+        "summarizedTitle": "Garfield Fat Cat Comics"
     },
     {
         "title": "Cuphead Volume 1: Comic Capers & Curios",
@@ -4774,7 +4801,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 67
-        }
+        },
+        "summarizedTitle": "cuphead comic book"
     },
     {
         "title": "Snoopy Boxed Set (PEANUTS)",
@@ -4950,7 +4978,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 57
-        }
+        },
+        "summarizedTitle": "Snoopy boxed set"
     },
     {
         "title": "Transformers Vol. 2 (2)",
@@ -5060,7 +5089,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 68
-        }
+        },
+        "summarizedTitle": "Transformers Vol. 2"
     },
     {
         "title": "Batman: A Death in the Family",
@@ -5177,7 +5207,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 58
-        }
+        },
+        "summarizedTitle": "Batman: Death in the Family"
     },
     {
         "title": "DEADPOOL VS. WOLVERINE",
@@ -5389,7 +5420,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 77
-        }
+        },
+        "summarizedTitle": "Deadpool vs. Wolverine"
     },
     {
         "title": "Batman Three Jokers",
@@ -5511,7 +5543,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 76
-        }
+        },
+        "summarizedTitle": "batman three jokers"
     },
     {
         "title": "Avatar: The Last Airbender--Smoke and Shadow Omnibus",
@@ -5632,7 +5665,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 71
-        }
+        },
+        "summarizedTitle": "avatar smoke and shadow"
     },
     {
         "title": "Batman: Hush",
@@ -5745,7 +5779,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 68
-        }
+        },
+        "summarizedTitle": "Batman Hush"
     },
     {
         "title": "Avatar: The Last Airbender--The Promise Omnibus",
@@ -5802,7 +5837,8 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 96
-        }
+        },
+        "summarizedTitle": "avatar the last airbender promise omnibus"
     },
     {
         "title": "Garfield Fat Cat 3-Pack (Book 6)",
@@ -5922,6 +5958,7 @@
             "saleSummary": null,
             "isSponsored": true,
             "productPosition": 99
-        }
+        },
+        "summarizedTitle": "garfield fat cat"
     }
 ]
