@@ -14,7 +14,6 @@ from preprocessing.utils import (
 # from storages.milvus.query import search_by_embedding
 # from storages.milvus.schema import get_collection
 from utils.downloaders.image_downloader import ParallelImageFetcher
-from embedding import EmbeddingModule
 from base import BaseQuery, ComplexQuery, ImageQuery, TextQuery, TopKFinalists
 from storages.aws_s3.s3_client import S3StorageClient
 from utils.generators._base import Text2ImgGenerativeModule
