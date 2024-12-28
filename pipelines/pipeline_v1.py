@@ -4,18 +4,15 @@ import tenacity
 
 from typing import Optional
 from base._dtos import GenerativeQuery, ProductFinalist
-from crawlers import CrawlingModule
 from pipelines._base import PipelineBase
 from preprocessing.utils import (
     get_fused_embedding,
     get_image_embedding,
     get_text_embedding,
 )
-# from storages.milvus.query import search_by_embedding
-# from storages.milvus.schema import get_collection
-from utils.downloaders.image_downloader import ParallelImageFetcher
+
+from storages.mongo import MongoDbClient
 from base import BaseQuery, ComplexQuery, ImageQuery, TextQuery, TopKFinalists
-from storages.aws_s3.s3_client import S3StorageClient
 from utils.generators._base import Text2ImgGenerativeModule
 from utils.generators._flux import FluxHuggingFaceGenerator
 from utils.llms._base import LLMModule
@@ -26,13 +23,12 @@ from storages.milvus.milvus_db import MilvusDB
 class PipelineV1(PipelineBase):
     def __init__(
         self,
-        s3_storage: S3StorageClient,
-        downloader: ParallelImageFetcher,
-        crawler: CrawlingModule,
+        mongo_db: MongoDbClient,
         generator: Optional[Text2ImgGenerativeModule] = None,
         llm: Optional[LLMModule] = None,
     ):
-        super(PipelineV1, self).__init__(s3_storage, downloader, crawler)
+        super(PipelineV1, self).__init__()
+        self.mongo_db = mongo_db
         self.generator: Optional[Text2ImgGenerativeModule] = generator
         self.llm: Optional[LLMModule] = llm
 
@@ -58,13 +54,11 @@ class PipelineV1(PipelineBase):
     @classmethod
     def from_env(cls, with_generator: bool = False, with_llm: bool = False):
         "Load all components from environment variables"
-        s3_storage = S3StorageClient.from_env()
-        downloader = ParallelImageFetcher.from_env()
-        crawler = CrawlingModule.from_env()
         MilvusDB.from_env()
+        mongo_db = MongoDbClient.from_env()
         generator = FluxHuggingFaceGenerator.from_env() if with_generator else None
         llm = OllamaLLMModule.from_env() if with_llm else None
-        return cls(s3_storage, downloader, crawler, generator, llm)
+        return cls(mongo_db, generator, llm)
 
     def get_name(self):
         return "Pipeline V1"
@@ -72,21 +66,25 @@ class PipelineV1(PipelineBase):
     def _serve_text(self, query: TextQuery) -> TopKFinalists:
         # Get embedding
         embedding = tenacity.retry(
-            wait=tenacity.wait_fixed(2),
-            stop=tenacity.stop_after_delay(10),
+            wait=tenacity.wait_exponential(multiplier=1, min=4, max=10),
+            stop=tenacity.stop_after_attempt(10),
             retry=tenacity.retry_if_exception_type(Exception),
         )(get_text_embedding)(query.content)
 
         # Query Dbs and Post-processing
-        candidates = MilvusDB.search_by_embedding(ts_embedding=None, text_embedding=embedding)
+        candidates = MilvusDB.search_by_embedding(
+            ts_embedding=None, text_embedding=embedding
+        )
+
+        candidate_asins = [
+            candidate[1][1].entity.get("metadata").get("asin")
+            for candidate in candidates
+        ]
+
+        candidates = self.mongo_db.fetch(candidate_asins)
 
         "Logic to serve text query"
-        return TopKFinalists(
-            [
-                ProductFinalist(candidate[1][1].entity.get("metadata"))
-                for candidate in candidates
-            ]
-        )
+        return TopKFinalists([ProductFinalist(candidate) for candidate in candidates])
 
     def _serve_image(self, query: ImageQuery) -> TopKFinalists:
         # Get embedding
@@ -97,15 +95,19 @@ class PipelineV1(PipelineBase):
         )(get_image_embedding)(query.content)
 
         # Query Dbs and Post-processing
-        candidates = MilvusDB.search_by_embedding(ts_embedding=embedding, text_embedding=None)
+        candidates = MilvusDB.search_by_embedding(
+            ts_embedding=embedding, text_embedding=None
+        )
+
+        candidate_asins = [
+            candidate[1][1].entity.get("metadata").get("asin")
+            for candidate in candidates
+        ]
+
+        candidates = self.mongo_db.fetch(candidate_asins)
 
         "Logic to serve text query"
-        return TopKFinalists(
-            [
-                ProductFinalist(candidate[1][1].entity.get("metadata"))
-                for candidate in candidates
-            ]
-        )
+        return TopKFinalists([ProductFinalist(candidate) for candidate in candidates])
 
     def _serve_complex(self, query: ComplexQuery) -> TopKFinalists:
         # Get embedding
@@ -123,15 +125,19 @@ class PipelineV1(PipelineBase):
         )(get_text_embedding)(query.text)
 
         # Query Dbs and Post-processing
-        candidates = MilvusDB.search_by_embedding(ts_embedding=ts_embedding, text_embedding=text_embedding)
+        candidates = MilvusDB.search_by_embedding(
+            ts_embedding=ts_embedding, text_embedding=text_embedding
+        )
+
+        candidate_asins = [
+            candidate[1][1].entity.get("metadata").get("asin")
+            for candidate in candidates
+        ]
+
+        candidates = self.mongo_db.fetch(candidate_asins)
 
         "Logic to serve text query"
-        return TopKFinalists(
-            [
-                ProductFinalist(candidate[1][1].entity.get("metadata"))
-                for candidate in candidates
-            ]
-        )
+        return TopKFinalists([ProductFinalist(candidate) for candidate in candidates])
 
 
 instance = PipelineV1.from_env(with_generator=True, with_llm=True)

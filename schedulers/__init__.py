@@ -7,7 +7,6 @@ import os
 from apify_client import ApifyClient
 from copy import deepcopy
 from preprocessing import PreprocessingConfig, PreprocessingPipelineModule
-from storages.aws_s3.config import S3StorageConfig
 from storages.milvus.milvus_db import MilvusDB
 from storages.mongo import MongoDbClient
 from storages.mongo._config import MongoDbConfig
@@ -21,8 +20,6 @@ keywords = os.getenv("KEYWORDS").split(",")
 actor_id = os.getenv("APIFY_ACTOR_ID")
 # MONGO
 mongo_config = MongoDbConfig.from_env()
-# S3
-s3_storage_config = S3StorageConfig.from_env()
 # PREPROCESSING
 preprocessing_config = PreprocessingConfig.from_env()
 
@@ -40,9 +37,9 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(message)s")
 
 @app.on_after_configure.connect
 def setup_periodic_tasks(sender: Celery, **kwargs):
-    sender.add_periodic_task(MINUTE, crawl_data.s(), name="crawl every hour")
+    sender.add_periodic_task(10, crawl_data.s(), name="crawl every hour")
     sender.add_periodic_task(
-        5 * MINUTE, preprocess_data.s(), name="preprocess every day"
+        20, preprocess_data.s(), name="preprocess every day"
     )
 
 
@@ -69,6 +66,8 @@ def crawl_data():
     apify_client = ApifyClient(apify_api_token)
     mongo_client = MongoDbClient(mongo_config)
 
+    print(f"Keywords: {keywords}")
+
     selected_keywords = random.sample(keywords, 20)
     logging.info(f"Selected keywords: {selected_keywords}")
     results = []
@@ -89,6 +88,8 @@ def crawl_data():
 def preprocess_data():
     "Schedule a task to process data from Apify"
     logging.info("Preprocessing data")
+
+    print("Preprocessing data")
 
     mongo_client = MongoDbClient(mongo_config)
     preprocessing_client = PreprocessingPipelineModule(preprocessing_config)

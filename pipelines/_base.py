@@ -1,22 +1,12 @@
 import logging
 
-from crawlers import CrawlingModule
-from utils.downloaders.image_downloader import ParallelImageFetcher
 from base import BaseQuery, ComplexQuery, ImageQuery, TextQuery, TopKFinalists
-from storages.aws_s3.s3_client import S3StorageClient
-# from storages.milvus.milvus_db import MilvusDB
-
 
 class PipelineBase:
     def __init__(
         self,
-        s3_storage: S3StorageClient,
-        downloader: ParallelImageFetcher,
-        crawler: CrawlingModule,
     ):
-        self.s3_storage: S3StorageClient = s3_storage
-        self.downloader: ParallelImageFetcher = downloader
-        self.crawler: CrawlingModule = crawler
+        pass
 
     def get_name(self):
         return self.__class__.get_name
